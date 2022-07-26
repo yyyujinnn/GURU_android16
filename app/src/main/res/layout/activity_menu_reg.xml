@@ -6,4 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".MenuReg">
 
+    <Button
+        android:id="@+id/countup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수량 +"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/count"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <Button
+        android:id="@+id/countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수량 -"
+        app:layout_constraintEnd_toStartOf="@+id/count"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/countup"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/countdown"
+        tools:layout_editor_absoluteY="313dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
