@@ -156,23 +156,6 @@
                     android:textSize="15sp"
                     tools:ignore="TouchTargetSizeCheck" />
 
-                <!-- 커스텀 메뉴 기존 메뉴 제목 -->
-                <TextView
-                    android:id="@+id/title_basemenu_textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:text="기존 메뉴"
-                    android:textColor="@color/Active_Text"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <!-- 커스텀 메뉴 기존 메뉴 콤보박스(스피너) -->
-                <Spinner
-                    android:id="@+id/custom_basemenu_spinner"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
                 <!-- 커스텀 메뉴 가격 제목 -->
                 <TextView
                     android:id="@+id/title_prise_textView"
@@ -230,7 +213,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:text="커스텀 메뉴 옵션"
+                    android:text="커스텀 메뉴 가격"
                     android:textColor="@color/Active_Text"
                     android:textSize="20sp"
                     android:textStyle="bold" />
