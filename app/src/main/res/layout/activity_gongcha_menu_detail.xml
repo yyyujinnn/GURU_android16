@@ -64,7 +64,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
-                                android:text="브랜드명"
+                                android:text="공차"
                                 android:textColor="@color/Active_Text"
                                 android:textSize="10sp" />
 
@@ -196,7 +196,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="레귤러(384ml)"
+                            android:text="라지(474ml)"
                             android:textColor="@color/Active_Text" />
 
                         <!-- 사이즈 라디오 버튼2 -->
@@ -206,7 +206,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:layout_marginLeft="50dp"
-                            android:text="엑스트라(651ml)"
+                            android:text="점보(651ml)"
                             android:textColor="@color/Active_Text" />
 
                     </LinearLayout>
@@ -217,7 +217,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="에스프레소 샷 갯수 (500원 추가)"
+                        android:text="에스프레소 샷 갯수 (600원 추가)"
                         android:textColor="@color/Active_Text"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -232,275 +232,264 @@
                         android:textColor="@color/Active_Text"
                         android:textSize="20sp" />
 
-                    <!-- 커스텀 메뉴 펄 토핑 제목 -->
+                    <!-- 커스텀 메뉴 당도 제목 -->
                     <TextView
-                        android:id="@+id/title_pearl_textView"
+                        android:id="@+id/title_suger_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="펄 토핑 (1000원 추가)"
+                        android:text="당도"
                         android:textColor="@color/Active_Text"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 펄 토핑 체크버튼 -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
+                    <!-- 커스텀 메뉴 당도 시크바 -->
+                    <SeekBar
+                        android:id="@+id/custom_suger_seekBar"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:progressTint="@color/Maincolor_Brown1" />
+
+                    <!-- 커스텀 메뉴 당도 시크바 값 텍스트-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:layout_marginTop="5dp">
 
-                        <!-- 커스텀 메뉴 펄 토핑 체크버튼1 -->
-                        <CheckBox
-                            android:id="@+id/custom_pearl1_checkBox"
+                        <!-- 당도 시크바 값 텍스트1: 0% -->
+                        <TextView
+                            android:id="@+id/explain_suger_0_textView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="타피오카 펄"
-                            android:textColor="@color/Active_Text"/>
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:text="0%"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/Active_Text"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <!-- 당도 시크바 값 텍스트2: 30% -->
+                        <TextView
+                            android:id="@+id/explain_suger_30_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="30%"
+                            android:textAlignment="center"
+                            android:textColor="@color/Active_Text"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <!-- 당도 시크바 값 텍스트3: 50% -->
+                        <TextView
+                            android:id="@+id/explain_suger_50_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="50%"
+                            android:textAlignment="center"
+                            android:textColor="@color/Active_Text"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <!-- 당도 시크바 값 텍스트4: 70% -->
+                        <TextView
+                            android:id="@+id/explain_suger_70_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="70%"
+                            android:textAlignment="center"
+                            android:textColor="@color/Active_Text"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <!-- 당도 시크바 값 텍스트5: 100% -->
+                        <TextView
+                            android:id="@+id/explain_suger_100_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:text="100%"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/Active_Text"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
-                    <!-- 커스텀 메뉴 시럽 제목 -->
+                    <!-- 커스텀 메뉴 얼음 제목 -->
                     <TextView
-                        android:id="@+id/title_syrup_textView"
+                        android:id="@+id/title_ice_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="시럽 (1회당 300원 추가)"
+                        android:text="얼음"
                         android:textColor="@color/Active_Text"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 커스텀 메뉴 시럽: 헤이즐넛 시럽 -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
+                    <!-- 커스텀 메뉴 얼음 시크바 -->
+                    <SeekBar
+                        android:id="@+id/custom_ice_seekBar"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_marginTop="10dp">
+                        android:progressTint="@color/Maincolor_Brown1" />
 
-                        <!-- 헤이즐넛 시럽 제목 -->
+                    <!-- 커스텀 메뉴 얼음 시크바 값 텍스트-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <!-- 얼음 시크바 값 텍스트1: 없음 -->
                         <TextView
-                            android:id="@+id/title_hazelnutsyrup_textView"
-                            android:layout_width="100dp"
+                            android:id="@+id/explain_ice_no_textView"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="헤이즐넛 시럽"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:text="없음"
+                            android:textAlignment="textStart"
                             android:textColor="@color/Active_Text"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
-                        <!-- 커스텀 메뉴 헤이즐넛 시럽 횟수 표시 텍스트 -->
+                        <!-- 얼음 시크바 값 텍스트2: 적게 -->
                         <TextView
-                            android:id="@+id/custom_hazelnutsyrup_num_textView"
+                            android:id="@+id/explain_ice_less_textView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="30dp"
-                            android:text="N 회"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="20sp" />
-
-                    </LinearLayout>
-
-                    <!-- 커스텀 메뉴 시럽: 카라멜 시럽 -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_marginTop="10dp">
-
-                        <!-- 카라멜 시럽 제목 -->
-                        <TextView
-                            android:id="@+id/title_caramelsyrup_textView"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="카라멜 시럽"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:text="적게"
+                            android:textAlignment="center"
                             android:textColor="@color/Active_Text"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
-                        <!-- 커스텀 메뉴 카라멜 시럽 횟수 표시 텍스트 -->
+                        <!-- 얼음 시크바 값 텍스트3: 보통 -->
                         <TextView
-                            android:id="@+id/custom_caramelsyrup_num_textView"
+                            android:id="@+id/explain_ice_normal_textView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="30dp"
-                            android:text="N 회"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="20sp" />
-
-                    </LinearLayout>
-
-                    <!-- 커스텀 메뉴 시럽: 바닐라 시럽 -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_marginTop="5dp">
-
-                        <!-- 바닐라 시럽 제목 -->
-                        <TextView
-                            android:id="@+id/title_vanillasyrup_textView"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="바닐라 시럽"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:text="보통"
+                            android:textAlignment="center"
                             android:textColor="@color/Active_Text"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
-                        <!-- 커스텀 메뉴 바닐라 시럽 횟수 표시 텍스트 -->
+                        <!-- 얼음 시크바 값 텍스트4: 많이 -->
                         <TextView
-                            android:id="@+id/custom_vanillasyrup_num_textView"
+                            android:id="@+id/explain_ice_much_textView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="30dp"
-                            android:text="N 회"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="20sp" />
-
-                    </LinearLayout>
-
-                    <!-- 커스텀 메뉴 시럽: 아이리쉬 시럽 -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_marginTop="5dp">
-
-                        <!-- 아이리쉬 시럽 제목 -->
-                        <TextView
-                            android:id="@+id/title_irishsyrup_textView"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="아이리쉬 시럽"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:text="많이"
+                            android:textAlignment="textEnd"
                             android:textColor="@color/Active_Text"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
-                        <!-- 커스텀 메뉴 아이리쉬 시럽 횟수 표시 텍스트 -->
-                        <TextView
-                            android:id="@+id/custom_irishsyrup_num_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="30dp"
-                            android:text="N 회"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="20sp" />
-
                     </LinearLayout>
 
-                    <!-- 커스텀 메뉴 시럽: 카페 시럽(무료) -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_marginTop="5dp">
-
-                        <!-- 카페 시럽 제목 -->
-                        <TextView
-                            android:id="@+id/title_cafesyrup_textView"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="카페 시럽(무료)"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <!-- 커스텀 메뉴 카페 시럽 횟수 표시 텍스트 -->
-                        <TextView
-                            android:id="@+id/custom_cafesyrup_num_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="30dp"
-                            android:text="N 회"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="20sp" />
-
-                    </LinearLayout>
-
-                    <!-- 커스텀 메뉴 토핑 소스 제목 -->
-                    <TextView
-                        android:id="@+id/title_toppingsauce_textView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:text="토핑 소스 (500원 추가)"
-                        android:textColor="@color/Active_Text"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <!-- 토핑 소스 체크버튼 -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="5dp">
-
-                        <!-- 커스텀 메뉴 토핑 소스 체크버튼1 -->
-                        <CheckBox
-                            android:id="@+id/custom_toppingsauce1_checkBox"
-                            android:layout_width="120dp"
-                            android:layout_height="wrap_content"
-                            android:text="초콜릿"
-                            android:textColor="@color/Active_Text"/>
-
-                        <!-- 커스텀 메뉴 토핑 소스 체크버튼2 -->
-                        <CheckBox
-                            android:id="@+id/custom_toppingsauce2_checkBox"
-                            android:layout_width="120dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:text="카라멜"
-                            android:textColor="@color/Active_Text"/>
-
-                    </LinearLayout>
-
-                    <!-- 커스텀 메뉴 토핑제목 -->
+                    <!-- 커스텀 메뉴 토핑 제목 -->
                     <TextView
                         android:id="@+id/title_topping_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="토핑 (500원 추가)"
+                        android:text="토핑(최대 3가지 선택가능)"
                         android:textColor="@color/Active_Text"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 토핑 체크버튼 -->
+                    <!-- 커스텀 메뉴 토핑 설명 -->
+                    <TextView
+                        android:id="@+id/explain_topping_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="라지 500원 | 점보 700원"
+                        android:textColor="@color/Active_Text"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                    <!-- 토핑 체크 박스1~3 -->
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_marginTop="5dp">
+                        android:gravity="center">
 
-                        <!-- 커스텀 메뉴 토핑 체크버튼1 -->
+                        <!-- 토핑 체크 박스1 -->
                         <CheckBox
-                            android:id="@+id/custom_topping1_checkBox"
-                            android:layout_width="120dp"
+                            android:id="@+id/custom_topping1_radioButton"
+                            android:layout_width="110dp"
                             android:layout_height="wrap_content"
-                            android:text="초코쿠키 크림"
-                            android:textColor="@color/Active_Text"/>
+                            android:text="타피오카 펄"
+                            android:textColor="@color/Active_Text" />
 
-                        <!-- 커스텀 메뉴 토핑 체크버튼2 -->
+                        <!-- 토핑 체크 박스2 -->
                         <CheckBox
-                            android:id="@+id/custom_topping2_checkBox"
+                            android:id="@+id/custom_topping2_radioButton"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
-                            android:text="초콜릿칩"
-                            android:textColor="@color/Active_Text"/>
+                            android:text="화이트 펄"
+                            android:textColor="@color/Active_Text" />
 
-                        <!-- 커스텀 메뉴 토핑 체크버튼3 -->
+                        <!-- 토핑 체크 박스3 -->
                         <CheckBox
-                            android:id="@+id/custom_topping3_checkBox"
+                            android:id="@+id/custom_topping3_radioButton"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
-                            android:text="휘핑크림"
-                            android:textColor="@color/Active_Text"/>
+                            android:text="알로에"
+                            android:textColor="@color/Active_Text" />
+
+                    </LinearLayout>
+
+                    <!-- 토핑 체크 박스4~6 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <!-- 토핑 체크 박스4 -->
+                        <CheckBox
+                            android:id="@+id/custom_topping4_radioButton"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="코코넛"
+                            android:textColor="@color/Active_Text" />
+
+                        <!-- 토핑 체크 박스5 -->
+                        <CheckBox
+                            android:id="@+id/custom_topping5_radioButton"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="밀크폼"
+                            android:textColor="@color/Active_Text" />
+
+                        <!-- 토핑 체크 박스6 -->
+                        <CheckBox
+                            android:id="@+id/custom_topping6_radioButton"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="치즈폼"
+                            android:textColor="@color/Active_Text" />
 
                     </LinearLayout>
 
