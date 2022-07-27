@@ -7,6 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 
+// < #. 홈 메인페이지: 랭킹 리스트(전체) >
+
 class MainActivity : AppCompatActivity() {
 
     // xml 변수 선언

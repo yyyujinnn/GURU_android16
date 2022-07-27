@@ -8,17 +8,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 
-// < #. 커스텀 메뉴 리스트 페이지:공개 리스트 >
+// < #. 커스텀 메뉴 리스트 페이지:비공개 리스트 >
 
-class CustomList : AppCompatActivity() {
+class CustomList_MyCustom : AppCompatActivity() {
+
     // xml 변수 선언
-    lateinit var customlist_tab1_Button:Button    // 상단 탭 버튼1: 공개된 커스텀
+    lateinit var customlist_tab1_Button: Button    // 상단 탭 버튼1: 공개된 커스텀
     lateinit var customlist_tab2_Button: Button   // 상단 탭 버튼2: 나만의 커스텀
-
-    lateinit var all_tab_imageButton: ImageButton         // 전체 탭 버튼
-    lateinit var starbucks_tab_imageButton: ImageButton   // 스타벅스 탭 버튼
-    lateinit var ediya_tab_imageButton: ImageButton       // 이디야 탭 버튼
-    lateinit var gongcha_tab_imageButton: ImageButton     // 공차 탭 버튼
 
     lateinit var divide_line_imageView: ImageView   // 구분선 이미지
 
@@ -32,6 +28,6 @@ class CustomList : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_custom_list)
+        setContentView(R.layout.activity_custom_list_mycustom)
     }
 }
