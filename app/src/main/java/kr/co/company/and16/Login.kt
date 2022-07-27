@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 
 class Login : AppCompatActivity() {
+    // 연동테스트용 문구
 
     lateinit var LoginButton: Button
     lateinit var SignupButton: Button
