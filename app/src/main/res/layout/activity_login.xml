@@ -6,29 +6,153 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
-    <Button
-        android:id="@+id/LoginButton"
+    <ImageView
+        android:id="@+id/login_bg_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/Maincolor_Brown2"
-        android:text="마이웨이 로그인하기"
-        android:textColor="@color/White_Text"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/app_logo_imageView"
+        app:srcCompat="@drawable/ic_login_background" />
 
-    <Button
-        android:id="@+id/SignupButton"
+    <ImageView
+        android:id="@+id/app_logo_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/Maincolor_White"
-        android:text="회원가입"
-        android:textColor="@color/Maincolor_Brown2"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.695"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.736" />
+        app:srcCompat="@drawable/ic_app_logo_myway_icon_small" />
+
+    <EditText
+        android:id="@+id/ID_editText"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_login_input_background"
+        android:backgroundTint="@color/White_Text"
+        android:ems="10"
+        android:hint="아이디 입력"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="48dp"
+        android:textColor="@color/Active_Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_logo_imageView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/id_icon_imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ID_editText"
+        app:layout_constraintStart_toStartOf="@+id/ID_editText"
+        app:layout_constraintTop_toTopOf="@+id/ID_editText"
+        app:srcCompat="@drawable/ic_id_icon_24" />
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_login_input_background"
+        android:backgroundTint="@color/White_Text"
+        android:ems="10"
+        android:hint="비밀번호 입력"
+        android:inputType="textPassword"
+        android:paddingLeft="48dp"
+        android:textColor="@color/Active_Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ID_editText"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/password_icon_imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/password_editText"
+        app:layout_constraintStart_toStartOf="@+id/password_editText"
+        app:layout_constraintTop_toTopOf="@+id/password_editText"
+        app:srcCompat="@drawable/ic_password_icon_24" />
+
+    <android.widget.Button
+        android:id="@+id/login_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/ic_login_button_background"
+        android:backgroundTint="@color/Maincolor_Brown2"
+        android:fontFamily="sans-serif-black"
+        android:text="마이웨이 로그인하기"
+        android:textColor="@color/White_Text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_editText" />
+
+    <TextView
+        android:id="@+id/forget_password_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:text="아이디 / 비밀번호 찾기"
+        android:textColor="@color/White_Text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+    <TextView
+        android:id="@+id/signUp_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:text="아직 마이웨이 회원이 아니신가요?"
+        android:textAlignment="center"
+        android:textColor="@color/Active_Text"
+        app:layout_constraintEnd_toStartOf="@+id/signUp_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+    <Button
+        android:id="@+id/signUp_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="40dp"
+        android:background="#00ff0000"
+        android:fontFamily="sans-serif-black"
+        android:text="회원가입"
+        android:textColor="@color/Maincolor_Brown1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+    <Button
+        android:id="@+id/google_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#00ff0000"
+        android:text="구글로 로그인하기"
+        android:textColor="@color/Maincolor_Brown2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUp_textView" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

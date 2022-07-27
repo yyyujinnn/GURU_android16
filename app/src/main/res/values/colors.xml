@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="Active1_Text">#1C2943</color>
-    <color name="Active2_Text">#28292D</color>
+    <color name="Active_Text">#1C2943</color>
     <color name="Inactive_Text">#B5B5B5</color>
     <color name="White_Text">#FFFFFF</color>
+
     <color name="Maincolor_Black">#090909</color>
     <color name="Maincolor_DarkBlue">#1C2943</color>
     <color name="Maincolor_White">#FFFFFF</color>
+
     <color name="Maincolor_Brown1">#C99C79</color>
     <color name="Maincolor_Brown2">#733D31</color>
     <color name="Maincolor_Brown3">#593521</color>
+
     <color name="Background_Ivory">#EDE5CF</color>
-    <color name="Background2">#ECF4F8</color>
+
 </resources>
