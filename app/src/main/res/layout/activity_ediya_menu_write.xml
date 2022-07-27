@@ -213,7 +213,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:text="커스텀 메뉴 설정"
+                    android:text="커스텀 메뉴 가격"
                     android:textColor="@color/Active_Text"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -425,7 +425,7 @@
 
                     <!-- 카라멜 시럽 갯수 감소 버튼 -->
                     <android.widget.Button
-                        android:id="@+id/custom_caramelsyrupnum_sub_button"
+                        android:id="@+id/custom_caramesyrupnum_sub_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -437,7 +437,7 @@
 
                     <!-- 카라멜 시럽 갯수 표시 텍스트 -->
                     <TextView
-                        android:id="@+id/custom_caramelsyrupnum_textView"
+                        android:id="@+id/custom_caramesyrupnum_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -448,7 +448,7 @@
 
                     <!-- 카라멜 시럽 갯수 증가 버튼 -->
                     <android.widget.Button
-                        android:id="@+id/custom_caramelsyrupnum_plus_button"
+                        android:id="@+id/custom_caramesyruplnum_plus_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
