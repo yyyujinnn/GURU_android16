@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="starbucks_menu">
+            <item>바닐라크림 프라푸치노</item>
+            <item>자바칩 프로푸치노</item>
+            <item>제주 유기농 말차 크림 프라푸치노</item>
+            <item>카라멜 프라푸치노</item>
+            <item>화이트 딸기 크림 프라푸치노</item>
+            <item>화이트 초콜릿 모카 프라푸치노</item>
+        </string-array>
+</resources>
