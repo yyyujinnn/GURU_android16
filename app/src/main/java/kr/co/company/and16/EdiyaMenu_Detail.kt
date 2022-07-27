@@ -8,6 +8,6 @@ import android.os.Bundle
 class EdiyaMenu_Detail : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ediya_menu)
+        setContentView(R.layout.activity_ediya_menu_detail)
     }
 }

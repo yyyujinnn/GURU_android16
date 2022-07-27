@@ -8,6 +8,6 @@ import android.os.Bundle
 class GongchaMenu_Detail : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gongcha_menu)
+        setContentView(R.layout.activity_gongcha_menu_detail)
     }
 }

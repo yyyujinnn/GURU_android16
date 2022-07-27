@@ -8,6 +8,6 @@ import android.os.Bundle
 class StarbucksMenu_Detail : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_starbucks_menu)
+        setContentView(R.layout.activity_starbucks_menu_detail)
     }
 }
