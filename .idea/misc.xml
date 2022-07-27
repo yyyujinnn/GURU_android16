@@ -3,26 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_custom_list.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_custom_list_mycustom.xml" value="0.2390625" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_ediya_menu_write.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_gongcha_menu.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_gongcha_menu_detail.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_gongcha_menu_write.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_login.xml" value="0.11499493414387031" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_menu_reg.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_my_custom_menu.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_my_list.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_overroll_rank.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_starbucks_menu.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_starbucks_menu_write.xml" value="0.264" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_start_onboading.xml" value="0.11499493414387031" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_write_select_brand.xml" value="0.264" />
-        <entry key="..\:/Users/sjtjd/AndroidStudioProjects/and16/app/src/main/res/layout/activity_ediya_menu.xml" value="0.3182291666666667" />
-        <entry key="..\:/Users/sjtjd/AndroidStudioProjects/and16/app/src/main/res/layout/activity_login.xml" value="0.3182291666666667" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_custom_list.xml" value="0.2" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_custom_list_mycustom.xml" value="0.264" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_ediya_menu.xml" value="0.1" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_ediya_menu_detail.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_ediya_menu_write.xml" value="0.264" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_ediya_rank.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_gongcha_menu.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_gongcha_menu_write.xml" value="0.176" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_gongcha_rank.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_login.xml" value="0.15625" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_menu_reg.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_my_custom_menu.xml" value="0.15625" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_my_list.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_overroll_rank.xml" value="0.1" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_sign_up.xml" value="0.15625" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_starbucks_menu.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_starbucks_menu_detail.xml" value="0.14947916666666666" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_starbucks_menu_write.xml" value="0.2" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_starbucks_rank.xml" value="0.15625" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_start_onboading.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/1209y/AndroidStudioProjects/and16/app/src/main/res/layout/activity_write_select_brand.xml" value="0.15625" />
         <entry key="..\:/Users/sjtjd/AndroidStudioProjects/and16/app/src/main/res/layout/activity_main.xml" value="0.3619791666666667" />
-        <entry key="..\:/Users/sjtjd/AndroidStudioProjects/and16/app/src/main/res/layout/activity_menu_reg.xml" value="0.3182291666666667" />
       </map>
     </option>
   </component>

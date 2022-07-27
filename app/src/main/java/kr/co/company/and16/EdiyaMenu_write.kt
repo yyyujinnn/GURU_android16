@@ -14,7 +14,7 @@ class EdiyaMenu_write : AppCompatActivity() {
 
     lateinit var custom_name_EditText: EditText
 
-    lateinit var spinner: Spinner
+    lateinit var custom_basemenu_spinner: Spinner
 
     lateinit var custom_prise_EditText: EditText
 
@@ -64,7 +64,7 @@ class EdiyaMenu_write : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ediya_menu_write)
 
-        //spinner = findViewById(R.id.spinner)
+        custom_basemenu_spinner = findViewById(R.id.custom_basemenu_spinner)
 
         custom_shotnum_plus_button = findViewById(R.id.custom_shotnum_plus_button)
         custom_shotnum_sub_button = findViewById(R.id.custom_shotnum_sub_button)
@@ -108,7 +108,7 @@ class EdiyaMenu_write : AppCompatActivity() {
             android.R.layout.simple_spinner_item
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            spinner.adapter = adapter
+            custom_basemenu_spinner.adapter = adapter
         }
 
         // 샷 개수 감소 버튼
