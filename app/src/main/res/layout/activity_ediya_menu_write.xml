@@ -432,7 +432,7 @@
 
                     <!-- 카라멜 시럽 제목 -->
                     <TextView
-                        android:id="@+id/title_caramesyrup_textView"
+                        android:id="@+id/title_caramelsyrup_textView"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="카라멜 시럽"
@@ -442,7 +442,7 @@
 
                     <!-- 카라멜 시럽 갯수 감소 버튼 -->
                     <android.widget.Button
-                        android:id="@+id/custom_caramesyrupnum_sub_button"
+                        android:id="@+id/custom_caramelsyrupnum_sub_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -454,7 +454,7 @@
 
                     <!-- 카라멜 시럽 갯수 표시 텍스트 -->
                     <TextView
-                        android:id="@+id/custom_caramesyrupnum_textView"
+                        android:id="@+id/custom_caramelsyrupnum_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -465,7 +465,7 @@
 
                     <!-- 카라멜 시럽 갯수 증가 버튼 -->
                     <android.widget.Button
-                        android:id="@+id/custom_caramesyruplnum_plus_button"
+                        android:id="@+id/custom_caramelsyruplnum_plus_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
