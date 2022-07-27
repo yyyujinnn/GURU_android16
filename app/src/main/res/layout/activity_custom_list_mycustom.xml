@@ -45,7 +45,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_weight="1"
                     android:background="@drawable/ic_active_tab_button"
-                    android:text="나 만의 커스텀"
+                    android:text="나만의 커스텀"
                     android:textColor="@color/White_Text"
                     tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 

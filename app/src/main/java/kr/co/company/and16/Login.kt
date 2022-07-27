@@ -17,30 +17,26 @@ class Login : AppCompatActivity() {
     lateinit var id_icon_imageView: ImageView         // 아이디 아이콘 이미지
     lateinit var password_editText: EditText          // 비밀번호 입력창
     lateinit var password_icon_imageView: ImageView   // 비밀번호 아이콘 이미지
-    lateinit var login_button: Button                 // 로그인 버튼
     lateinit var forget_password_textView: TextView   // 아이디/비번찾기 텍스트
     lateinit var signUp_textView: TextView            // 회원가입 설명 텍스트
-    lateinit var signUp_button: Button                // 회원가입 버튼
     lateinit var google_login_button: Button          // 구글 로그인 버튼
-
-
-    lateinit var LoginButton: Button
-    lateinit var SignupButton: Button
+    lateinit var LoginButton: Button //로그인 버튼
+    lateinit var SignupButton: Button //회원가입 버튼
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        // * 변수 다시 연결해주세요 *
+        LoginButton = findViewById(R.id.LoginButton)
+        SignupButton = findViewById(R.id.SignupButton)
 
-        //LoginButton = findViewById(R.id.LoginButton)
-        //SignupButton = findViewById(R.id.SignupButton)
-
+        // 로그인버튼 클릭 시 main 화면으로 이동
         LoginButton.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
+        //회원가입 버튼 클릭 시 회원가입 화면으로 이동
         SignupButton.setOnClickListener{
             val intent = Intent(this, SignUp::class.java)
             startActivity(intent)

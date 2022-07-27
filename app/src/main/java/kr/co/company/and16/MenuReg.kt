@@ -28,12 +28,14 @@ class MenuReg : AppCompatActivity() {
         countdown = findViewById(R.id.countdown)
         countup = findViewById(R.id.countup)
         output_text = findViewById<TextView>(R.id.count)
-        var count = 0;
+        var count = 0; // 수량은 0에서 시작
 
+        // 수량 감소 버튼
         countdown.setOnClickListener{
             count--
             output_text.setText(count.toString())
         }
+        // 수량 증가 버튼
         countup.setOnClickListener{
             count++
             output_text.setText(count.toString())
