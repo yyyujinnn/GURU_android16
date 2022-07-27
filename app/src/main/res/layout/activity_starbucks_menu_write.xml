@@ -117,7 +117,7 @@
                     <!-- 공개 라디오 버튼 -->
                     <RadioButton
                         android:id="@+id/custom_public_radioButton"
-                        android:layout_width="wrap_content"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="공개"
                         android:textColor="@color/Active_Text" />
@@ -125,7 +125,7 @@
                     <!-- 비공개 라디오 버튼 -->
                     <RadioButton
                         android:id="@+id/custom_private_radioButton"
-                        android:layout_width="wrap_content"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:text="비공개"
@@ -519,7 +519,7 @@
                     <!-- 라떼 베이스 라디오 버튼1 -->
                     <RadioButton
                         android:id="@+id/custom_lattebase1_radioButton"
-                        android:layout_width="100dp"
+                        android:layout_width="110dp"
                         android:layout_height="wrap_content"
                         android:text="일반 우유"
                         android:textColor="@color/Active_Text" />
@@ -527,7 +527,7 @@
                     <!-- 라떼 베이스 라디오 버튼2 -->
                     <RadioButton
                         android:id="@+id/custom_lattebase2_radioButton"
-                        android:layout_width="100dp"
+                        android:layout_width="110dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:text="저지방 우유"
@@ -536,7 +536,7 @@
                     <!-- 라떼 베이스 라디오 버튼3 -->
                     <RadioButton
                         android:id="@+id/custom_lattebase3_radioButton"
-                        android:layout_width="100dp"
+                        android:layout_width="110dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:text="무지방 우유"
@@ -554,7 +554,7 @@
                     <!-- 라떼 베이스 라디오 버튼4 -->
                     <RadioButton
                         android:id="@+id/custom_lattebase4_radioButton"
-                        android:layout_width="100dp"
+                        android:layout_width="110dp"
                         android:layout_height="wrap_content"
                         android:text="두유"
                         android:textColor="@color/Active_Text" />
@@ -562,7 +562,7 @@
                     <!-- 라떼 베이스 라디오 버튼5 -->
                     <RadioButton
                         android:id="@+id/custom_lattebase5_radioButton"
-                        android:layout_width="100dp"
+                        android:layout_width="110dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:text="오트(귀리)"
@@ -738,7 +738,7 @@
                     <!-- 휘핑 라디오 버튼1 -->
                     <RadioButton
                         android:id="@+id/custom_whipping1_radioButton"
-                        android:layout_width="100dp"
+                        android:layout_width="110dp"
                         android:layout_height="wrap_content"
                         android:text="휘핑X"
                         android:textColor="@color/Active_Text" />
