@@ -3,9 +3,11 @@ package kr.co.company.and16
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class OverrollRank : AppCompatActivity() {
+// < #. 커스텀 메뉴 상세 페이지: 이디야 >
+
+class EdiyaMenu_Detail : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_overroll_rank)
+        setContentView(R.layout.activity_ediya_menu)
     }
 }
