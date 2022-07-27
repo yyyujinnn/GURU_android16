@@ -4,19 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Maincolor_Brown1"
-    tools:context=".StartOnboading">
+    android:background="@color/Maincolor_White"
+    tools:context=".StartOnboading" >
 
-    <Button
-        android:id="@+id/StartButton"
+    <ImageView
+        android:id="@+id/onboarding_bg_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/Maincolor_White"
-        android:text="마이웨이 시작하기"
-        android:textColor="@color/Maincolor_Black"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/ic_start_onboarding_background" />
+
+    <ImageView
+        android:id="@+id/onboarding_logo_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121"
+        app:srcCompat="@drawable/ic_app_logo_myway_icon" />
+
+    <TextView
+        android:id="@+id/appExplain_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="여기에는 문구\n한마디 소개가 들어가는 자리"
+        android:textAlignment="center"
+        android:textColor="@color/White_Text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onboarding_logo_imageView" />
+
+    <android.widget.Button
+        android:id="@+id/start_button"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/ic_app_start_button_background"
+        android:backgroundTint="@color/Maincolor_White"
+        android:text="마이웨이 시작하기"
+        android:textColor="@color/Active_Text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appExplain_textView" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
