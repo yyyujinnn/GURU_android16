@@ -592,14 +592,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp">
 
                     <!-- 베이스(물,티) 시크바 값 텍스트1: 적게 -->
                     <TextView
                         android:id="@+id/explain_base_less_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_marginLeft="5dp"
                         android:layout_weight="1"
                         android:text="적게"
@@ -613,7 +613,6 @@
                         android:id="@+id/explain_base_normal_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_weight="1"
                         android:text="보통"
                         android:textAlignment="center"
@@ -626,7 +625,6 @@
                         android:id="@+id/explain_base_much_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
                         android:text="많이"
@@ -659,14 +657,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp">
 
                     <!-- 얼음 시크바 값 텍스트1: 없음 -->
                     <TextView
                         android:id="@+id/explain_ice_no_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_marginLeft="5dp"
                         android:layout_weight="1"
                         android:text="없음"
@@ -680,7 +678,6 @@
                         android:id="@+id/explain_ice_less_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_weight="1"
                         android:text="적게"
                         android:textAlignment="center"
@@ -693,7 +690,6 @@
                         android:id="@+id/explain_ice_normal_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_weight="1"
                         android:text="보통"
                         android:textAlignment="center"
@@ -706,7 +702,6 @@
                         android:id="@+id/explain_ice_much_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
                         android:text="많이"
@@ -774,14 +769,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp">
 
                     <!-- 휘핑 시크바 값 텍스트1: 없음 -->
                     <TextView
                         android:id="@+id/explain_whipping_no_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_marginLeft="5dp"
                         android:layout_weight="1"
                         android:text="없음"
@@ -795,7 +790,6 @@
                         android:id="@+id/explain_whipping_less_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_weight="1"
                         android:text="적게"
                         android:textAlignment="center"
@@ -808,7 +802,6 @@
                         android:id="@+id/explain_whipping_normal_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_weight="1"
                         android:text="보통"
                         android:textAlignment="center"
@@ -821,7 +814,6 @@
                         android:id="@+id/explain_whipping_much_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
                         android:text="많이"
@@ -889,14 +881,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp">
 
                     <!-- 드리즐 시크바 값 텍스트1: 없음 -->
                     <TextView
                         android:id="@+id/explain_drizzle_no_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_marginLeft="5dp"
                         android:layout_weight="1"
                         android:text="없음"
@@ -910,7 +902,6 @@
                         android:id="@+id/explain_drizzle_less_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_weight="1"
                         android:text="적게"
                         android:textAlignment="center"
@@ -923,7 +914,6 @@
                         android:id="@+id/explain_drizzle_normal_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_weight="1"
                         android:text="보통"
                         android:textAlignment="center"
@@ -936,7 +926,6 @@
                         android:id="@+id/explain_drizzle_much_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
                         android:text="많이"
