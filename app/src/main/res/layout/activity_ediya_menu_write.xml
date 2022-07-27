@@ -35,7 +35,7 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <!-- 브랜드 텍스트 -->
+                <!-- 브랜드 텍스트: 이디야 -->
                 <TextView
                     android:id="@+id/brand_name_textView"
                     android:layout_width="wrap_content"

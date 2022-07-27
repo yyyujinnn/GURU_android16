@@ -15,7 +15,7 @@ class StarbucksMenu_write : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_starbucks_menu_write)
 
-        val spinner: Spinner = findViewById(R.id.spinner)
+        //val spinner: Spinner = findViewById(R.id.spinner)
 
         ArrayAdapter.createFromResource(
             this,
