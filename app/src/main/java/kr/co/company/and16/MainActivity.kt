@@ -10,6 +10,13 @@ import androidx.cardview.widget.CardView
 class MainActivity : AppCompatActivity() {
 
     // xml 변수 선언
+    lateinit var all_tab_imageButton: ImageButton         // 전체 탭 버튼
+    lateinit var starbucks_tab_imageButton: ImageButton   // 스타벅스 탭 버튼
+    lateinit var ediya_tab_imageButton: ImageButton       // 이디야 탭 버튼
+    lateinit var gongcha_tab_imageButton: ImageButton     // 공차 탭 버튼
+
+    lateinit var divide_line_imageView: ImageView   // 구분선 이미지
+
     lateinit var ranking_first_card:CardView                // 카드뷰1: 랭킹1
     lateinit var first_item_imageView: ImageView            // 랭킹1위 제품 이미지
     lateinit var first_item_explain_textView: TextView      // 카드뷰2 설명 텍스트
