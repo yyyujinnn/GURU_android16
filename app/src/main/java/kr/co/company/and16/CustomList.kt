@@ -2,6 +2,7 @@ package kr.co.company.and16
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
@@ -9,6 +10,9 @@ import androidx.cardview.widget.CardView
 
 class CustomList : AppCompatActivity() {
     // xml 변수 선언
+    lateinit var customlist_tab1_Button:Button    // 상단 탭 버튼1: 공개된 커스텀
+    lateinit var customlist_tab2_Button: Button   // 상단 탭 버튼2: 나만의 커스텀
+
     lateinit var all_tab_imageButton: ImageButton         // 전체 탭 버튼
     lateinit var starbucks_tab_imageButton: ImageButton   // 스타벅스 탭 버튼
     lateinit var ediya_tab_imageButton: ImageButton       // 이디야 탭 버튼
