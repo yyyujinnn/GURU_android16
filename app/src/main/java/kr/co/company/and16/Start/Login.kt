@@ -33,13 +33,13 @@ class Login : AppCompatActivity() {
         SignupButton = findViewById(R.id.SignupButton)
 
         // 로그인버튼 클릭 시 main 화면으로 이동
-        LoginButton.setOnClickListener{
+        LoginButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
         //회원가입 버튼 클릭 시 회원가입 화면으로 이동
-        SignupButton.setOnClickListener{
+        SignupButton.setOnClickListener {
             val intent = Intent(this, SignUp::class.java)
             startActivity(intent)
         }
