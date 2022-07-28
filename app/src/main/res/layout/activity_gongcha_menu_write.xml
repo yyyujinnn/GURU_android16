@@ -66,12 +66,6 @@
                     android:gravity="center">
 
                     <!-- 대표 이미지 입력 버튼 -->
-                    <ImageView
-                        android:id="@+id/user_image"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        tools:srcCompat="@tools:sample/avatars" />
 
                     <ImageButton
                         android:id="@+id/ImageRegButton"
@@ -79,6 +73,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:background="#00ff0000"
+                        android:scaleType="fitCenter"
                         app:srcCompat="@drawable/ic_add_image_icon"
                         tools:ignore="SpeakableTextPresentCheck" />
 
