@@ -37,9 +37,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var list_item_mn_textView: TextView           // 카드뷰2 제품 좋아요 숫자
     lateinit var list_item_like_imageButton: ImageButton   // 카드뷰2 찜 버튼
 
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
