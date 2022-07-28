@@ -52,12 +52,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".OverrollRank"
-            android:exported="false" />
-        <activity
-            android:name=".MenuReg"
-            android:exported="false" />
-        <activity
             android:name=".Zzim.MyCustomMenu"
             android:exported="false" />
         <activity

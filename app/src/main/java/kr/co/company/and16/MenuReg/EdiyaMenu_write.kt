@@ -138,36 +138,36 @@ class EdiyaMenu_write : AppCompatActivity() {
         custom_caramelsyrupnum_plus_button.setOnClickListener {
             custom_caramelsyrupnum_textView++
             caramel_output_text.setText(custom_caramelsyrupnum_textView.toString())
-            // 바닐라시럽 횟수 감소 버튼
-            custom_vanillasyrupnum_sub_button.setOnClickListener {
-                custom_vanillasyrupnum_textView--
-                vanilla_output_text.setText(custom_vanillasyrupnum_textView.toString())
-            }
-            // 바닐라시럽 횟수 증가 버튼
-            custom_vanillasyrupnum_sub_button.setOnClickListener {
-                custom_vanillasyrupnum_textView++
-                vanilla_output_text.setText(custom_vanillasyrupnum_textView.toString())
-            }
-            // 아이리쉬시럽 횟수 감소 버튼
-            custom_irishsyrupnum_sub_button.setOnClickListener {
-                custom_irishsyrupnum_textView--
-                irish_output_text.setText(custom_irishsyrupnum_textView.toString())
-            }
-            // 아이리쉬시럽 횟수 증가 버튼
-            custom_irishsyrupnum_plus_button.setOnClickListener {
-                custom_irishsyrupnum_textView++
-                irish_output_text.setText(custom_irishsyrupnum_textView.toString())
-            }
-            // 카페시럽 횟수 감소 버튼
-            custom_cafesyrupnum_sub_button.setOnClickListener {
-                custom_cafesyrupnum_textView--
-                cafe_output_text.setText(custom_cafesyrupnum_textView.toString())
-            }
-            // 카페시럽 횟수 증가 버튼
-            custom_cafesyrupnum_plus_button.setOnClickListener {
-                custom_cafesyrupnum_textView++
-                cafe_output_text.setText(custom_cafesyrupnum_textView.toString())
-            }
+        }
+        // 바닐라시럽 횟수 감소 버튼
+        custom_vanillasyrupnum_sub_button.setOnClickListener {
+            custom_vanillasyrupnum_textView--
+            vanilla_output_text.setText(custom_vanillasyrupnum_textView.toString())
+        }
+        // 바닐라시럽 횟수 증가 버튼
+        custom_vanillasyrupnum_plus_button.setOnClickListener {
+            custom_vanillasyrupnum_textView++
+            vanilla_output_text.setText(custom_vanillasyrupnum_textView.toString())
+        }
+        // 아이리쉬시럽 횟수 감소 버튼
+        custom_irishsyrupnum_sub_button.setOnClickListener {
+            custom_irishsyrupnum_textView--
+            irish_output_text.setText(custom_irishsyrupnum_textView.toString())
+        }
+        // 아이리쉬시럽 횟수 증가 버튼
+        custom_irishsyrupnum_plus_button.setOnClickListener {
+            custom_irishsyrupnum_textView++
+            irish_output_text.setText(custom_irishsyrupnum_textView.toString())
+        }
+        // 카페시럽 횟수 감소 버튼
+        custom_cafesyrupnum_sub_button.setOnClickListener {
+            custom_cafesyrupnum_textView--
+            cafe_output_text.setText(custom_cafesyrupnum_textView.toString())
+        }
+        // 카페시럽 횟수 증가 버튼
+        custom_cafesyrupnum_plus_button.setOnClickListener {
+            custom_cafesyrupnum_textView++
+            cafe_output_text.setText(custom_cafesyrupnum_textView.toString())
         }
     }
 }
