@@ -1,8 +1,9 @@
-package kr.co.company.and16
+package kr.co.company.and16.MenuReg
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import kr.co.company.and16.R
 
 // < #. 커스텀 메뉴 작성 페이지2: 스타벅스 커스텀 메뉴 >
 

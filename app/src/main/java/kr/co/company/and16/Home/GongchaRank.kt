@@ -1,11 +1,12 @@
-package kr.co.company.and16
+package kr.co.company.and16.Home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kr.co.company.and16.R
 
-class SignUp : AppCompatActivity() {
+class GongchaRank : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up)
+        setContentView(R.layout.activity_gongcha_rank)
     }
 }

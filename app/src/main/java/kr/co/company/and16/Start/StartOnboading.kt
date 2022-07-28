@@ -1,12 +1,12 @@
-package kr.co.company.and16
+package kr.co.company.and16.Start
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import kr.co.company.and16.R
 
 class StartOnboading : AppCompatActivity() {
 

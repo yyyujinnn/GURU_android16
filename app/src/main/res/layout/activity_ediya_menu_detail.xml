@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StarbucksMenu_write">
+    tools:context=".MenuReg.StarbucksMenu_write">
 
     <ScrollView
         android:layout_width="match_parent"

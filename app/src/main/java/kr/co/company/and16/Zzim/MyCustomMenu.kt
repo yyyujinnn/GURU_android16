@@ -1,11 +1,12 @@
-package kr.co.company.and16
+package kr.co.company.and16.Zzim
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kr.co.company.and16.R
 
-class GongchaRank : AppCompatActivity() {
+class MyCustomMenu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gongcha_rank)
+        setContentView(R.layout.activity_my_custom_menu)
     }
 }

@@ -1,4 +1,4 @@
-package kr.co.company.and16
+package kr.co.company.and16.MenuReg
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.TextView
+import kr.co.company.and16.R
 
 // < #. 커스텀 메뉴 작성 페이지1:브랜드 선택 >
 

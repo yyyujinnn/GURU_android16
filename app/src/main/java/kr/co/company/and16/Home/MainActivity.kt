@@ -1,4 +1,4 @@
-package kr.co.company.and16
+package kr.co.company.and16.Home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import kr.co.company.and16.R
 
 // < #. 홈 메인페이지: 랭킹 리스트(전체) >
 

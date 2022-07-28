@@ -1,4 +1,4 @@
-package kr.co.company.and16
+package kr.co.company.and16.Custom
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,10 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import kr.co.company.and16.Home.EdiyaRank
+import kr.co.company.and16.Home.GongchaRank
+import kr.co.company.and16.Home.StarbucksRank
+import kr.co.company.and16.R
 
 // < #. 커스텀 메뉴 리스트 페이지:공개 리스트 >
 

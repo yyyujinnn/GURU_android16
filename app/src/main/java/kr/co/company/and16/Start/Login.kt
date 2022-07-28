@@ -1,4 +1,4 @@
-package kr.co.company.and16
+package kr.co.company.and16.Start
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import kr.co.company.and16.Home.MainActivity
+import kr.co.company.and16.R
 
 class Login : AppCompatActivity() {
 

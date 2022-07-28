@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StarbucksMenu_write">
+    tools:context=".MenuReg.StarbucksMenu_write">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -67,7 +67,7 @@
 
                     <!-- 대표 이미지 입력 버튼 -->
                     <ImageButton
-                        android:id="@+id/custom_image_imageButton"
+                        android:id="@+id/ImageRegButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
