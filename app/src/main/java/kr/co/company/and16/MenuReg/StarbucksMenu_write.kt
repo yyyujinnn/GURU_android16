@@ -1,5 +1,8 @@
 package kr.co.company.and16.MenuReg
 
+import android.content.Context
+import android.database.sqlite.SQLiteDatabase
+import android.database.sqlite.SQLiteOpenHelper
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
@@ -10,6 +13,10 @@ import kr.co.company.and16.R
 class StarbucksMenu_write : AppCompatActivity() {
 
     // 변수 선언
+    lateinit var myHelper: myDBHelper
+    lateinit var sqlDB : SQLiteDatabase
+    lateinit var login_button : Button
+
     lateinit var custom_public_radioButton : RadioButton //레시피 공개
     lateinit var custom_private_radioButton : RadioButton //레시피 비공개
 
@@ -65,6 +72,10 @@ class StarbucksMenu_write : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_starbucks_menu_write)
 
+        login_button = findViewById(R.id.login_button)
+        custom_name_EditText = findViewById(R.id.custom_name_EditText)
+        custom_prise_EditText = findViewById(R.id.custom_prise_EditText)
+
         custom_basemenu_spinner = findViewById(R.id.custom_basemenu_spinner)
 
         custom_shotnum_plus_button = findViewById(R.id.custom_shotnum_plus_button)
@@ -117,7 +128,7 @@ class StarbucksMenu_write : AppCompatActivity() {
             vanilla_output_text.setText(custom_vanillasyrupnum_textView.toString())
         }
         // 바닐라시럽 횟수 증가 버튼
-        custom_vanillasyrupnum_sub_button.setOnClickListener {
+        custom_vanillasyrupnum_plus_button.setOnClickListener {
             custom_vanillasyrupnum_textView++
             vanilla_output_text.setText(custom_vanillasyrupnum_textView.toString())
         }
@@ -143,5 +154,23 @@ class StarbucksMenu_write : AppCompatActivity() {
             custom_caramelsyrupnum_textView++
             caramel_output_text.setText(custom_caramelsyrupnum_textView.toString())
         }
+
+        myHelper = myDBHelper(this)
+        login_button.setOnClickListener {
+            sqlDB = myHelper.writableDatabase
+            myHelper.onUpgrade(sqlDB, 1, 2,)
+            sqlDB.close()
+        }
+    }
+    inner class myDBHelper(context: Context) : SQLiteOpenHelper(context, "Menu",null,1) {
+        override fun onCreate(p0: SQLiteDatabase?) {
+            TODO("Not yet implemented")
+        }
+
+        override fun onUpgrade(p0: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
+            TODO("Not yet implemented")
+        }
     }
 }
+
+
