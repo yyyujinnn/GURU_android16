@@ -77,16 +77,12 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <!-- 카드뷰: 커스텀 메뉴 리스트 카드 -->
-                <androidx.cardview.widget.CardView
+                <!-- 카드뷰: 커스텀 메뉴 리스트 카드  => * 리니어로 수정 -->
+                <LinearLayout
                     android:id="@+id/customlist_card"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    app:cardPreventCornerOverlap="true"
-                    app:cardUseCompatPadding="true"
-                    android:cardConerRadius="10dp"
-                    android:elevation="10dp">
+                    android:layout_marginTop="15dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -170,7 +166,7 @@
 
                     </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+                </LinearLayout>
 
             </LinearLayout>
 

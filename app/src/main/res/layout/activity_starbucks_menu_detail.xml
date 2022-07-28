@@ -19,16 +19,11 @@
             android:layout_marginTop="15dp"
             android:layout_marginRight="16dp">
 
-            <!-- 카드뷰1: 커스텀 메뉴 간략 정보 카드  -->
-            <androidx.cardview.widget.CardView
+            <!-- 카드뷰1: 커스텀 메뉴 간략 정보 카드 => * 리니어로 수정  -->
+            <LinearLayout
                 android:id="@+id/custom_concise_card"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:cardConerRadius="10dp"
-                android:elevation="10dp"
-                app:cardCornerRadius="10dp"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true">
+                android:layout_height="match_parent">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -120,7 +115,7 @@
 
                 </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
             <!-- 커스텀 메뉴 옵션 그룹 -->
             <LinearLayout
