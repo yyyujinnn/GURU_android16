@@ -13,7 +13,7 @@ import kr.co.company.and16.R
 class MyList : AppCompatActivity() {
 
     // xml 변수 선언
-    lateinit var customlist_card: CardView                       // 카드뷰: 커스텀 메뉴 리스트
+    //lateinit var customlist_card: CardView                       // 카드뷰: 커스텀 메뉴 리스트
     lateinit var customlist_item_imageView: ImageView            // 카드뷰 제품 이미지
     lateinit var customlist_item_name_textView: TextView         // 카드뷰 제품 이름
     lateinit var customlist_item_brand_textView: TextView        // 카드뷰 제품 브랜드명

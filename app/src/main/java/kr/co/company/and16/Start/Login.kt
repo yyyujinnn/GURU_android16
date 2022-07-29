@@ -58,6 +58,10 @@ class Login : AppCompatActivity() {
         LoginButton = findViewById(R.id.LoginButton)
         LoginButton.setOnClickListener{
             signUp()
+
+            // 로그인버튼 클릭 시 main 화면으로 이동
+            //val intent = Intent(this, MainActivity::class.java)
+            //startActivity(intent)
         }
 
         // 구글 로그인
@@ -65,6 +69,7 @@ class Login : AppCompatActivity() {
         google_login_button.setOnClickListener{
             googleLogin()
         }
+
         var gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()

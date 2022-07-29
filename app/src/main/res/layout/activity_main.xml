@@ -10,6 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
 
@@ -22,11 +25,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1"
-                android:layout_marginTop="15dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp">
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/all_tab_imageButton"
@@ -34,8 +37,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#00ff0000"
-                    android:contentDescription="@string/app_name"
-                    app:srcCompat="@drawable/ic_logo_all_icon_button" />
+                    app:srcCompat="@drawable/ic_logo_all_icon_button"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/starbucks_tab_imageButton"
@@ -43,8 +46,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#00ff0000"
-                    android:contentDescription="@string/app_name"
-                    app:srcCompat="@drawable/ic_logo_starbucks_icon_button" />
+                    app:srcCompat="@drawable/ic_logo_starbucks_icon_button"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/ediya_tab_imageButton"
@@ -52,8 +55,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#00ff0000"
-                    android:contentDescription="@string/app_name"
-                    app:srcCompat="@drawable/ic_logo_ediya_icon_button" />
+                    app:srcCompat="@drawable/ic_logo_ediya_icon_button"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/gongcha_tab_imageButton"
@@ -61,8 +64,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#00ff0000"
-                    android:contentDescription="@string/app_name"
-                    app:srcCompat="@drawable/ic_logo_gongcha_icon_button" />
+                    app:srcCompat="@drawable/ic_logo_gongcha_icon_button"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
             </LinearLayout>
 
@@ -286,8 +289,6 @@
             </LinearLayout>
 
         </ScrollView>
-
-
 
 
     </LinearLayout>
