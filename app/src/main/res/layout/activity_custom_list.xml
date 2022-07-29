@@ -71,7 +71,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#00ff0000"
-                    android:contentDescription="@string/app_name"
                     app:srcCompat="@drawable/ic_logo_all_icon_button" />
 
                 <ImageButton
@@ -80,7 +79,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#00ff0000"
-                    android:contentDescription="@string/app_name"
                     app:srcCompat="@drawable/ic_logo_starbucks_icon_button" />
 
                 <ImageButton
@@ -89,7 +87,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#00ff0000"
-                    android:contentDescription="@string/app_name"
                     app:srcCompat="@drawable/ic_logo_ediya_icon_button" />
 
                 <ImageButton
@@ -98,8 +95,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#00ff0000"
-                    android:contentDescription="@string/app_name"
-                    app:srcCompat="@drawable/ic_logo_ediya_icon_button" />
+                    app:srcCompat="@drawable/ic_logo_gongcha_icon_button" />
 
             </LinearLayout>
 
