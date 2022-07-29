@@ -1,14 +1,10 @@
-package kr.co.company.and16.Home
+package kr.co.company.and16
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.cardview.widget.CardView
-import kr.co.company.and16.R
-
-// < #. 홈 메인페이지: 랭킹 리스트(전체) >
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,6 +34,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var list_item_like_imageButton: ImageButton   // 카드뷰2 찜 버튼
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         // xml 변수 연결
@@ -64,8 +61,8 @@ class MainActivity : AppCompatActivity() {
         list_item_like_imageButton = findViewById(R.id.list_item_like_imageButton)   // 카드뷰2 찜 버튼
 
 
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
 }

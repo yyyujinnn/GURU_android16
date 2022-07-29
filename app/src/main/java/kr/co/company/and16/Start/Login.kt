@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import kr.co.company.and16.Home.MainActivity
+import kr.co.company.and16.MainActivity
 import kr.co.company.and16.R
 
 class Login : AppCompatActivity() {
