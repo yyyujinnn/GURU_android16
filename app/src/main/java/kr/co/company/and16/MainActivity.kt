@@ -8,7 +8,7 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
-    // xml 변수 선언
+    // xml 변수 선언d
     lateinit var all_tab_imageButton: ImageButton         // 전체 탭 버튼
     lateinit var starbucks_tab_imageButton: ImageButton   // 스타벅스 탭 버튼
     lateinit var ediya_tab_imageButton: ImageButton       // 이디야 탭 버튼
