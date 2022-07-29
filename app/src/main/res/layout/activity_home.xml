@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- 카드뷰1 영역 (+그림자) -->
+                <!-- [ 카드뷰1 영역 (+그림자) ] -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -205,7 +205,7 @@
 
                 </LinearLayout>
 
-                <!-- 카드뷰2 영역 (+그림자) -->
+                <!-- [ 카드뷰2 영역 (+그림자) ] -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
