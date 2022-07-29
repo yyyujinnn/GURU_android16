@@ -3,15 +3,45 @@ package kr.co.company.and16.Home
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import kr.co.company.and16.Custom.CustomList
 import kr.co.company.and16.MenuReg.EdiyaMenu_write
 import kr.co.company.and16.MenuReg.GongchaMenu_write
 import kr.co.company.and16.MenuReg.StarbucksMenu_write
 import kr.co.company.and16.R
+import kr.co.company.and16.Zzim.MyList
 
 class HomeActivity : AppCompatActivity() {
+
+    //옵션 메뉴
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_home,menu)
+        return true
+    }
+
+    // 옵션 메뉴 선택 시 동작
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item?.itemId){
+            //커스텀 메뉴 클릭 시 -> 커스텀 메뉴 화면으로 전환
+            R.id.action_customList -> {
+                val intent = Intent(this, CustomList::class.java)
+                startActivity(intent)
+                return true
+            }
+            // 나의 찜 클릭 시 -> 나의 찜 화면으로 전환
+            R.id.action_myList -> {
+                val intent = Intent(this, MyList::class.java)
+                startActivity(intent)
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         // xml 변수 선언
         lateinit var all_tab_imageButton: ImageButton         // 전체 탭 버튼
