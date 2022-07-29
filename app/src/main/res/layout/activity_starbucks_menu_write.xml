@@ -108,7 +108,7 @@
                     android:textStyle="bold" />
 
                 <!-- 공개/비공개 라디오 버튼 -->
-                <LinearLayout
+                <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -131,7 +131,7 @@
                         android:text="비공개"
                         android:textColor="@color/Active_Text" />
 
-                </LinearLayout>
+                </RadioGroup>
 
                 <!-- 커스텀 메뉴 이름 제목 -->
                 <TextView
@@ -250,7 +250,7 @@
                     android:textStyle="bold" />
 
                 <!-- 사이즈 라디오 버튼1~3 -->
-                <LinearLayout
+                <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -285,7 +285,7 @@
                         android:text="벤티(591ml)"
                         android:textColor="@color/Active_Text" />
 
-                </LinearLayout>
+                </RadioGroup>
 
                 <!-- 커스텀 메뉴 에스프레소 샷 갯수 제목 -->
                 <TextView
@@ -529,8 +529,13 @@
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-                <!-- 라떼 베이스 라디오 버튼1~3 -->
                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <!-- 라떼 베이스 라디오 버튼1~3 -->
+                <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -561,11 +566,10 @@
                         android:layout_marginLeft="20dp"
                         android:text="무지방 우유"
                         android:textColor="@color/Active_Text" />
+                </RadioGroup>
 
-                </LinearLayout>
-
-                <!-- 라떼 베이스 라디오 버튼4~5 -->
-                <LinearLayout
+                <!-- 라떼 베이스 라디오 버튼 4~5 -->
+                <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -588,7 +592,9 @@
                         android:text="오트(귀리)"
                         android:textColor="@color/Active_Text" />
 
+                </RadioGroup>
                 </LinearLayout>
+
 
                 <!-- 커스텀 메뉴 베이스(물,티) 제목 -->
                 <TextView

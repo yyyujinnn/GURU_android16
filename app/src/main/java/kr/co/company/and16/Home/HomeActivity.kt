@@ -1,10 +1,14 @@
 package kr.co.company.and16.Home
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import kr.co.company.and16.MenuReg.EdiyaMenu_write
+import kr.co.company.and16.MenuReg.GongchaMenu_write
+import kr.co.company.and16.MenuReg.StarbucksMenu_write
 import kr.co.company.and16.R
 
 class HomeActivity : AppCompatActivity() {
@@ -61,6 +65,19 @@ class HomeActivity : AppCompatActivity() {
         list_item_mn_textView = findViewById(R.id.list_item_mn_textView)             // 카드뷰2 제품 좋아요 숫자
         list_item_like_imageButton = findViewById(R.id.list_item_like_imageButton)   // 카드뷰2 찜 버튼
 
+        starbucks_tab_imageButton.setOnClickListener {
+            val intent = Intent(this, StarbucksRank::class.java)
+            startActivity(intent)
+        }
 
+        ediya_tab_imageButton.setOnClickListener {
+            val intent = Intent(this, EdiyaRank::class.java)
+            startActivity(intent)
+        }
+
+        gongcha_tab_imageButton.setOnClickListener {
+            val intent = Intent(this, GongchaRank::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -91,6 +91,8 @@
                 android:orientation="vertical">
 
                 <!-- 카드뷰1: 1위 커스텀 메뉴 카드 => * 리니어로 수정 -->
+
+                <!-- 카드뷰2: 커스텀 메뉴 리스트 카드 => * 리니어로 수정 -->
                 <LinearLayout
                     android:id="@+id/ranking_first_card"
                     android:layout_width="match_parent"
@@ -191,7 +193,6 @@
 
                 </LinearLayout>
 
-                <!-- 카드뷰2: 커스텀 메뉴 리스트 카드 => * 리니어로 수정 -->
                 <LinearLayout
                     android:id="@+id/customlist_card"
                     android:layout_width="match_parent"

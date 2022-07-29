@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import kr.co.company.and16.R
+import org.w3c.dom.Text
 
 // < #. 커스텀 메뉴 작성 페이지2: 스타벅스 커스텀 메뉴 >
 
@@ -65,7 +66,10 @@ class StarbucksMenu_write : AppCompatActivity() {
     lateinit var custom_whipping3_radioButton : RadioButton
     lateinit var custom_whipping_seekBar : SeekBar
 
-    lateinit var title_roastnum_textView : TextView
+    lateinit var custom_roastnum_plus_button : Button
+    lateinit var custom_roastnum_sub_button : Button
+    lateinit var custom_roastnum_textView : TextView
+    lateinit var roast_output_text : TextView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -101,6 +105,12 @@ class StarbucksMenu_write : AppCompatActivity() {
         custom_caramelsyrupnum_textView = findViewById(R.id.custom_caramelsyrupnum_textView)
         caramel_output_text = findViewById<TextView>(R.id.custom_caramelsyrupnum_textView)
         var custom_caramelsyrupnum_textView = 0 // 횟수는 0에서 가감
+
+        custom_roastnum_plus_button = findViewById(R.id.custom_roastnum_plus_button)
+        custom_roastnum_sub_button = findViewById(R.id.custom_roastnum_sub_button)
+        custom_roastnum_textView = findViewById(R.id.custom_roastnum_textView)
+        roast_output_text = findViewById<TextView>(R.id.custom_roastnum_textView)
+        var custom_roastnum_textView = 0 // 횟수는 0에서 가감
 
         ArrayAdapter.createFromResource(
             this,
@@ -153,6 +163,17 @@ class StarbucksMenu_write : AppCompatActivity() {
         custom_caramelsyrupnum_plus_button.setOnClickListener {
             custom_caramelsyrupnum_textView++
             caramel_output_text.setText(custom_caramelsyrupnum_textView.toString())
+        }
+
+        // 로스트 프라푸치노 개수 감소 버튼
+        custom_roastnum_sub_button.setOnClickListener {
+            custom_roastnum_textView--
+            roast_output_text.setText(custom_roastnum_textView.toString())
+        }
+        // 로스트 프라푸치노 개수 증가 버튼
+        custom_roastnum_plus_button.setOnClickListener {
+            custom_roastnum_textView++
+            roast_output_text.setText(custom_roastnum_textView.toString())
         }
 
         myHelper = myDBHelper(this)
