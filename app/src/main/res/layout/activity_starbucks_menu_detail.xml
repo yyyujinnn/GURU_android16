@@ -39,7 +39,7 @@
                         android:id="@+id/first_item_imageView"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/ic_logo_gongcha_icon_button" />
+                        app:srcCompat="@tools:sample/avatars" />
 
                     <!-- 커스텀 메뉴 간략 정보 텍스트 그룹 -->
                     <LinearLayout
@@ -909,7 +909,7 @@
                             android:id="@+id/reviewer_profile_imageView"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            app:srcCompat="@drawable/ic_logo_gongcha_icon_button" />
+                            app:srcCompat="@tools:sample/avatars" />
 
                         <!-- 커스텀 메뉴 리뷰 작성자 이름 텍스트 -->
                         <TextView
@@ -950,7 +950,7 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginTop="10dp"
-                        app:srcCompat="@drawable/ic_logo_gongcha_icon_button" />
+                        app:srcCompat="@tools:sample/avatars" />
 
 
                 </LinearLayout>

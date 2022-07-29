@@ -40,6 +40,7 @@
                     tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
                 <!-- 상단 탭 버튼2: 나 만의 커스텀 -->
+
                 <android.widget.Button
                     android:id="@+id/customlist_tab2_Button"
                     android:layout_width="wrap_content"
@@ -98,7 +99,7 @@
                     android:layout_weight="1"
                     android:background="#00ff0000"
                     android:contentDescription="@string/app_name"
-                    app:srcCompat="@drawable/ic_logo_gongcha_icon_button" />
+                    app:srcCompat="@drawable/ic_logo_ediya_icon_button" />
 
             </LinearLayout>
 
@@ -153,7 +154,7 @@
                                 android:id="@+id/customlist_item_imageView"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
-                                app:srcCompat="@drawable/ic_logo_gongcha_icon_button" />
+                                app:srcCompat = "@tools:sample/avatars" />
 
                             <LinearLayout
                                 android:layout_width="wrap_content"

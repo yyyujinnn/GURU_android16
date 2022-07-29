@@ -43,7 +43,7 @@
                             android:id="@+id/customlist_item_imageView"
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            app:srcCompat="@drawable/ic_logo_gongcha_icon_button" />
+                            app:srcCompat="@tools:sample/avatars" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
