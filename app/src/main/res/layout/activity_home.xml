@@ -29,7 +29,8 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="16dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center">
 
                 <ImageButton
                     android:id="@+id/all_tab_imageButton"
@@ -85,7 +86,7 @@
             android:orientation="vertical"
             >
 
-            <!-- 랭킹 리스트 쌓는 용도의 리니어레이아웃 -->
+            <!-- 랭킹 리스트 쌓는 용도의 리니어 레이아웃 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -121,14 +122,14 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="현재 가장 인기가 많아요!"
-                                android:textColor="@color/Active_Text"
-                                android:textSize="20sp"
+                                android:textColor="@color/Maincolor_Brown3"
+                                android:textSize="23sp"
                                 android:textStyle="bold" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
+                                android:layout_marginTop="15dp"
                                 android:orientation="horizontal">
 
                                 <ImageView
@@ -212,7 +213,7 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/conner_round_20"
-                    android:elevation="10dp">
+                    android:elevation="5dp">
 
                     <!-- 카드뷰2: 커스텀 메뉴 리스트 카드 => * 리니어로 수정 -->
                     <LinearLayout
