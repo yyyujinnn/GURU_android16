@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import kr.co.company.and16.MainActivity
+import kr.co.company.and16.Home.HomeActivity
 import kr.co.company.and16.R
 
 class Login : AppCompatActivity() {
@@ -129,7 +129,7 @@ class Login : AppCompatActivity() {
     }
     fun moveMainPage(user: FirebaseUser?) {
         if (user != null) {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
         }
     }
 
@@ -155,7 +155,7 @@ class Login : AppCompatActivity() {
                     if (task.isSuccessful) {
                         val user = auth.currentUser
                         Toast.makeText(this, "로그인에 성공했습니다.", Toast.LENGTH_SHORT).show()
-                        val intent = Intent(this, MainActivity::class.java)
+                        val intent = Intent(this, HomeActivity::class.java)
                         startActivity(intent)
                     } else {
                         if (task.exception != null) {

@@ -16,7 +16,7 @@
         android:theme="@style/Theme.And16"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".Home.MainActivity"
             android:exported="false" />
         <activity
             android:name=".MenuReg.Write_SelectBrand"
@@ -44,9 +44,6 @@
             android:exported="false" />
         <activity
             android:name=".Start.Login"
-            android:exported="false" />
-        <activity
-            android:name=".Home.MainActivity"
             android:exported="false" />
         <activity
             android:name=".Start.StartOnboading"
