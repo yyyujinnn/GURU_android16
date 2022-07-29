@@ -4,74 +4,185 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Background_Ivory"
     tools:context=".Start.SignUp">
 
-
-    <EditText
-        android:id="@+id/emailEditText"
-        android:layout_width="0dp"
+    <!-- 이메일 아이디 제목 텍스트 -->
+    <TextView
+        android:id="@+id/title_emailid_textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:hint="아이디"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="50dp"
+        android:text="이메일 아이디"
+        android:textColor="@color/Active_Text"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- 이메일 아이디 입력창 -->
     <EditText
-        android:id="@+id/passWordCheckEditText"
-        android:layout_width="0dp"
+        android:id="@+id/emailEditText"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_signup_input_background"
+        android:backgroundTint="@color/Maincolor_White"
+        android:ems="10"
+        android:hint="(아이디)이메일 주소를 입력해주세요"
+        android:inputType="textPersonName"
+        android:paddingLeft="35dp"
+        android:textColor="@color/Active_Text"
+        app:layout_constraintStart_toStartOf="@+id/title_emailid_textView"
+        app:layout_constraintTop_toBottomOf="@+id/title_emailid_textView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- 이메일 아이디 아이콘 이미지 -->
+    <ImageView
+        android:id="@+id/email_icon_imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/emailEditText"
+        app:layout_constraintStart_toStartOf="@+id/emailEditText"
+        app:layout_constraintTop_toTopOf="@+id/emailEditText"
+        app:srcCompat="@drawable/ic_email_icon_19" />
+
+    <!-- 구분선 이미지 -->
+    <ImageView
+        android:id="@+id/dividingLine_imageView1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:hint="비밀번호 확인"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+        app:srcCompat="@drawable/ic_divide_line" />
+
+    <!-- 비밀번호 제목 텍스트 -->
+    <TextView
+        android:id="@+id/title_password_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="비밀번호"
+        android:textColor="@color/Active_Text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividingLine_imageView1" />
+
+    <!-- 비밀번호 입력창 -->
+    <EditText
+        android:id="@+id/passWordEditText"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_signup_input_background"
+        android:backgroundTint="@color/Maincolor_White"
+        android:ems="10"
+        android:hint="비밀번호를 입력해주세요"
+        android:inputType="textPersonName"
+        android:paddingLeft="35dp"
+        android:textColor="@color/Active_Text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_password_textView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- 비밀번호 아이콘 이미지 -->
+    <ImageView
+        android:id="@+id/password_icon_imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/passWordEditText"
+        app:layout_constraintStart_toStartOf="@+id/passWordEditText"
+        app:layout_constraintTop_toTopOf="@+id/passWordEditText"
+        app:srcCompat="@drawable/ic_password_icon_19" />
+
+    <!-- 비밀번호 재확인 제목 텍스트 -->
+    <TextView
+        android:id="@+id/title_password_check_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="비밀번호 재확인"
+        android:textColor="@color/Active_Text"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passWordEditText" />
 
+    <!-- 비밀번호 재확인 입력창 -->
     <EditText
-        android:id="@+id/passWordEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/passWordCheckEditText"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_signup_input_background"
+        android:backgroundTint="@color/Maincolor_White"
         android:ems="10"
+        android:hint="비밀번호를 다시 입력해주세요"
         android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:hint="비밀번호"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:paddingLeft="35dp"
+        android:textColor="@color/Active_Text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/title_password_check_textView"
+        tools:ignore="TouchTargetSizeCheck" />
 
-    <Button
+    <!-- 비밀번호 아이콘 이미지 -->
+    <ImageView
+        android:id="@+id/passwordcheck_icon_imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/passWordCheckEditText"
+        app:layout_constraintStart_toStartOf="@+id/passWordCheckEditText"
+        app:layout_constraintTop_toTopOf="@+id/passWordCheckEditText"
+        app:srcCompat="@drawable/ic_password_icon_19" />
+
+    <!-- 회원가입 완료 버튼 -->
+    <android.widget.Button
         android:id="@+id/signUpButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="25dp"
-        android:text="회원가입 하기"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_signup_button_background"
+        android:backgroundTint="@color/Maincolor_Brown3"
+        android:text="회원가입 완료"
+        android:textColor="@color/White_Text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passWordCheckEditText" />
 
-    <Button
+    <!-- 로그인화면으로 가기 버튼 -->
+    <android.widget.Button
         android:id="@+id/gotoLoginButton"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="88dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/Maincolor_Brown1"
         android:text="로그인 화면으로 가기"
+        android:textColor="@color/White_Text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passWordCheckEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/signUpButton" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
