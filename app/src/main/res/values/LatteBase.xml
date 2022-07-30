@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Lattebase">
+        <item>일반 우유</item>
+        <item>저지방 우유</item>
+        <item>무지방 우유</item>
+        <item>두유</item>
+        <item>오트(귀리)</item>
+    </string-array>
+</resources>
