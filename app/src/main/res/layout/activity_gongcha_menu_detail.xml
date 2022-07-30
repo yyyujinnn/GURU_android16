@@ -587,7 +587,7 @@
 
             </LinearLayout>
 
-            <!-- 카드뷰3: 커스텀제품 리뷰 카드 => * 리니어로 수정 -->
+            <!-- 카드뷰3: 커스텀제품 리뷰 카드 => *  리니어로 수정 -->
             <LinearLayout
                 android:id="@+id/custom_review_card"
                 android:layout_width="match_parent"
