@@ -711,22 +711,23 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:orientation="horizontal" >
+                        android:orientation="horizontal">
 
                         <!-- 커스텀 메뉴 리뷰 작성자 프로필 이미지 -->
                         <ImageView
                             android:id="@+id/reviewer_profile_imageView"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            app:srcCompat="@drawable/ic_logo_all_icon_button" />
+                            app:srcCompat="@drawable/reviewer2" />
 
                         <!-- 커스텀 메뉴 리뷰 작성자 이름 텍스트 -->
                         <TextView
                             android:id="@+id/reviewer_name_textView"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
                             android:layout_marginLeft="10dp"
-                            android:text="작성자이름"
+                            android:text="오리는왈왈"
                             android:textColor="@color/Active_Text"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -735,11 +736,12 @@
                         <TextView
                             android:id="@+id/review_date_textView"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
                             android:layout_marginLeft="10dp"
-                            android:text="2022.07.00"
+                            android:text="2022.07.31"
                             android:textColor="@color/Active_Text"
-                            android:textSize="10sp" />
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -749,7 +751,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="여기에 바닐라 시럽 한번 더 추가하면 완전 최고에요!!"
+                        android:text="이디야 토핑이 너무 좋아요ㅠㅠ"
                         android:textColor="@color/Active_Text"
                         android:textSize="15sp" />
 
@@ -759,7 +761,7 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginTop="10dp"
-                        app:srcCompat="@drawable/ic_logo_all_icon_button" />
+                        app:srcCompat="@drawable/ediya_review_picture" />
 
 
                 </LinearLayout>

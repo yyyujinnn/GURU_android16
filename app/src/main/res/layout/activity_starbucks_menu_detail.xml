@@ -9,15 +9,18 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:ignore="SpeakableTextPresentCheck">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteY="173dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="15dp"
-            android:layout_marginRight="16dp">
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
 
             <!-- 카드뷰1: 커스텀 메뉴 간략 정보 카드 => * 리니어로 수정 -->
             <LinearLayout
@@ -183,8 +186,8 @@
                     <RadioGroup
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:orientation="horizontal">
 
                         <!-- 사이즈 라디오 버튼1 -->
                         <RadioButton
@@ -200,8 +203,8 @@
                             android:id="@+id/custom_size2_radioButton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
                             android:text="그란데(473ml)"
                             android:textColor="@color/Active_Text" />
 
@@ -210,8 +213,8 @@
                             android:id="@+id/custom_size3_radioButton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
                             android:text="벤티(591ml)"
                             android:textColor="@color/Active_Text" />
 
@@ -271,9 +274,9 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
                         android:gravity="center"
-                        android:layout_marginTop="5dp">
+                        android:orientation="horizontal">
 
                         <!-- 바닐라 시럽 제목 -->
                         <TextView
@@ -319,9 +322,9 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
                         android:gravity="center"
-                        android:layout_marginTop="10dp">
+                        android:orientation="horizontal">
 
                         <!-- 헤이즐넛 시럽 제목 -->
                         <TextView
@@ -367,9 +370,9 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
                         android:gravity="center"
-                        android:layout_marginTop="10dp">
+                        android:orientation="horizontal">
 
                         <!-- 카라멜 시럽 제목 -->
                         <TextView
@@ -448,8 +451,8 @@
                         android:id="@+id/custom_base_seekBar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:min="0"
                         android:max="2"
+                        android:min="0"
                         android:progress="1"
                         android:progressTint="@color/Maincolor_Brown1" />
 
@@ -457,8 +460,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_marginTop="5dp">
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1">
 
                         <!-- 베이스(물,티) 시크바 값0 텍스트: 적게 -->
                         <TextView
@@ -516,8 +519,8 @@
                         android:id="@+id/custom_ice_seekBar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:min="0"
                         android:max="3"
+                        android:min="0"
                         android:progress="2"
                         android:progressTint="@color/Maincolor_Brown1" />
 
@@ -525,8 +528,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_marginTop="5dp">
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1">
 
                         <!-- 얼음 시크바 값0 텍스트: 없음 -->
                         <TextView
@@ -595,8 +598,8 @@
                     <RadioGroup
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:orientation="horizontal">
 
                         <!-- 휘핑 라디오 버튼1 -->
                         <RadioButton
@@ -631,8 +634,8 @@
                         android:id="@+id/custom_whipping_seekBar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:min="0"
                         android:max="3"
+                        android:min="0"
                         android:progress="0"
                         android:progressTint="@color/Maincolor_Brown1" />
 
@@ -640,8 +643,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_marginTop="5dp">
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1">
 
                         <!-- 휘핑 시크바 값0 텍스트: 없음 -->
                         <TextView
@@ -710,8 +713,8 @@
                     <RadioGroup
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:orientation="horizontal">
 
                         <!-- 드리즐 라디오 버튼1 -->
                         <RadioButton
@@ -746,8 +749,8 @@
                         android:id="@+id/custom_drizzle_seekBar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:min="0"
                         android:max="3"
+                        android:min="0"
                         android:progress="0"
                         android:progressTint="@color/Maincolor_Brown1" />
 
@@ -755,8 +758,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_marginTop="5dp">
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1">
 
                         <!-- 드리즐 시크바 값0 텍스트: 없음 -->
                         <TextView
@@ -860,9 +863,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:elevation="15dp"
                 app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true"
-                android:elevation="15dp">
+                app:cardUseCompatPadding="true">
 
                 <!-- 리뷰 작성 안내 카드 내용 그룹 -->
                 <LinearLayout
@@ -879,7 +882,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <!-- 커스텀 메뉴 리뷰 제목 텍스트 -->
                         <TextView
@@ -932,10 +935,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true"
+                android:layout_marginBottom="100dp"
                 android:elevation="15dp"
-                android:layout_marginBottom="100dp" >
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
 
                 <!-- 커스텀제품 리뷰 내용 그룹 -->
                 <LinearLayout
@@ -952,22 +955,23 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:orientation="horizontal" >
+                        android:orientation="horizontal">
 
                         <!-- 커스텀 메뉴 리뷰 작성자 프로필 이미지 -->
                         <ImageView
                             android:id="@+id/reviewer_profile_imageView"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            app:srcCompat="@drawable/ic_logo_all_icon_button" />
+                            app:srcCompat="@drawable/reviewer1" />
 
                         <!-- 커스텀 메뉴 리뷰 작성자 이름 텍스트 -->
                         <TextView
                             android:id="@+id/reviewer_name_textView"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
                             android:layout_marginLeft="10dp"
-                            android:text="작성자이름"
+                            android:text="당고바닐라"
                             android:textColor="@color/Active_Text"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -976,11 +980,12 @@
                         <TextView
                             android:id="@+id/review_date_textView"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
                             android:layout_marginLeft="10dp"
-                            android:text="2022.07.00"
+                            android:text="2022.07.30"
                             android:textColor="@color/Active_Text"
-                            android:textSize="10sp" />
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -1000,7 +1005,7 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginTop="10dp"
-                        app:srcCompat="@drawable/ic_logo_all_icon_button" />
+                        app:srcCompat="@drawable/starbuks_review_picture" />
 
 
                 </LinearLayout>
