@@ -5,13 +5,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kr.co.company.and16.Custom.CustomList
 import kr.co.company.and16.MenuReg.EdiyaMenu_write
 import kr.co.company.and16.MenuReg.GongchaMenu_write
 import kr.co.company.and16.MenuReg.StarbucksMenu_write
+import kr.co.company.and16.MenuReg.Write_SelectBrand
 import kr.co.company.and16.R
 import kr.co.company.and16.Zzim.MyList
 
@@ -68,6 +71,8 @@ class HomeActivity : AppCompatActivity() {
         lateinit var list_item_mn_textView: TextView           // 카드뷰2 제품 좋아요 숫자
         lateinit var list_item_like_imageButton: ImageButton   // 카드뷰2 찜 버튼
 
+        lateinit var RegButton: FloatingActionButton // 메뉴등록 플로팅버튼
+
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -95,6 +100,8 @@ class HomeActivity : AppCompatActivity() {
         list_item_mn_textView = findViewById(R.id.list_item_mn_textView)             // 카드뷰2 제품 좋아요 숫자
         list_item_like_imageButton = findViewById(R.id.list_item_like_imageButton)   // 카드뷰2 찜 버튼
 
+        RegButton = findViewById(R.id.RegButton) // 메뉴등록 플로팅 버튼
+
         starbucks_tab_imageButton.setOnClickListener {
             val intent = Intent(this, StarbucksMenu_write::class.java)
             startActivity(intent)
@@ -107,6 +114,11 @@ class HomeActivity : AppCompatActivity() {
 
         gongcha_tab_imageButton.setOnClickListener {
             val intent = Intent(this, GongchaRank::class.java)
+            startActivity(intent)
+        }
+
+        RegButton.setOnClickListener {
+            val intent = Intent(this,Write_SelectBrand::class.java)
             startActivity(intent)
         }
     }
