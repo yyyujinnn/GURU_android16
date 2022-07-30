@@ -14,8 +14,6 @@ import org.w3c.dom.Text
 class StarbucksMenu_write : AppCompatActivity() {
 
     // 변수 선언
-    lateinit var myHelper: myDBHelper
-    lateinit var sqlDB : SQLiteDatabase
     lateinit var login_button : Button
 
     lateinit var custom_public_radioButton : RadioButton //레시피 공개
@@ -51,11 +49,7 @@ class StarbucksMenu_write : AppCompatActivity() {
     lateinit var custom_caramelsyrupnum_textView : TextView
     lateinit var caramel_output_text : TextView
 
-    lateinit var custom_lattebase1_radioButton : RadioButton
-    lateinit var custom_lattebase2_radioButton : RadioButton
-    lateinit var custom_lattebase3_radioButton : RadioButton
-    lateinit var custom_lattebase4_radioButton : RadioButton
-    lateinit var custom_lattebase5_radioButton : RadioButton
+    lateinit var custom_lattebase_spinner : Spinner
 
     lateinit var custom_base_seekBar : SeekBar
 
@@ -81,6 +75,7 @@ class StarbucksMenu_write : AppCompatActivity() {
         custom_prise_EditText = findViewById(R.id.custom_prise_EditText)
 
         custom_basemenu_spinner = findViewById(R.id.custom_basemenu_spinner)
+        custom_lattebase_spinner = findViewById(R.id.custom_lattebase_spinner)
 
         custom_shotnum_plus_button = findViewById(R.id.custom_shotnum_plus_button)
         custom_shotnum_sub_button = findViewById(R.id.custom_shotnum_sub_button)
@@ -112,6 +107,7 @@ class StarbucksMenu_write : AppCompatActivity() {
         roast_output_text = findViewById<TextView>(R.id.custom_roastnum_textView)
         var custom_roastnum_textView = 0 // 횟수는 0에서 가감
 
+        // 기존 메뉴 스피너
         ArrayAdapter.createFromResource(
             this,
             R.array.starbucks_menu,
@@ -119,6 +115,16 @@ class StarbucksMenu_write : AppCompatActivity() {
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             custom_basemenu_spinner.adapter = adapter
+        }
+
+        //베이스 음료 스피너
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.Lattebase,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            custom_lattebase_spinner.adapter = adapter
         }
 
         // 샷 개수 감소 버튼
@@ -174,22 +180,6 @@ class StarbucksMenu_write : AppCompatActivity() {
         custom_roastnum_plus_button.setOnClickListener {
             custom_roastnum_textView++
             roast_output_text.setText(custom_roastnum_textView.toString())
-        }
-
-        myHelper = myDBHelper(this)
-        login_button.setOnClickListener {
-            sqlDB = myHelper.writableDatabase
-            myHelper.onUpgrade(sqlDB, 1, 2,)
-            sqlDB.close()
-        }
-    }
-    inner class myDBHelper(context: Context) : SQLiteOpenHelper(context, "Menu",null,1) {
-        override fun onCreate(p0: SQLiteDatabase?) {
-            TODO("Not yet implemented")
-        }
-
-        override fun onUpgrade(p0: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-            TODO("Not yet implemented")
         }
     }
 }
