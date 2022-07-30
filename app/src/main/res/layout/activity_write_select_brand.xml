@@ -24,12 +24,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
+    <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints"
+        android:orientation="horizontal"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="30dp">
 
         <!-- 브랜드 선택: 스타벅스 -->
         <RadioButton
@@ -47,7 +48,7 @@
             android:id="@+id/ediya_radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="10dp"
             android:text="이디야"
             android:textColor="@color/Active_Text"
             android:textSize="20sp"
@@ -59,14 +60,14 @@
             android:id="@+id/gongcha_radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="10dp"
             android:text="공차"
             android:textColor="@color/Active_Text"
             android:textSize="20sp"
             tools:layout_editor_absoluteX="38dp"
             tools:layout_editor_absoluteY="211dp" />
 
-    </LinearLayout>
+    </RadioGroup>
 
     <!-- 커스텀 메뉴 작성하기 버튼 -->
     <android.widget.Button
