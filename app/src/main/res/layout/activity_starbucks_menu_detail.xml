@@ -19,7 +19,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginRight="16dp">
 
-            <!-- 카드뷰1: 커스텀 메뉴 간략 정보 카드 => * 리니어로 수정  -->
+            <!-- 카드뷰1: 커스텀 메뉴 간략 정보 카드 => * 리니어로 수정 -->
             <LinearLayout
                 android:id="@+id/custom_concise_card"
                 android:layout_width="match_parent"
@@ -60,7 +60,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
-                                android:text="스타벅스"
+                                android:text="공차"
                                 android:textColor="@color/Active_Text"
                                 android:textSize="10sp" />
 
@@ -223,20 +223,38 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="에스프레소 샷 갯수"
+                        android:text="에스프레소 샷 갯수 (600원 추가)"
                         android:textColor="@color/Active_Text"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <!-- 커스텀 메뉴 에스프레소 샷 갯수 표시 텍스트 -->
-                    <TextView
-                        android:id="@+id/custom_shotnum_textView"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="N 샷"
-                        android:textColor="@color/Active_Text"
-                        android:textSize="20sp" />
+                        android:orientation="horizontal">
+
+                        <!-- 커스텀 메뉴 에스프레소 샷 갯수 표시 텍스트 -->
+                        <TextView
+                            android:id="@+id/custom_shotnum_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NN"
+                            android:textColor="@color/Active_Text"
+                            android:textSize="20sp" />
+
+                        <!-- 에스프레소 샷 단위(샷) 설명 텍스트 -->
+                        <TextView
+                            android:id="@+id/explain_shotnum_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="샷"
+                            android:textColor="@color/Active_Text"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
 
                     <!-- 커스텀 메뉴 시럽 제목 -->
                     <TextView
@@ -268,14 +286,32 @@
                             android:textStyle="bold" />
 
                         <!-- 커스텀 메뉴 바닐라 시럽 횟수 표시 텍스트 -->
-                        <TextView
-                            android:id="@+id/custom_vanillasyrup_num_textView"
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="30dp"
-                            android:text="N 회"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="20sp" />
+                            android:orientation="horizontal">
+
+                            <!-- 커스텀 메뉴 바닐라 시럽 횟수 표시 텍스트 -->
+                            <TextView
+                                android:id="@+id/custom_vanillasyrup_shotnum_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NN"
+                                android:textColor="@color/Active_Text"
+                                android:textSize="20sp" />
+
+                            <!-- 바닐라 시럽 단위(회) 설명 텍스트 -->
+                            <TextView
+                                android:id="@+id/explain_vanillasyrup_shotnum_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="회"
+                                android:textColor="@color/Active_Text"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -298,14 +334,32 @@
                             android:textStyle="bold" />
 
                         <!-- 커스텀 메뉴 헤이즐넛 시럽 횟수 표시 텍스트 -->
-                        <TextView
-                            android:id="@+id/custom_hazelnutsyrup_num_textView"
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="30dp"
-                            android:text="N 회"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="20sp" />
+                            android:orientation="horizontal">
+
+                            <!-- 커스텀 메뉴 헤이즐넛 시럽 횟수 표시 텍스트 -->
+                            <TextView
+                                android:id="@+id/custom_hazelnutsyrup_shotnum_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NN"
+                                android:textColor="@color/Active_Text"
+                                android:textSize="20sp" />
+
+                            <!-- 헤이즐넛 시럽 단위(회) 설명 텍스트 -->
+                            <TextView
+                                android:id="@+id/explain_hazelnutsyrup_shotnum_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="회"
+                                android:textColor="@color/Active_Text"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -328,14 +382,32 @@
                             android:textStyle="bold" />
 
                         <!-- 커스텀 메뉴 카라멜 시럽 횟수 표시 텍스트 -->
-                        <TextView
-                            android:id="@+id/custom_caramelsyrup_num_textView"
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="30dp"
-                            android:text="N 회"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="20sp" />
+                            android:orientation="horizontal">
+
+                            <!-- 커스텀 메뉴 카라멜 시럽 횟수 표시 텍스트 -->
+                            <TextView
+                                android:id="@+id/custom_caramelsyrup_shotnum_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NN"
+                                android:textColor="@color/Active_Text"
+                                android:textSize="20sp" />
+
+                            <!-- 카라멜 시럽 단위(회) 설명 텍스트 -->
+                            <TextView
+                                android:id="@+id/explain_caramelsyrup_shotnum_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="회"
+                                android:textColor="@color/Active_Text"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -351,66 +423,90 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 라떼 베이스 라디오 버튼1~3 -->
-                    <RadioGroup
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
-
-                        <!-- 라떼 베이스 라디오 버튼1 -->
-                        <RadioButton
-                            android:id="@+id/custom_lattebase1_radioButton"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="일반 우유"
-                            android:textColor="@color/Active_Text" />
-
-                        <!-- 라떼 베이스 라디오 버튼2 -->
-                        <RadioButton
-                            android:id="@+id/custom_lattebase2_radioButton"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:text="저지방 우유"
-                            android:textColor="@color/Active_Text" />
-
-                        <!-- 라떼 베이스 라디오 버튼3 -->
-                        <RadioButton
-                            android:id="@+id/custom_lattebase3_radioButton"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:text="무지방 우유"
-                            android:textColor="@color/Active_Text" />
-
-                    </RadioGroup>
-
-                    <!-- 라떼 베이스 라디오 버튼4~5 -->
+                    <!-- 커스텀 메뉴 라떼 베이스 라디오 버튼1~5 -->
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                        android:orientation="vertical">
 
-                        <!-- 라떼 베이스 라디오 버튼4 -->
-                        <RadioButton
-                            android:id="@+id/custom_lattebase4_radioButton"
-                            android:layout_width="100dp"
+                        <!-- 라떼 베이스 라디오 버튼1~5 -->
+                        <RadioGroup
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="두유"
-                            android:textColor="@color/Active_Text" />
+                            android:orientation="horizontal"
+                            android:gravity="center">
 
-                        <!-- 라떼 베이스 라디오 버튼5 -->
-                        <RadioButton
-                            android:id="@+id/custom_lattebase5_radioButton"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:text="오트(귀리)"
-                            android:textColor="@color/Active_Text" />
+                            <!-- 라떼 베이스 라디오 버튼1~5 -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <!-- 라떼 베이스 라디오 버튼1~3 -->
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <!-- 라떼 베이스 라디오 버튼1 -->
+                                    <RadioButton
+                                        android:id="@+id/custom_lattebase1_radioButton"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="일반 우유"
+                                        android:textColor="@color/Active_Text" />
+
+                                    <!-- 라떼 베이스 라디오 버튼2 -->
+                                    <RadioButton
+                                        android:id="@+id/custom_lattebase2_radioButton"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:text="저지방 우유"
+                                        android:textColor="@color/Active_Text" />
+
+                                    <!-- 라떼 베이스 라디오 버튼3 -->
+                                    <RadioButton
+                                        android:id="@+id/custom_lattebase3_radioButton"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:text="무지방 우유"
+                                        android:textColor="@color/Active_Text" />
+
+                                </LinearLayout>
+
+                                <!-- 라떼 베이스 라디오 버튼 4~5 -->
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <!-- 라떼 베이스 라디오 버튼4 -->
+                                    <RadioButton
+                                        android:id="@+id/custom_lattebase4_radioButton"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="두유"
+                                        android:textColor="@color/Active_Text" />
+
+                                    <!-- 라떼 베이스 라디오 버튼5 -->
+                                    <RadioButton
+                                        android:id="@+id/custom_lattebase5_radioButton"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:text="오트(귀리)"
+                                        android:textColor="@color/Active_Text" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </RadioGroup>
+
 
                     </LinearLayout>
+
 
                     <!-- 커스텀 메뉴 베이스(물,티) 제목 -->
                     <TextView
@@ -566,7 +662,7 @@
                         android:textStyle="bold" />
 
                     <!-- 휘핑 라디오 버튼1~3 -->
-                    <RadioGroup
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -598,7 +694,7 @@
                             android:text="에스프레소 휘핑"
                             android:textColor="@color/Active_Text" />
 
-                    </RadioGroup>
+                    </LinearLayout>
 
                     <!-- 커스텀 메뉴 휘핑 시크바 -->
                     <SeekBar
@@ -678,7 +774,7 @@
                         android:textStyle="bold" />
 
                     <!-- 드리즐 라디오 버튼1~3 -->
-                    <RadioGroup
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -710,7 +806,7 @@
                             android:text="초콜릿 드리즐"
                             android:textColor="@color/Active_Text" />
 
-                    </RadioGroup>
+                    </LinearLayout>
 
                     <!-- 커스텀 메뉴 드리즐 시크바 -->
                     <SeekBar
@@ -790,22 +886,40 @@
                         android:textStyle="bold" />
 
                     <!-- 커스텀 메뉴 로스트 갯수 표시 텍스트 -->
-                    <TextView
-                        android:id="@+id/custom_roastnum_textView"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="N 샷"
-                        android:textColor="@color/Active_Text"
-                        android:textSize="20sp" />
+                        android:orientation="horizontal">
+
+                        <!-- 커스텀 메뉴 로스트 갯수 표시 텍스트 -->
+                        <TextView
+                            android:id="@+id/custom_roastnum_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NN"
+                            android:textColor="@color/Active_Text"
+                            android:textSize="20sp" />
+
+                        <!-- 로스트 단위(회) 설명 텍스트 -->
+                        <TextView
+                            android:id="@+id/explain_roastnum_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="회"
+                            android:textColor="@color/Active_Text"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
 
 
                 </LinearLayout>
 
             </LinearLayout>
 
-            <!-- 카드뷰2: 리뷰 작성 안내 카드 -->
-            <androidx.cardview.widget.CardView
+            <!-- 카드뷰2: 리뷰 작성 안내 카드 => * 리니어로 수정 -->
+            <LinearLayout
                 android:id="@+id/explain_review_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -874,10 +988,10 @@
 
                 </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
-            <!-- 카드뷰3: 커스텀제품 리뷰 카드-->
-            <androidx.cardview.widget.CardView
+            <!-- 카드뷰3: 커스텀제품 리뷰 카드 => * 리니어로 수정 -->
+            <LinearLayout
                 android:id="@+id/custom_review_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -955,7 +1069,7 @@
 
                 </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
 
         </LinearLayout>
