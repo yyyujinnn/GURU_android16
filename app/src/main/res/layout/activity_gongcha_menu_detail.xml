@@ -262,6 +262,9 @@
                         android:id="@+id/custom_suger_seekBar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:min="0"
+                        android:max="4"
+                        android:progress="2"
                         android:progressTint="@color/Maincolor_Brown1" />
 
                     <!-- 커스텀 메뉴 당도 시크바 값 텍스트-->
@@ -271,7 +274,7 @@
                         android:layout_weight="1"
                         android:layout_marginTop="5dp">
 
-                        <!-- 당도 시크바 값 텍스트1: 0% -->
+                        <!-- 당도 시크바 값 텍스트0: 0% -->
                         <TextView
                             android:id="@+id/explain_suger_0_textView"
                             android:layout_width="wrap_content"
@@ -284,7 +287,7 @@
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
-                        <!-- 당도 시크바 값 텍스트2: 30% -->
+                        <!-- 당도 시크바 값0 텍스트: 30% -->
                         <TextView
                             android:id="@+id/explain_suger_30_textView"
                             android:layout_width="wrap_content"
@@ -296,7 +299,7 @@
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
-                        <!-- 당도 시크바 값 텍스트3: 50% -->
+                        <!-- 당도 시크바 값1 텍스트: 50% -->
                         <TextView
                             android:id="@+id/explain_suger_50_textView"
                             android:layout_width="wrap_content"
@@ -308,7 +311,7 @@
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
-                        <!-- 당도 시크바 값 텍스트4: 70% -->
+                        <!-- 당도 시크바 값2 텍스트: 70% -->
                         <TextView
                             android:id="@+id/explain_suger_70_textView"
                             android:layout_width="wrap_content"
@@ -320,7 +323,7 @@
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
-                        <!-- 당도 시크바 값 텍스트5: 100% -->
+                        <!-- 당도 시크바 값3 텍스트: 100% -->
                         <TextView
                             android:id="@+id/explain_suger_100_textView"
                             android:layout_width="wrap_content"

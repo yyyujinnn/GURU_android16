@@ -631,6 +631,9 @@
                     android:id="@+id/custom_base_seekBar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:min="0"
+                    android:max="2"
+                    android:progress="1"
                     android:progressTint="@color/Maincolor_Brown1" />
 
                 <!-- 커스텀 메뉴 베이스(물,티) 시크바 값 텍스트-->
@@ -640,7 +643,7 @@
                     android:layout_weight="1"
                     android:layout_marginTop="5dp">
 
-                    <!-- 베이스(물,티) 시크바 값 텍스트1: 적게 -->
+                    <!-- 베이스(물,티) 시크바 값0 텍스트: 적게 -->
                     <TextView
                         android:id="@+id/explain_base_less_textView"
                         android:layout_width="wrap_content"
@@ -653,7 +656,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 베이스(물,티) 시크바 값 텍스트2: 보통 -->
+                    <!-- 베이스(물,티) 시크바 값1 텍스트: 보통 -->
                     <TextView
                         android:id="@+id/explain_base_normal_textView"
                         android:layout_width="wrap_content"
@@ -665,7 +668,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 베이스(물,티) 시크바 값 텍스트3: 많이 -->
+                    <!-- 베이스(물,티) 시크바 값2 텍스트: 많이 -->
                     <TextView
                         android:id="@+id/explain_base_much_textView"
                         android:layout_width="wrap_content"
@@ -696,6 +699,9 @@
                     android:id="@+id/custom_ice_seekBar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:min="0"
+                    android:max="3"
+                    android:progress="2"
                     android:progressTint="@color/Maincolor_Brown1" />
 
                 <!-- 커스텀 메뉴 얼음 시크바 값 텍스트-->
@@ -705,7 +711,7 @@
                     android:layout_weight="1"
                     android:layout_marginTop="5dp">
 
-                    <!-- 얼음 시크바 값 텍스트1: 없음 -->
+                    <!-- 얼음 시크바 값0 텍스트: 없음 -->
                     <TextView
                         android:id="@+id/explain_ice_no_textView"
                         android:layout_width="wrap_content"
@@ -718,7 +724,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 얼음 시크바 값 텍스트2: 적게 -->
+                    <!-- 얼음 시크바 값1 텍스트: 적게 -->
                     <TextView
                         android:id="@+id/explain_ice_less_textView"
                         android:layout_width="wrap_content"
@@ -730,7 +736,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 얼음 시크바 값 텍스트3: 보통 -->
+                    <!-- 얼음 시크바 값2 텍스트: 보통 -->
                     <TextView
                         android:id="@+id/explain_ice_normal_textView"
                         android:layout_width="wrap_content"
@@ -742,7 +748,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 얼음 시크바 값 텍스트4: 많이 -->
+                    <!-- 얼음 시크바 값3 텍스트: 많이 -->
                     <TextView
                         android:id="@+id/explain_ice_much_textView"
                         android:layout_width="wrap_content"
@@ -763,7 +769,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:text="휘핑(600원 추가)"
+                    android:text="휘핑 (600원 추가)"
                     android:textColor="@color/Active_Text"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -808,6 +814,9 @@
                     android:id="@+id/custom_whipping_seekBar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:min="0"
+                    android:max="3"
+                    android:progress="0"
                     android:progressTint="@color/Maincolor_Brown1" />
 
                 <!-- 커스텀 메뉴 휘핑 시크바 값 텍스트-->
@@ -817,7 +826,7 @@
                     android:layout_weight="1"
                     android:layout_marginTop="5dp">
 
-                    <!-- 휘핑 시크바 값 텍스트1: 없음 -->
+                    <!-- 휘핑 시크바 값0 텍스트: 없음 -->
                     <TextView
                         android:id="@+id/explain_whipping_no_textView"
                         android:layout_width="wrap_content"
@@ -830,7 +839,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 휘핑 시크바 값 텍스트2: 적게 -->
+                    <!-- 휘핑 시크바 값1 텍스트: 적게 -->
                     <TextView
                         android:id="@+id/explain_whipping_less_textView"
                         android:layout_width="wrap_content"
@@ -842,7 +851,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 휘핑 시크바 값 텍스트3: 보통 -->
+                    <!-- 휘핑 시크바 값2 텍스트: 보통 -->
                     <TextView
                         android:id="@+id/explain_whipping_normal_textView"
                         android:layout_width="wrap_content"
@@ -854,7 +863,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 휘핑 시크바 값 텍스트4: 많이 -->
+                    <!-- 휘핑 시크바 값3 텍스트: 많이 -->
                     <TextView
                         android:id="@+id/explain_whipping_much_textView"
                         android:layout_width="wrap_content"
@@ -875,7 +884,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:text="휘핑(600원 추가)"
+                    android:text="드리즐"
                     android:textColor="@color/Active_Text"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -920,6 +929,9 @@
                     android:id="@+id/custom_drizzle_seekBar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:min="0"
+                    android:max="3"
+                    android:progress="0"
                     android:progressTint="@color/Maincolor_Brown1" />
 
                 <!-- 커스텀 메뉴 드리즐 시크바 값 텍스트-->
@@ -929,7 +941,7 @@
                     android:layout_weight="1"
                     android:layout_marginTop="5dp">
 
-                    <!-- 드리즐 시크바 값 텍스트1: 없음 -->
+                    <!-- 드리즐 시크바 값0 텍스트: 없음 -->
                     <TextView
                         android:id="@+id/explain_drizzle_no_textView"
                         android:layout_width="wrap_content"
@@ -942,7 +954,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 드리즐 시크바 값 텍스트2: 적게 -->
+                    <!-- 드리즐 시크바 값1 텍스트: 적게 -->
                     <TextView
                         android:id="@+id/explain_drizzle_less_textView"
                         android:layout_width="wrap_content"
@@ -954,7 +966,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 드리즐 시크바 값 텍스트3: 보통 -->
+                    <!-- 드리즐 시크바 값2 텍스트: 보통 -->
                     <TextView
                         android:id="@+id/explain_drizzle_normal_textView"
                         android:layout_width="wrap_content"
@@ -966,7 +978,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 드리즐 시크바 값 텍스트4: 많이 -->
+                    <!-- 드리즐 시크바 값3 텍스트: 많이 -->
                     <TextView
                         android:id="@+id/explain_drizzle_much_textView"
                         android:layout_width="wrap_content"
