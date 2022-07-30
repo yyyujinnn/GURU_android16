@@ -180,7 +180,7 @@
                         android:textStyle="bold" />
 
                     <!-- 사이즈 라디오 버튼1~2 -->
-                    <LinearLayout
+                    <RadioGroup
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -205,7 +205,7 @@
                             android:text="점보(651ml)"
                             android:textColor="@color/Active_Text" />
 
-                    </LinearLayout>
+                    </RadioGroup>
 
                     <!-- 커스텀 메뉴 에스프레소 샷 갯수 제목 -->
                     <TextView

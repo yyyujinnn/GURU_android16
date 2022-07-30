@@ -174,7 +174,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:textColor="@color/Active_Text"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <!-- 커스텀 메뉴 가격 제목 -->
                 <TextView

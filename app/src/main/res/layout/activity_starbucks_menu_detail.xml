@@ -180,7 +180,7 @@
                         android:textStyle="bold" />
 
                     <!-- 사이즈 라디오 버튼1~3 -->
-                    <LinearLayout
+                    <RadioGroup
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -215,7 +215,7 @@
                             android:text="벤티(591ml)"
                             android:textColor="@color/Active_Text" />
 
-                    </LinearLayout>
+                    </RadioGroup>
 
                     <!-- 커스텀 메뉴 에스프레소 샷 갯수 제목 -->
                     <TextView
@@ -352,7 +352,7 @@
                         android:textStyle="bold" />
 
                     <!-- 라떼 베이스 라디오 버튼1~3 -->
-                    <LinearLayout
+                    <RadioGroup
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -384,7 +384,7 @@
                             android:text="무지방 우유"
                             android:textColor="@color/Active_Text" />
 
-                    </LinearLayout>
+                    </RadioGroup>
 
                     <!-- 라떼 베이스 라디오 버튼4~5 -->
                     <LinearLayout
@@ -566,7 +566,7 @@
                         android:textStyle="bold" />
 
                     <!-- 휘핑 라디오 버튼1~3 -->
-                    <LinearLayout
+                    <RadioGroup
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -598,7 +598,7 @@
                             android:text="에스프레소 휘핑"
                             android:textColor="@color/Active_Text" />
 
-                    </LinearLayout>
+                    </RadioGroup>
 
                     <!-- 커스텀 메뉴 휘핑 시크바 -->
                     <SeekBar
@@ -678,7 +678,7 @@
                         android:textStyle="bold" />
 
                     <!-- 드리즐 라디오 버튼1~3 -->
-                    <LinearLayout
+                    <RadioGroup
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -710,7 +710,7 @@
                             android:text="초콜릿 드리즐"
                             android:textColor="@color/Active_Text" />
 
-                    </LinearLayout>
+                    </RadioGroup>
 
                     <!-- 커스텀 메뉴 드리즐 시크바 -->
                     <SeekBar
