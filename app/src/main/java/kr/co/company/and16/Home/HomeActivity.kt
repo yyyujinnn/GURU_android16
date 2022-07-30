@@ -103,7 +103,7 @@ class HomeActivity : AppCompatActivity() {
         RegButton = findViewById(R.id.RegButton) // 메뉴등록 플로팅 버튼
 
         starbucks_tab_imageButton.setOnClickListener {
-            val intent = Intent(this, StarbucksMenu_write::class.java)
+            val intent = Intent(this, StarbucksRank::class.java)
             startActivity(intent)
         }
 
