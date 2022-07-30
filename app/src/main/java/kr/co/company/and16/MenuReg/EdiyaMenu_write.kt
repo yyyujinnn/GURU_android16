@@ -9,6 +9,7 @@ import kr.co.company.and16.R
 
 class EdiyaMenu_write : AppCompatActivity() {
 
+    lateinit var login_button : Button
     lateinit var custom_public_radioButton: RadioButton //레시피 공개
     lateinit var custom_private_radioButton: RadioButton //레시피 비공개
 
@@ -62,6 +63,11 @@ class EdiyaMenu_write : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ediya_menu_write)
+
+        login_button = findViewById(R.id.login_button)
+
+        custom_name_EditText = findViewById(R.id.custom_name_EditText)
+        custom_prise_EditText = findViewById(R.id.custom_prise_EditText)
 
         custom_basemenu_spinner = findViewById(R.id.custom_basemenu_spinner)
 
