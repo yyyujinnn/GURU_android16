@@ -96,7 +96,7 @@ class HomeActivity : AppCompatActivity() {
         list_item_like_imageButton = findViewById(R.id.list_item_like_imageButton)   // 카드뷰2 찜 버튼
 
         starbucks_tab_imageButton.setOnClickListener {
-            val intent = Intent(this, StarbucksRank::class.java)
+            val intent = Intent(this, StarbucksMenu_write::class.java)
             startActivity(intent)
         }
 
