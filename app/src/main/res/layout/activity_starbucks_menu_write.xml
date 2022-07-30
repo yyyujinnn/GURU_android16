@@ -530,80 +530,15 @@
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-                <!-- 커스텀 메뉴 라떼 베이스 라디오 버튼1~5 -->
-                <RadioGroup
-                    android:layout_width="wrap_content"
+                <!-- 커스텀 메뉴 라떼 베이스 콤보박스(스피너) -->
+                <Spinner
+                    android:id="@+id/custom_lattebase_spinner"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center">
-
-                    <!-- 라떼 베이스 라디오 버튼1~5 -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <!-- 라떼 베이스 라디오 버튼1~3 -->
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-                            <!-- 라떼 베이스 라디오 버튼1 -->
-                            <RadioButton
-                                android:id="@+id/custom_lattebase1_radioButton"
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:text="일반 우유"
-                                android:textColor="@color/Active_Text" />
-
-                            <!-- 라떼 베이스 라디오 버튼2 -->
-                            <RadioButton
-                                android:id="@+id/custom_lattebase2_radioButton"
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="저지방 우유"
-                                android:textColor="@color/Active_Text" />
-
-                            <!-- 라떼 베이스 라디오 버튼3 -->
-                            <RadioButton
-                                android:id="@+id/custom_lattebase3_radioButton"
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="무지방 우유"
-                                android:textColor="@color/Active_Text" />
-
-                        </LinearLayout>
-
-                        <!-- 라떼 베이스 라디오 버튼 4~5 -->
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <!-- 라떼 베이스 라디오 버튼4 -->
-                            <RadioButton
-                                android:id="@+id/custom_lattebase4_radioButton"
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:text="두유"
-                                android:textColor="@color/Active_Text" />
-
-                            <!-- 라떼 베이스 라디오 버튼5 -->
-                            <RadioButton
-                                android:id="@+id/custom_lattebase5_radioButton"
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="오트(귀리)"
-                                android:textColor="@color/Active_Text" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-
-                </RadioGroup>
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/Active_Text"
+                    android:textSize="20sp"
+                    tools:ignore="TouchTargetSizeCheck" />
 
 
                 <!-- 커스텀 메뉴 베이스(물,티) 제목 -->
@@ -766,7 +701,7 @@
                     android:textStyle="bold" />
 
                 <!-- 휘핑 라디오 버튼1~3 -->
-                <RadioGroup
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -798,7 +733,7 @@
                         android:text="에스프레소 휘핑"
                         android:textColor="@color/Active_Text" />
 
-                </RadioGroup>
+                </LinearLayout>
 
                 <!-- 커스텀 메뉴 휘핑 시크바 -->
                 <SeekBar
@@ -881,7 +816,7 @@
                     android:textStyle="bold" />
 
                 <!-- 드리즐 라디오 버튼1~3 -->
-                <RadioGroup
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -913,7 +848,7 @@
                         android:text="초콜릿 드리즐"
                         android:textColor="@color/Active_Text" />
 
-                </RadioGroup>
+                </LinearLayout>
 
                 <!-- 커스텀 메뉴 드리즐 시크바 -->
                 <SeekBar
