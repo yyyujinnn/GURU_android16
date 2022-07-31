@@ -10,6 +10,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import kr.co.company.and16.EdiyaCustomList
 import kr.co.company.and16.Home.EdiyaRank
 import kr.co.company.and16.Home.GongchaRank
 import kr.co.company.and16.Home.HomeActivity
@@ -69,6 +70,7 @@ class CustomList : AppCompatActivity(){
     lateinit var customlist_item_mn_textView: TextView           // 카드뷰 제품 좋아요 숫자
     lateinit var customlist_item_like_imageButton: ImageButton   // 카드뷰 제품 찜 버튼
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_custom_list)
@@ -91,17 +93,17 @@ class CustomList : AppCompatActivity(){
             startActivity(intent)
         }
 
-        // 각 브랜드 로고 버튼을 누르면 각 브랜드의 인기 랭크를 보여줌
+        // 각 브랜드 로고 버튼을 누르면 각 브랜드의 커스텀 리스트를 보여줌
         starbucks_tab_imageButton.setOnClickListener{
-            val intent = Intent(this, StarbucksRank::class.java)
+            val intent = Intent(this, StarbucksCustomList::class.java)
             startActivity(intent)
         }
         ediya_tab_imageButton.setOnClickListener{
-            val intent = Intent(this, EdiyaRank::class.java)
+            val intent = Intent(this, EdiyaCustomList::class.java)
             startActivity(intent)
         }
         gongcha_tab_imageButton.setOnClickListener{
-            val intent = Intent(this, GongchaRank::class.java)
+            val intent = Intent(this, GongchaCustomList::class.java)
             startActivity(intent)
         }
     }
