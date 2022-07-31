@@ -25,6 +25,7 @@ import java.io.ByteArrayOutputStream
 
 class EdiyaMenu_write : AppCompatActivity() {
 
+
     lateinit var dbManager: DBManager
     lateinit var sqlitedb : SQLiteDatabase
 

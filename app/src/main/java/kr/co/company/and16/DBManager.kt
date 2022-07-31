@@ -11,6 +11,7 @@ class DBManager(
     version: Int
 ) : SQLiteOpenHelper(context, name, factory, version) {
 
+
     override fun onCreate(db: SQLiteDatabase?) {
         // 이디야 테이블 생성
         db!!.execSQL("CREATE TABLE ediyaMenuDB (customMenuName text, customImage blob, existingMenuName text, price text, size text, espressoShotNumber text, tapiocaPearl text, hazelnutsSyrupNumber text, caramelSyrupNumber text, vanillaSyrupNumber text, irishSyrupNumber text, cafeSyrupNumber text, toppingSauce text, topping text)")

@@ -100,6 +100,7 @@ class EdiyaMenu_Detail : AppCompatActivity() {
         cursor = sqlitedb.rawQuery("SELECT * FROM ediyaMenuDB WHERE customMenuName = '"+ str_customMenuName +"';", null)
 
 
+
         if(cursor.moveToNext()) {
 
             // 컬럼값으로 인덱스값 알아오기
