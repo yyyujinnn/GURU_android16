@@ -15,11 +15,14 @@ import kr.co.company.and16.Home.GongchaRank
 import kr.co.company.and16.Home.HomeActivity
 import kr.co.company.and16.Home.StarbucksRank
 import kr.co.company.and16.R
+import kr.co.company.and16.RecyclerView_ediya.MyModel
+import kr.co.company.and16.RecyclerView_ediya.MyRecyclerViewInterface
 import kr.co.company.and16.Zzim.MyList
 
 // < #. 커스텀 메뉴 리스트 페이지:공개 리스트 >
 
-class CustomList : AppCompatActivity() {
+class CustomList : AppCompatActivity(){
+
 
     //옵션 메뉴
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
