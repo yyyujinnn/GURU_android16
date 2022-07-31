@@ -141,6 +141,8 @@ class EdiyaMenu_Detail : AppCompatActivity() {
 
 
 
+        
+
         var bitmapImage = BitmapFactory.decodeByteArray(bytesImage, 0, bytesImage.size)
         custom_image.setImageBitmap(bitmapImage)
     }
