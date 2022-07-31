@@ -9,7 +9,8 @@ import android.util.Log
 import android.widget.LinearLayout
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.activity_ediya_custom_list.*
+import androidx.recyclerview.widget.RecyclerView
+//import kotlinx.android.synthetic.main.activity_ediya_custom_list.*
 import kr.co.company.and16.RecyclerView_ediya.MyModel
 import kr.co.company.and16.RecyclerView_ediya.MyRecyclerAdapter
 import kr.co.company.and16.RecyclerView_ediya.MyRecyclerViewInterface
@@ -22,12 +23,16 @@ class EdiyaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
 
     lateinit var dbManager : DBManager
     lateinit var sqlitedb : SQLiteDatabase
-    
+
+    lateinit var my_recycler_view : RecyclerView
 
     @SuppressLint("Range")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ediya_custom_list)
+
+
+        my_recycler_view = findViewById(R.id.my_recycler_view)
 
         dbManager = DBManager(this, "ediyaMenuDB", null, 1)
         sqlitedb = dbManager.readableDatabase
@@ -95,14 +100,6 @@ class EdiyaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
             //       list_item_prise_textView.setText(str_price)
 
 
-
-            // 레이아웃 클릭 시
-//            layout_item.setOnClickListener {
-            // 상세 정보로 이동
-//                val intent = Intent(this,EdiyaCustomMenuShowActivity::class.java)
-//                intent.putExtra("intent_name", str_customMenuName)
-//                startActivity(intent)
-//            }
 
 
             // while문에서 생성한 내용들 layout에 넣기
