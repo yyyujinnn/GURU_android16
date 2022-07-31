@@ -71,7 +71,7 @@ class Login : AppCompatActivity() {
         }
 
         var gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(getString(R.string.default_web_client_id))
+            .requestIdToken("476872125178-er3sp9tg59ckruhvjq40r3k9kovifvlo.apps.googleusercontent.com")
             .requestEmail()
             .build()
         googleSignInClient = GoogleSignIn.getClient(this,gso)
