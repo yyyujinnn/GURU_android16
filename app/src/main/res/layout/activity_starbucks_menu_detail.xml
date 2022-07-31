@@ -49,8 +49,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:gravity="bottom"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:gravity="bottom">
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -59,20 +59,20 @@
 
                             <!-- 커스텀 메뉴 브랜드명 텍스트 -->
                             <TextView
-                                android:id="@+id/custom_brand_textView"
+                                android:id="@+id/first_item_brand_textView"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
-                                android:text="공차"
+                                android:text="이디야"
                                 android:textColor="@color/Active_Text"
                                 android:textSize="10sp" />
 
                             <!-- 커스텀 메뉴 이름 텍스트 -->
                             <TextView
-                                android:id="@+id/custom_name_textView"
+                                android:id="@+id/custom_name"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="커스텀메뉴 이름"
+                                android:text="1위 커스텀메뉴 명칭"
                                 android:textAlignment="viewStart"
                                 android:textColor="@color/Active_Text"
                                 android:textSize="15sp"
@@ -87,10 +87,10 @@
 
                                 <!-- 커스텀 메뉴 가격 텍스트 -->
                                 <TextView
-                                    android:id="@+id/custom_prise_textView"
+                                    android:id="@+id/custom_prise"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="10000"
+                                    android:text="custom_prise"
                                     android:textColor="@color/Active_Text"
                                     android:textSize="20sp"
                                     android:textStyle="bold" />
@@ -115,7 +115,7 @@
                             android:id="@+id/first_item_mn_textView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="80dp"
+                            android:layout_marginLeft="50dp"
                             android:text="nn명 커스텀즈의 찜"
                             android:textColor="@color/Maincolor_Brown2"
                             android:textSize="15sp" />
