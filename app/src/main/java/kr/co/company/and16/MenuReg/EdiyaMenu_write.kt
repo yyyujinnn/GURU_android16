@@ -255,7 +255,7 @@ class EdiyaMenu_write : AppCompatActivity() {
 
         // 스피너를 위한 리스트 배열로 만들기
         var ediyaExistingMenu =
-            resources.getStringArray(R.array.ediya_menu)  //var ediyaExistingMenu = listOf("선택하세요", "초콜릿칩플래치노", "녹차플랫치노", "오리진쉐이크","딸기쉐이크", "복숭아아이스티", "토피넛라떼")   //arrays 파일에 작성하였음
+            resources.getStringArray(R.array.ediya_menu)  //"초콜릿칩플래치노", "녹차플랫치노", "오리진쉐이크","딸기쉐이크", "복숭아아이스티", "토피넛라떼"    파일에 작성하였음
         var adapter =
             ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, ediyaExistingMenu)
         custom_basemenu_spinner.adapter = adapter
