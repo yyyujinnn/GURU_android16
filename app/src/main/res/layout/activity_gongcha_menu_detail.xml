@@ -390,7 +390,8 @@
                         android:text="리뷰 작성하기 >"
                         android:textColor="@color/White_Text"
                         android:textSize="15sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
 
 
                 </LinearLayout>
