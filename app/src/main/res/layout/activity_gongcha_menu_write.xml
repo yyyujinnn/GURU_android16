@@ -253,6 +253,7 @@
 
                 <!-- 사이즈 라디오 버튼1~2 -->
                 <RadioGroup
+                    android:id="@+id/sizeRadioGroup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"

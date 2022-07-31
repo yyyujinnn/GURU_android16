@@ -256,24 +256,29 @@
                     android:orientation="horizontal"
                     android:gravity="center">
 
-                    <!-- 사이즈 라디오 버튼1 -->
-                    <RadioButton
-                        android:id="@+id/custom_size1_radioButton"
-                        android:layout_width="wrap_content"
+                    <!-- 사이즈 라디오 버튼 그룹 -->
+                    <RadioGroup
+                        android:id="@+id/sizeRadioGroup"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="레귤러(384ml)"
-                        android:textColor="@color/Active_Text" />
+                        android:orientation="horizontal">
+                        <!-- 사이즈 라디오 버튼1 -->
+                        <RadioButton
+                            android:id="@+id/custom_size1_radioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="레귤러(384ml)"/>
 
-                    <!-- 사이즈 라디오 버튼2 -->
-                    <RadioButton
-                        android:id="@+id/custom_size2_radioButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="50dp"
-                        android:text="엑스트라(651ml)"
-                        android:textColor="@color/Active_Text" />
+                        <!-- 사이즈 라디오 버튼2 -->
+                        <RadioButton
+                            android:id="@+id/custom_size2_radioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="50dp"
+                            android:text="엑스트라(651ml)" />
+                    </RadioGroup>
 
                 </RadioGroup>
 
