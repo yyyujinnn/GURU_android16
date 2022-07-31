@@ -15,6 +15,9 @@ class DBManager(
         // 이디야 테이블 생성
         db!!.execSQL("CREATE TABLE ediyaMenuDB (customMenuName text, customImage blob, existingMenuName text, price text, size text, espressoShotNumber text, tapiocaPearl text, hazelnutsSyrupNumber text, caramelSyrupNumber text, vanillaSyrupNumber text, irishSyrupNumber text, cafeSyrupNumber text, toppingSauce text, topping text)")
 
+        // 공차테이블 생성
+        db!!.execSQL("CREATE TABLE gongchaMenuDB (customMenuName text, customImage blob, existingMenuName text, price text, size text, espressoShotNumber text, sugar text, ice text, topping text)")
+
 
 
     }

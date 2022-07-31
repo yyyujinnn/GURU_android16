@@ -160,7 +160,7 @@
 
                     <!-- 커스텀 메뉴 기존 메뉴 표시 텍스트 -->
                     <TextView
-                        android:id="@+id/custom_basemenu_textView"
+                        android:id="@+id/custom_basemenu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -200,7 +200,7 @@
 
                     <!-- 커스텀 메뉴 사이즈 표시 텍스트 -->
                     <TextView
-                        android:id="@+id/custom_size_textView"
+                        android:id="@+id/custom_size"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -228,7 +228,7 @@
 
                         <!-- 커스텀 메뉴 에스프레소 샷 갯수 표시 텍스트 -->
                         <TextView
-                            android:id="@+id/custom_shotnum_textView"
+                            android:id="@+id/custom_shotnum"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="NN"
@@ -267,7 +267,7 @@
 
                         <!-- 커스텀 메뉴 당도 표시 텍스트 -->
                         <TextView
-                            android:id="@+id/custom_suger_textView"
+                            android:id="@+id/custom_sugar"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="NN"
@@ -299,7 +299,7 @@
 
                     <!-- 커스텀 메뉴 얼음 표시 텍스트 -->
                     <TextView
-                        android:id="@+id/custom_ice_textView"
+                        android:id="@+id/custom_ice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -331,7 +331,7 @@
 
                     <!-- 커스텀 메뉴 토핑 표시 텍스트 -->
                     <TextView
-                        android:id="@+id/custom_topping_textView"
+                        android:id="@+id/custom_toppings"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
