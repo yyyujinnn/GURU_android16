@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Custom.GongchaCustomList">
+    tools:context=".Custom.GongchaCustomList"
+    android:orientation="vertical">
 
 
         <LinearLayout
@@ -115,7 +116,7 @@
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/my_recycle_view"
+                android:id="@+id/my_recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
@@ -124,4 +125,4 @@
 
         </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
