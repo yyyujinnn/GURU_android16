@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import kr.co.company.and16.DBManager
+import kr.co.company.and16.EdiyaCustomList
 import kr.co.company.and16.R
 
 // < #. 커스텀 메뉴 상세 페이지: 이디야 >
@@ -82,9 +83,9 @@ class EdiyaMenu_Detail : AppCompatActivity() {
 
         login_button = findViewById(R.id.login_button)
 
-        // 리스트 목록으로 화면 전환
+        // 이디야 리스트 목록으로 화면 전환
         login_button.setOnClickListener{
-            val intent = Intent(this, CustomList::class.java)
+            val intent = Intent(this, EdiyaCustomList::class.java)
             startActivity(intent)
         }
         // EdiyaMenu_write에서 전달한 intent 받기
@@ -142,7 +143,7 @@ class EdiyaMenu_Detail : AppCompatActivity() {
 
 
 
-        
+
 
         var bitmapImage = BitmapFactory.decodeByteArray(bytesImage, 0, bytesImage.size)
         custom_image.setImageBitmap(bitmapImage)

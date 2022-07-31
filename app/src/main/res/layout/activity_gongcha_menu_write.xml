@@ -515,7 +515,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:text="토핑(최대 3가지 선택가능)"
+                    android:text="토핑"
                     android:textColor="@color/Active_Text"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -526,7 +526,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="라지 500원 | 점보 700원"
+                    android:text="(추가금액: 라지 500원 | 점보 700원)"
                     android:textColor="@color/Active_Text"
                     android:textSize="13sp"
                     android:textStyle="bold"/>
