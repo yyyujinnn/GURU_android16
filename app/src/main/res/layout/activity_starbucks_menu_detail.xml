@@ -149,7 +149,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="기존 메뉴표시되는 텍스트"
-                        android:textColor="@color/Active_Text"
+                        android:textColor="@color/Maincolor_Brown2"
                         android:textSize="20sp" />
 
                     <!-- 구분선2 이미지 -->
@@ -244,7 +244,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="NN"
-                            android:textColor="@color/Active_Text"
+                            android:textColor="@color/Maincolor_Brown2"
                             android:textSize="20sp" />
 
                         <!-- 에스프레소 샷 단위(샷) 설명 텍스트 -->
@@ -254,7 +254,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:text="샷"
-                            android:textColor="@color/Active_Text"
+                            android:textColor="@color/Maincolor_Brown2"
                             android:textSize="20sp" />
 
                     </LinearLayout>
@@ -284,7 +284,7 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="바닐라 시럽"
-                            android:textColor="@color/Active_Text"
+                            android:textColor="@color/Maincolor_Brown2"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -301,7 +301,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="NN"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                             <!-- 바닐라 시럽 단위(회) 설명 텍스트 -->
@@ -311,7 +311,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
                                 android:text="회"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -332,7 +332,7 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="헤이즐넛 시럽"
-                            android:textColor="@color/Active_Text"
+                            android:textColor="@color/Maincolor_Brown2"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -349,7 +349,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="NN"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                             <!-- 헤이즐넛 시럽 단위(회) 설명 텍스트 -->
@@ -359,7 +359,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
                                 android:text="회"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -380,7 +380,7 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="카라멜 시럽"
-                            android:textColor="@color/Active_Text"
+                            android:textColor="@color/Maincolor_Brown2"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -397,7 +397,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="NN"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                             <!-- 카라멜 시럽 단위(회) 설명 텍스트 -->
@@ -407,7 +407,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
                                 android:text="회"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -432,7 +432,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="라떼 베이스 표시"
-                        android:textColor="@color/Active_Text"
+                        android:textColor="@color/Maincolor_Brown2"
                         android:textSize="20sp" />
 
                     <!-- 커스텀 메뉴 베이스(물,티) 제목 -->
@@ -837,7 +837,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="NN"
-                            android:textColor="@color/Active_Text"
+                            android:textColor="@color/Maincolor_Brown2"
                             android:textSize="20sp" />
 
                         <!-- 로스트 단위(회) 설명 텍스트 -->
@@ -847,7 +847,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:text="회"
-                            android:textColor="@color/Active_Text"
+                            android:textColor="@color/Maincolor_Brown2"
                             android:textSize="20sp" />
 
                     </LinearLayout>

@@ -146,7 +146,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="기존 메뉴표시되는 텍스트"
-                        android:textColor="@color/Active_Text"
+                        android:textColor="@color/Maincolor_Brown2"
                         android:textSize="20sp" />
 
                     <!-- 구분선2 이미지 -->
@@ -179,33 +179,15 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 사이즈 라디오 버튼1~2 -->
-                    <RadioGroup
+                    <!-- 커스텀 메뉴 사이즈 표시 텍스트 -->
+                    <TextView
+                        android:id="@+id/custom_size_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
-
-                        <!-- 사이즈 라디오 버튼1 -->
-                        <RadioButton
-                            android:id="@+id/custom_size1_radioButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="레귤러(384ml)"
-                            android:textColor="@color/Active_Text" />
-
-                        <!-- 사이즈 라디오 버튼2 -->
-                        <RadioButton
-                            android:id="@+id/custom_size2_radioButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginLeft="50dp"
-                            android:text="엑스트라(651ml)"
-                            android:textColor="@color/Active_Text" />
-
-                    </RadioGroup>
+                        android:layout_marginTop="10dp"
+                        android:text="사이즈 표시"
+                        android:textColor="@color/Maincolor_Brown2"
+                        android:textSize="20sp" />
 
                     <!-- 커스텀 메뉴 에스프레소 샷 갯수 제목 -->
                     <TextView
@@ -231,7 +213,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="NN"
-                            android:textColor="@color/Active_Text"
+                            android:textColor="@color/Maincolor_Brown2"
                             android:textSize="20sp" />
 
                         <!-- 에스프레소 샷 단위(샷) 설명 텍스트 -->
@@ -241,7 +223,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:text="샷"
-                            android:textColor="@color/Active_Text"
+                            android:textColor="@color/Maincolor_Brown2"
                             android:textSize="20sp" />
 
                     </LinearLayout>
@@ -257,22 +239,15 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 펄 토핑 체크버튼 -->
-                    <LinearLayout
+                    <!-- 커스텀 메뉴 펄 토핑 표시 텍스트 -->
+                    <TextView
+                        android:id="@+id/custom_pearl_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="5dp">
-
-                        <!-- 커스텀 메뉴 펄 토핑 체크버튼1 -->
-                        <CheckBox
-                            android:id="@+id/custom_pearl1_checkBox"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="타피오카 펄"
-                            android:textColor="@color/Active_Text"/>
-
-                    </LinearLayout>
+                        android:layout_marginTop="10dp"
+                        android:text="펄 토핑 표시"
+                        android:textColor="@color/Maincolor_Brown2"
+                        android:textSize="20sp" />
 
                     <!-- 커스텀 메뉴 시럽 제목 -->
                     <TextView
@@ -299,7 +274,7 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="헤이즐넛 시럽"
-                            android:textColor="@color/Active_Text"
+                            android:textColor="@color/Maincolor_Brown2"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -316,7 +291,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="NN"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                             <!-- 헤이즐넛 시럽 단위(회) 설명 텍스트 -->
@@ -326,7 +301,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
                                 android:text="회"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -347,7 +322,7 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="카라멜 시럽"
-                            android:textColor="@color/Active_Text"
+                            android:textColor="@color/Maincolor_Brown2"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -364,7 +339,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="NN"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                             <!-- 카라멜 시럽 단위(회) 설명 텍스트 -->
@@ -374,7 +349,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
                                 android:text="회"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -395,7 +370,7 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="바닐라 시럽"
-                            android:textColor="@color/Active_Text"
+                            android:textColor="@color/Maincolor_Brown2"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -412,7 +387,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="NN"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                             <!-- 바닐라 시럽 단위(회) 설명 텍스트 -->
@@ -422,7 +397,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
                                 android:text="회"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -443,7 +418,7 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="아이리쉬 시럽"
-                            android:textColor="@color/Active_Text"
+                            android:textColor="@color/Maincolor_Brown2"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -460,7 +435,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="NN"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                             <!-- 아이리쉬 시럽 단위(회) 설명 텍스트 -->
@@ -470,7 +445,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
                                 android:text="회"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -491,7 +466,7 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="카페 시럽(무료)"
-                            android:textColor="@color/Active_Text"
+                            android:textColor="@color/Maincolor_Brown2"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -508,7 +483,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="NN"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                             <!-- 카페 시럽 단위(회) 설명 텍스트 -->
@@ -518,7 +493,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
                                 android:text="회"
-                                android:textColor="@color/Active_Text"
+                                android:textColor="@color/Maincolor_Brown2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -536,31 +511,15 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 토핑 소스 체크버튼 -->
-                    <LinearLayout
+                    <!-- 커스텀 메뉴 토핑 소스 표시 텍스트 -->
+                    <TextView
+                        android:id="@+id/custom_toppingsauce_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="5dp">
-
-                        <!-- 커스텀 메뉴 토핑 소스 체크버튼1 -->
-                        <CheckBox
-                            android:id="@+id/custom_toppingsauce1_checkBox"
-                            android:layout_width="120dp"
-                            android:layout_height="wrap_content"
-                            android:text="초콜릿"
-                            android:textColor="@color/Active_Text"/>
-
-                        <!-- 커스텀 메뉴 토핑 소스 체크버튼2 -->
-                        <CheckBox
-                            android:id="@+id/custom_toppingsauce2_checkBox"
-                            android:layout_width="120dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:text="카라멜"
-                            android:textColor="@color/Active_Text"/>
-
-                    </LinearLayout>
+                        android:layout_marginTop="10dp"
+                        android:text="토핑 소스 표시"
+                        android:textColor="@color/Maincolor_Brown2"
+                        android:textSize="20sp" />
 
                     <!-- 커스텀 메뉴 토핑제목 -->
                     <TextView
@@ -573,40 +532,15 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 토핑 체크버튼 -->
-                    <LinearLayout
+                    <!-- 커스텀 메뉴 토핑 표시 텍스트 -->
+                    <TextView
+                        android:id="@+id/custom_topping_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="5dp">
-
-                        <!-- 커스텀 메뉴 토핑 체크버튼1 -->
-                        <CheckBox
-                            android:id="@+id/custom_topping1_checkBox"
-                            android:layout_width="120dp"
-                            android:layout_height="wrap_content"
-                            android:text="초코쿠키 크림"
-                            android:textColor="@color/Active_Text"/>
-
-                        <!-- 커스텀 메뉴 토핑 체크버튼2 -->
-                        <CheckBox
-                            android:id="@+id/custom_topping2_checkBox"
-                            android:layout_width="110dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:text="초콜릿칩"
-                            android:textColor="@color/Active_Text"/>
-
-                        <!-- 커스텀 메뉴 토핑 체크버튼3 -->
-                        <CheckBox
-                            android:id="@+id/custom_topping3_checkBox"
-                            android:layout_width="110dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:text="휘핑크림"
-                            android:textColor="@color/Active_Text"/>
-
-                    </LinearLayout>
+                        android:layout_marginTop="10dp"
+                        android:text="펄 토핑 표시"
+                        android:textColor="@color/Maincolor_Brown2"
+                        android:textSize="20sp" />
 
 
                 </LinearLayout>
