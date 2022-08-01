@@ -78,11 +78,14 @@ class StarbucksCustomList : AppCompatActivity(), MyRecyclerViewInterface {
             var str_drizzle = cursor.getString(cursor.getColumnIndex("drizzle")).toString()
             var str_roast = cursor.getString(cursor.getColumnIndex("roastNumber")).toString()
 
+            var bytesImage = cursor.getBlob(cursor.getColumnIndex("customImage"))
+
             // 리사이클러뷰 관련 내용
             var myModel = MyModel(
                 name = str_customMenuName,
                 price = str_price,
                 existmenu = str_existingMenuName,
+                profileImage = bytesImage,
                 msize = str_size,
                 mlattebase = str_lattebase,
                 mbase = str_base,

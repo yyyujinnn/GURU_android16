@@ -65,9 +65,12 @@ class GongchaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
             var str_topping = cursor.getString(cursor.getColumnIndex("topping")).toString()
 
 
+            var bytesImage = cursor.getBlob(cursor.getColumnIndex("customImage"))
+
+
 
             // 리사이클러뷰 관련 내용
-            var myModel = MyModel(name = str_customMenuName, price = str_price, existmenu = str_existingMenuName, msize = str_size, mtopping = str_topping,
+            var myModel = MyModel(name = str_customMenuName, price = str_price, existmenu = str_existingMenuName, profileImage = bytesImage,msize = str_size, mtopping = str_topping,
                 mespressoshotnumber = str_espressoShotNumber, msugar = str_sugar, mice = str_ice)
             this.modelList.add(myModel)
             myRecyclerAdapter = MyRecyclerAdapter(this)
