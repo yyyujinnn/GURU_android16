@@ -69,6 +69,9 @@ class EdiyaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
             var str_irishSyrupNumber = cursor.getString(cursor.getColumnIndex("irishSyrupNumber")).toString()
             var str_cafeSyrupNumber = cursor.getString(cursor.getColumnIndex("cafeSyrupNumber")).toString()
 
+            // db에 저장된 이미지
+            var bytesImage = cursor.getBlob(cursor.getColumnIndex("customImage"))
+
 
             // 리사이클러뷰 관련 내용
             var myModel = MyModel(name = str_customMenuName, price = str_price, existmenu = str_existingMenuName, msize = str_size, mtapiocapearl = str_tapiocaPearl, mtoppingsauce = str_toppingSauce, mtopping = str_topping,
