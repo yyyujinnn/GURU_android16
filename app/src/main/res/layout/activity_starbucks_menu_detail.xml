@@ -201,43 +201,15 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 사이즈 라디오 버튼1~3 -->
-                    <RadioGroup
+                    <!-- 커스텀 메뉴 사이즈 표시 텍스트 -->
+                    <TextView
+                        android:id="@+id/custom_size"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                        <!-- 사이즈 라디오 버튼1 -->
-                        <RadioButton
-                            android:id="@+id/custom_size1_radioButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="톨(355ml)"
-                            android:textColor="@color/Active_Text" />
-
-                        <!-- 사이즈 라디오 버튼2 -->
-                        <RadioButton
-                            android:id="@+id/custom_size2_radioButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_weight="1"
-                            android:text="그란데(473ml)"
-                            android:textColor="@color/Active_Text" />
-
-                        <!-- 사이즈 라디오 버튼3 -->
-                        <RadioButton
-                            android:id="@+id/custom_size3_radioButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_weight="1"
-                            android:text="벤티(591ml)"
-                            android:textColor="@color/Active_Text" />
-
-                    </RadioGroup>
+                        android:layout_marginTop="10dp"
+                        android:text="사이즈 표시"
+                        android:textColor="@color/Maincolor_Brown2"
+                        android:textSize="20sp" />
 
                     <!-- 커스텀 메뉴 에스프레소 샷 갯수 제목 -->
                     <TextView
@@ -465,62 +437,15 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 커스텀 메뉴 베이스(물,티) 시크바 -->
-                    <SeekBar
-                        android:id="@+id/custom_base_seekBar"
-                        android:layout_width="match_parent"
+                    <!-- 커스텀 메뉴 베이스(물,티) 표시 텍스트 -->
+                    <TextView
+                        android:id="@+id/custom_base_textView"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:max="2"
-                        android:min="0"
-                        android:progress="1"
-                        android:progressTint="@color/Maincolor_Brown1" />
-
-                    <!-- 커스텀 메뉴 베이스(물,티) 시크바 값 텍스트-->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1">
-
-                        <!-- 베이스(물,티) 시크바 값0 텍스트: 적게 -->
-                        <TextView
-                            android:id="@+id/explain_base_less_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:layout_weight="1"
-                            android:text="적게"
-                            android:textAlignment="textStart"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <!-- 베이스(물,티) 시크바 값1 텍스트: 보통 -->
-                        <TextView
-                            android:id="@+id/explain_base_normal_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="보통"
-                            android:textAlignment="center"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <!-- 베이스(물,티) 시크바 값2 텍스트: 많이 -->
-                        <TextView
-                            android:id="@+id/explain_base_much_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="1"
-                            android:text="많이"
-                            android:textAlignment="textEnd"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
+                        android:layout_marginTop="10dp"
+                        android:text="베이스(물,티) 표시"
+                        android:textColor="@color/Maincolor_Brown2"
+                        android:textSize="20sp" />
 
                     <!-- 커스텀 메뉴 얼음 제목 -->
                     <TextView
@@ -533,74 +458,15 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 커스텀 메뉴 얼음 시크바 -->
-                    <SeekBar
-                        android:id="@+id/custom_ice_seekBar"
-                        android:layout_width="match_parent"
+                    <!-- 커스텀 메뉴 얼음 표시 텍스트 -->
+                    <TextView
+                        android:id="@+id/custom_ice_textView"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:max="3"
-                        android:min="0"
-                        android:progress="2"
-                        android:progressTint="@color/Maincolor_Brown1" />
-
-                    <!-- 커스텀 메뉴 얼음 시크바 값 텍스트-->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1">
-
-                        <!-- 얼음 시크바 값0 텍스트: 없음 -->
-                        <TextView
-                            android:id="@+id/explain_ice_no_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:layout_weight="1"
-                            android:text="없음"
-                            android:textAlignment="textStart"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <!-- 얼음 시크바 값1 텍스트: 적게 -->
-                        <TextView
-                            android:id="@+id/explain_ice_less_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="적게"
-                            android:textAlignment="center"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <!-- 얼음 시크바 값2 텍스트: 보통 -->
-                        <TextView
-                            android:id="@+id/explain_ice_normal_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="보통"
-                            android:textAlignment="center"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <!-- 얼음 시크바 값3 텍스트: 많이 -->
-                        <TextView
-                            android:id="@+id/explain_ice_much_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="1"
-                            android:text="많이"
-                            android:textAlignment="textEnd"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
+                        android:layout_marginTop="10dp"
+                        android:text="얼음 표시"
+                        android:textColor="@color/Maincolor_Brown2"
+                        android:textSize="20sp" />
 
                     <!-- 커스텀 메뉴 휘핑 제목 -->
                     <TextView
@@ -613,109 +479,15 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 휘핑 라디오 버튼1~3 -->
-                    <RadioGroup
+                    <!-- 커스텀 메뉴 휘핑 표시 텍스트 -->
+                    <TextView
+                        android:id="@+id/custom_whipping_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                        <!-- 휘핑 라디오 버튼1 -->
-                        <RadioButton
-                            android:id="@+id/custom_whipping1_radioButton"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="휘핑X"
-                            android:textColor="@color/Active_Text" />
-
-                        <!-- 휘핑 라디오 버튼2 -->
-                        <RadioButton
-                            android:id="@+id/custom_whipping2_radioButton"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:text="일반 휘핑"
-                            android:textColor="@color/Active_Text" />
-
-                        <!-- 휘핑 라디오 버튼3 -->
-                        <RadioButton
-                            android:id="@+id/custom_whipping3_radioButton"
-                            android:layout_width="130dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:text="에스프레소 휘핑"
-                            android:textColor="@color/Active_Text" />
-
-                    </RadioGroup>
-
-                    <!-- 커스텀 메뉴 휘핑 시크바 -->
-                    <SeekBar
-                        android:id="@+id/custom_whipping_seekBar"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:max="3"
-                        android:min="0"
-                        android:progress="0"
-                        android:progressTint="@color/Maincolor_Brown1" />
-
-                    <!-- 커스텀 메뉴 휘핑 시크바 값 텍스트-->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1">
-
-                        <!-- 휘핑 시크바 값0 텍스트: 없음 -->
-                        <TextView
-                            android:id="@+id/explain_whipping_no_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:layout_weight="1"
-                            android:text="없음"
-                            android:textAlignment="textStart"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <!-- 휘핑 시크바 값1 텍스트: 적게 -->
-                        <TextView
-                            android:id="@+id/explain_whipping_less_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="적게"
-                            android:textAlignment="center"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <!-- 휘핑 시크바 값2 텍스트: 보통 -->
-                        <TextView
-                            android:id="@+id/explain_whipping_normal_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="보통"
-                            android:textAlignment="center"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <!-- 휘핑 시크바 값3 텍스트: 많이 -->
-                        <TextView
-                            android:id="@+id/explain_whipping_much_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="1"
-                            android:text="많이"
-                            android:textAlignment="textEnd"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
+                        android:layout_marginTop="10dp"
+                        android:text="휘핑 표시"
+                        android:textColor="@color/Maincolor_Brown2"
+                        android:textSize="20sp" />
 
                     <!-- 커스텀 메뉴 드리즐 제목 -->
                     <TextView
@@ -728,109 +500,15 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- 드리즐 라디오 버튼1~3 -->
-                    <RadioGroup
+                    <!-- 커스텀 메뉴 드리즐 표시 텍스트 -->
+                    <TextView
+                        android:id="@+id/custom_drizzle_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                        <!-- 드리즐 라디오 버튼1 -->
-                        <RadioButton
-                            android:id="@+id/custom_drizzle1_radioButton"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="드리즐X"
-                            android:textColor="@color/Active_Text" />
-
-                        <!-- 드리즐 라디오 버튼2 -->
-                        <RadioButton
-                            android:id="@+id/custom_drizzle2_radioButton"
-                            android:layout_width="120dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:text="카라멜 드리즐"
-                            android:textColor="@color/Active_Text" />
-
-                        <!-- 드리즐 라디오 버튼3 -->
-                        <RadioButton
-                            android:id="@+id/custom_drizzle3_radioButton"
-                            android:layout_width="120dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:text="초콜릿 드리즐"
-                            android:textColor="@color/Active_Text" />
-
-                    </RadioGroup>
-
-                    <!-- 커스텀 메뉴 드리즐 시크바 -->
-                    <SeekBar
-                        android:id="@+id/custom_drizzle_seekBar"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:max="3"
-                        android:min="0"
-                        android:progress="0"
-                        android:progressTint="@color/Maincolor_Brown1" />
-
-                    <!-- 커스텀 메뉴 드리즐 시크바 값 텍스트-->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1">
-
-                        <!-- 드리즐 시크바 값0 텍스트: 없음 -->
-                        <TextView
-                            android:id="@+id/explain_drizzle_no_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:layout_weight="1"
-                            android:text="없음"
-                            android:textAlignment="textStart"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <!-- 드리즐 시크바 값1 텍스트: 적게 -->
-                        <TextView
-                            android:id="@+id/explain_drizzle_less_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="적게"
-                            android:textAlignment="center"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <!-- 드리즐 시크바 값2 텍스트: 보통 -->
-                        <TextView
-                            android:id="@+id/explain_drizzle_normal_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="보통"
-                            android:textAlignment="center"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <!-- 드리즐 시크바 값3 텍스트: 많이 -->
-                        <TextView
-                            android:id="@+id/explain_drizzle_much_textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="1"
-                            android:text="많이"
-                            android:textAlignment="textEnd"
-                            android:textColor="@color/Active_Text"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
+                        android:layout_marginTop="10dp"
+                        android:text="드리즐 표시"
+                        android:textColor="@color/Maincolor_Brown2"
+                        android:textSize="20sp" />
 
                     <!-- 커스텀 메뉴 로스트 갯수 제목 -->
                     <TextView
