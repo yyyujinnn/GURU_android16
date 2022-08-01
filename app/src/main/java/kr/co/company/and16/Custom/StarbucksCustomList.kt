@@ -63,8 +63,6 @@ class StarbucksCustomList : AppCompatActivity(), MyRecyclerViewInterface {
             var str_size = cursor.getString(cursor.getColumnIndex("size")).toString()
             var str_espressoShotNumber =
                 cursor.getString(cursor.getColumnIndex("espressoShotNumber")).toString()
-
-
             var str_vanillaSyrupNumber =
                 cursor.getString(cursor.getColumnIndex("vanillaSyrupNumber")).toString()
             var str_hazelnutsSyrupNumber =

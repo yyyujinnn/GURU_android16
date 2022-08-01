@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.ActionBar
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kr.co.company.and16.Custom.CustomList
 import kr.co.company.and16.MenuReg.EdiyaMenu_write
@@ -19,6 +20,8 @@ import kr.co.company.and16.R
 import kr.co.company.and16.Zzim.MyList
 
 class HomeActivity : AppCompatActivity() {
+
+    lateinit var actionBar : ActionBar
 
     //옵션 메뉴
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -46,6 +49,12 @@ class HomeActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        actionBar = supportActionBar!!
+        actionBar.title ="전체 커스텀메뉴 랭킹"
+
+
+
         // xml 변수 선언
         lateinit var all_tab_imageButton: ImageButton         // 전체 탭 버튼
         lateinit var starbucks_tab_imageButton: ImageButton   // 스타벅스 탭 버튼
