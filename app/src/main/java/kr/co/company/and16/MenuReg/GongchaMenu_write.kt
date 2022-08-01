@@ -14,6 +14,7 @@ import android.provider.MediaStore
 import android.util.Log
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -27,6 +28,9 @@ import java.io.ByteArrayOutputStream
 // < #. 커스텀 메뉴 작성 페이지2: 공차 커스텀 메뉴 >
 
 class GongchaMenu_write : AppCompatActivity() {
+
+    lateinit var actionBar : ActionBar
+
 
     lateinit var dbManager: DBManager
     lateinit var sqlitedb : SQLiteDatabase
@@ -121,6 +125,12 @@ class GongchaMenu_write : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gongcha_menu_write)
+
+
+        // 액션바 제목 변경
+        actionBar = supportActionBar!!
+        actionBar.title ="커스텀 메뉴 등록하기"
+
 
         custom_public_radioButton = findViewById(R.id.custom_public_radioButton)
         custom_private_radioButton = findViewById(R.id.custom_private_radioButton)
