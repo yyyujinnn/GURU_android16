@@ -77,12 +77,6 @@ class Login : AppCompatActivity() {
         googleSignInClient = GoogleSignIn.getClient(this,gso)
 
 
-//
-//        // 로그인버튼 클릭 시 main 화면으로 이동
-//        LoginButton.setOnClickListener {
-//            val intent = Intent(this, MainActivity::class.java)
-//             startActivity(intent)
-//        }
 
         //회원가입 버튼 클릭 시 회원가입 화면으로 이동
         SignupButton.setOnClickListener {
