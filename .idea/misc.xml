@@ -9,25 +9,20 @@
         <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/drawable/ic_logo_starbucks_icon_button.xml" value="0.2115" />
         <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_custom_list.xml" value="0.12335359675785208" />
         <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_custom_list_mycustom.xml" value="0.1" />
+        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_ediya_custom_list.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_ediya_menu_detail.xml" value="0.2" />
         <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_ediya_menu_write.xml" value="0.176" />
+        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_gongcha_custom_list.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_gongcha_menu_detail.xml" value="0.2" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_gongcha_menu_write.xml" value="0.10778985507246377" />
+        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_gongcha_menu_write.xml" value="0.2" />
         <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_login.xml" value="0.12335359675785208" />
         <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_main.xml" value="0.10778985507246377" />
         <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_my_list.xml" value="0.10778985507246377" />
         <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_sign_up.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_starbucks_menu_detail.xml" value="0.136" />
+        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_starbucks_custom_list.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_starbucks_menu_detail.xml" value="0.2" />
         <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_starbucks_menu_write.xml" value="0.264" />
-        <entry key="..\:/Users/mingyeong/AndroidStudioProjects/and16/app/src/main/res/layout/activity_custom_list.xml" value="0.35520833333333335" />
-        <entry key="..\:/Users/mingyeong/AndroidStudioProjects/and16/app/src/main/res/layout/activity_ediya_custom_list.xml" value="0.2717948717948718" />
-        <entry key="..\:/Users/mingyeong/AndroidStudioProjects/and16/app/src/main/res/layout/activity_ediya_menu_detail.xml" value="0.1" />
-        <entry key="..\:/Users/mingyeong/AndroidStudioProjects/and16/app/src/main/res/layout/activity_ediya_rank.xml" value="0.35520833333333335" />
-        <entry key="..\:/Users/mingyeong/AndroidStudioProjects/and16/app/src/main/res/layout/activity_gongcha_custom_list.xml" value="0.26145833333333335" />
-        <entry key="..\:/Users/mingyeong/AndroidStudioProjects/and16/app/src/main/res/layout/activity_gongcha_menu_write.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/mingyeong/AndroidStudioProjects/and16/app/src/main/res/layout/activity_home.xml" value="0.35520833333333335" />
-        <entry key="..\:/Users/mingyeong/AndroidStudioProjects/and16/app/src/main/res/layout/activity_starbucks_custom_list.xml" value="0.2717948717948718" />
-        <entry key="..\:/Users/mingyeong/AndroidStudioProjects/and16/app/src/main/res/layout/layout_recycler_item.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/01071/AndroidStudioProjects/GURU2_Android16_TeamProject/and16/app/src/main/res/layout/activity_start_onboading.xml" value="0.136" />
         <entry key="..\:/Users/mingyeong/StudioProjects/and16/app/src/main/res/drawable/ic_active_like_icon_20.xml" value="0.2585" />
         <entry key="..\:/Users/mingyeong/StudioProjects/and16/app/src/main/res/drawable/ic_inactive_customlist_navigation_icon_24.xml" value="0.288" />
         <entry key="..\:/Users/mingyeong/StudioProjects/and16/app/src/main/res/drawable/ic_login_background.xml" value="0.2585" />

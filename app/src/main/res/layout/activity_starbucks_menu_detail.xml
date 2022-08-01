@@ -22,7 +22,7 @@
             android:layout_marginRight="16dp"
             android:orientation="vertical">
 
-            <!-- 카드뷰1: 커스텀 메뉴 간략 정보 카드 => * 리니어로 수정 -->
+            <!-- 카드뷰1: 커스텀 메뉴 간략 정보 카드 => * 리니어로 수정  -->
             <LinearLayout
                 android:id="@+id/custom_concise_card"
                 android:layout_width="match_parent"
