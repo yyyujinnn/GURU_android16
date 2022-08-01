@@ -8,6 +8,7 @@ import android.view.MenuItem
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.ActionBar
 import androidx.cardview.widget.CardView
 import kr.co.company.and16.Custom.CustomList
 import kr.co.company.and16.Home.HomeActivity
@@ -16,6 +17,8 @@ import kr.co.company.and16.R
 // < #. 찜 목록 리스트 페이지 >
 
 class MyList : AppCompatActivity() {
+    // 액션바
+    lateinit var actionBar : ActionBar
 
     //옵션 메뉴
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -53,5 +56,9 @@ class MyList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_list)
+
+        // 액션바 제목 변경
+        actionBar = supportActionBar!!
+        actionBar.title =" 찜한 커스텀 메뉴"
     }
 }
