@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.ActionBar
 import kr.co.company.and16.DBManager
 import kr.co.company.and16.EdiyaCustomList
 import kr.co.company.and16.R
@@ -16,6 +17,9 @@ import kr.co.company.and16.R
 // < #. 커스텀 메뉴 상세 페이지: 이디야 >
 
 class EdiyaMenu_Detail : AppCompatActivity() {
+
+    // 액션바
+    lateinit var actionBar : ActionBar
 
     lateinit var dbManager : DBManager
     lateinit var sqlitedb : SQLiteDatabase
@@ -62,7 +66,9 @@ class EdiyaMenu_Detail : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ediya_menu_detail)
 
-
+    // 액션바 제목 변경
+        actionBar = supportActionBar!!
+        actionBar.title ="커스텀메뉴 명칭"
 
 
         custom_name = findViewById(R.id.custom_name)

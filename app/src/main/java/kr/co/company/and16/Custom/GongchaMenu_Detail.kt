@@ -10,13 +10,15 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.ActionBar
 import kr.co.company.and16.DBManager
 import kr.co.company.and16.R
 
 // < #. 커스텀 메뉴 상세 페이지: 공차 >
 
 class GongchaMenu_Detail : AppCompatActivity() {
-
+    // 액션바
+    lateinit var actionBar : ActionBar
 
     lateinit var dbManager : DBManager
     lateinit var sqlitedb : SQLiteDatabase
@@ -51,6 +53,10 @@ class GongchaMenu_Detail : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gongcha_menu_detail)
+
+        // 액션바 제목 변경
+        actionBar = supportActionBar!!
+        actionBar.title ="커스텀메뉴 명칭"
 
 
         custom_name = findViewById(R.id.custom_name)

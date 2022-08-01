@@ -11,6 +11,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.ActionBar
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_ediya_custom_list.*
@@ -33,6 +34,9 @@ class CustomList : AppCompatActivity(){
     val TAG: String = "로그"
     var modelList = ArrayList<MyModel>()
     private lateinit var myRecyclerAdapter: MyRecyclerAdapter
+
+    // 액션바
+    lateinit var actionBar : ActionBar
 
     //옵션 메뉴
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -83,6 +87,10 @@ class CustomList : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_custom_list)
+
+        // 액션바 제목 변경
+        actionBar = supportActionBar!!
+        actionBar.title ="전체 커스텀메뉴"
 
         all_tab_imageButton = findViewById(R.id.all_tab_imageButton)
         starbucks_tab_imageButton = findViewById(R.id.starbucks_tab_imageButton)

@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.ActionBar
 import kr.co.company.and16.DBManager
 import kr.co.company.and16.R
 
@@ -17,6 +18,8 @@ import kr.co.company.and16.R
 
 class StarbucksMenu_Detail : AppCompatActivity() {
 
+    // 액션바
+    lateinit var actionBar : ActionBar
 
     lateinit var dbManager : DBManager
     lateinit var sqlitedb : SQLiteDatabase
@@ -64,6 +67,10 @@ class StarbucksMenu_Detail : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_starbucks_menu_detail)
+
+        // 액션바 제목 변경
+        actionBar = supportActionBar!!
+        actionBar.title ="커스텀메뉴 명칭"
 
 
         custom_image = findViewById(R.id.custom_image)
