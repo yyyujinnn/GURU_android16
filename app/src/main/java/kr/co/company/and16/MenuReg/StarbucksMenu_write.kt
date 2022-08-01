@@ -29,9 +29,7 @@ import java.io.ByteArrayOutputStream
 
 class StarbucksMenu_write : AppCompatActivity() {
 
-
     lateinit var actionBar : ActionBar
-
 
     lateinit var dbManager : DBManager
     lateinit var sqlitedb : SQLiteDatabase
@@ -100,7 +98,6 @@ class StarbucksMenu_write : AppCompatActivity() {
     var vanillaSyrupNumber = 0      // 바닐라 시럽 개수를 위한 변수
     var roastNumber = 0        // 아이리쉬 시럽 개수를 위한 변수
 
-
     protected override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(requestCode == GET_GALLERY_IMAGE && resultCode == RESULT_OK && data != null && data.getData() != null) {
@@ -109,18 +106,13 @@ class StarbucksMenu_write : AppCompatActivity() {
         }
     }
 
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_starbucks_menu_write)
 
-
         // 액션바 제목 변경
         actionBar = supportActionBar!!
         actionBar.title ="커스텀 메뉴 등록하기"
-
 
         sizeRadioGroup = findViewById(R.id.sizeRadioGroup)
         custom_size1_radioButton = findViewById(R.id.custom_size1_radioButton)
@@ -171,7 +163,6 @@ class StarbucksMenu_write : AppCompatActivity() {
 
         login_button = findViewById(R.id.login_button)
 
-
         ImageRegButton = findViewById(R.id.ImageRegButton)
 
         // 이미지 추가 버튼 클릭 이벤트
@@ -203,7 +194,6 @@ class StarbucksMenu_write : AppCompatActivity() {
             }
         }
 
-
         var str_existingMenuName: String = ""   //custom_basemenu_spinner 에서 반환된 값 담을 변수(기존메뉴 이름)
 
         // 스피너를 위한 리스트 배열로 만들기(1) - 기본메뉴
@@ -229,7 +219,6 @@ class StarbucksMenu_write : AppCompatActivity() {
 
         var str_lattebase: String = ""   //custom_lattebase_spinner 에서 반환된 값 담을 변수(라떼베이스 이름)
 
-
         // 스피너를 위한 리스트 배열로 만들기(2) - 라떼 베이스
         var lattebaseMenu =
             resources.getStringArray(R.array.Lattebase)
@@ -247,10 +236,8 @@ class StarbucksMenu_write : AppCompatActivity() {
                 }
 
                 override fun onNothingSelected(p0: AdapterView<*>?) {
-
                 }
             }
-
 
         var str_base: String = ""   // 시크바 - 베이스(물,티)
         var str_ice: String = ""   //시크바 - 얼음
@@ -266,10 +253,7 @@ class StarbucksMenu_write : AppCompatActivity() {
                     str_base = "보통"
                 else if(progress == 2)
                     str_base = "많이"
-
-
                 // 진짜 상태 : "${progress}"
-
             }
 
             override fun onStartTrackingTouch(p0: SeekBar?) {}
@@ -420,9 +404,7 @@ class StarbucksMenu_write : AppCompatActivity() {
                         }
                     }
                 }
-
             }
-
 
             override fun onStartTrackingTouch(p0: SeekBar?) {}
             override fun onStopTrackingTouch(p0: SeekBar?) { }
@@ -473,7 +455,6 @@ class StarbucksMenu_write : AppCompatActivity() {
             override fun onStopTrackingTouch(p0: SeekBar?) { }
         })
 
-
         dbManager = DBManager(this, "starbucksMenuDB", null, 1)
 
         // 커스텀메뉴 작성 완료 버튼 클릭
@@ -490,7 +471,6 @@ class StarbucksMenu_write : AppCompatActivity() {
 
             var str_roastNumber: String = ""
 
-
             // 버튼 이벤트로 받은 int 값을 str 형태로 변경(for db 필드 유형 일치)
             str_espressoShotNumber = espressoShotNumber.toString()
 
@@ -499,7 +479,6 @@ class StarbucksMenu_write : AppCompatActivity() {
             str_vanillaSyrupNumber = vanillaSyrupNumber.toString()
 
             str_roastNumber = roastNumber.toString()
-
 
             // 사이즈 선택 라디오 버튼
             if (sizeRadioGroup.checkedRadioButtonId == R.id.custom_size1_radioButton)
@@ -517,7 +496,6 @@ class StarbucksMenu_write : AppCompatActivity() {
             var byteArrayOutputStream = ByteArrayOutputStream()
             bitmap.compress(Bitmap.CompressFormat.PNG, 0, byteArrayOutputStream)
             var bytesImage = byteArrayOutputStream.toByteArray()
-
 
             // db 필드에 입력받은 값 넣기
             var contentValues = ContentValues()
@@ -548,11 +526,6 @@ class StarbucksMenu_write : AppCompatActivity() {
             val intent = Intent(this, StarbucksMenu_Detail::class.java)
             intent.putExtra("intent_starbucks_name", custom_name_EditText.text.toString())
             startActivity(intent)
-
         }
-
-
-
     }
 }
-

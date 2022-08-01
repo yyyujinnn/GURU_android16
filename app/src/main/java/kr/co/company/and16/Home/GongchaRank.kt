@@ -10,9 +10,7 @@ import kr.co.company.and16.R
 
 class GongchaRank : AppCompatActivity() {
 
-
     lateinit var actionBar : ActionBar
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         // 액션바 제목 변경
@@ -50,5 +48,4 @@ class GongchaRank : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
 }

@@ -36,8 +36,6 @@ class EdiyaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
     lateinit var ediya_tab_imageButton: ImageButton       // 이디야 탭 버튼
     lateinit var gongcha_tab_imageButton: ImageButton     // 공차 탭 버튼
 
-
-
     @SuppressLint("Range")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,7 +52,6 @@ class EdiyaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
 
         dbManager = DBManager(this, "ediyaMenuDB", null, 1)
         sqlitedb = dbManager.readableDatabase
-
 
         var cursor : Cursor
         cursor = sqlitedb.rawQuery("SELECT * FROM ediyaMenuDB", null) // ediyaMenuDB의 모든 데이터
@@ -80,7 +77,6 @@ class EdiyaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
             // db에 저장된 이미지
             var bytesImage = cursor.getBlob(cursor.getColumnIndex("customImage"))
 
-
             // 리사이클러뷰 관련 내용
             var myModel = MyModel(name = str_customMenuName, price = str_price, existmenu = str_existingMenuName, profileImage = bytesImage, msize = str_size, mtapiocapearl = str_tapiocaPearl, mtoppingsauce = str_toppingSauce, mtopping = str_topping,
                 mespressoshotnumber = str_espressoShotNumber, mhazelnutssyrupnumber = str_hazelnutsSyrupNumber, mcaramelsyrupnumber = str_caramelSyrupNumber, mvanillasyrupnumber = str_vanillaSyrupNumber,
@@ -92,8 +88,6 @@ class EdiyaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
                 layoutManager = LinearLayoutManager(this@EdiyaCustomList, LinearLayoutManager.VERTICAL, false)
                 adapter = myRecyclerAdapter
             }
-
-
         }
 
         cursor.close()
@@ -113,7 +107,6 @@ class EdiyaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
             val intent = Intent(this, GongchaCustomList::class.java)
             startActivity(intent)
         }
-
     }
 
     override fun onItemClicked(position: Int) {
@@ -143,7 +136,6 @@ class EdiyaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
         val mirishsyrupNumber: String = this.modelList[position].mirisvhsyrupnumber ?: ""
         val mcafesyrupNumber: String = this.modelList[position].mcafesyrunnumber ?: ""
 
-
         AlertDialog.Builder(this)
             .setTitle(title)
             .setMessage("가격 : $mprice 원\n" +
@@ -162,7 +154,4 @@ class EdiyaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
             }
             .show()
     }
-
-
 }
-

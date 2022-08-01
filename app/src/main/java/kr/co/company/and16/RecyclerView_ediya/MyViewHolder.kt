@@ -35,12 +35,9 @@ class MyViewHolder(itemView: View, recyclerViewInterface: MyRecyclerViewInterfac
             .centerCrop()
             .placeholder(R.drawable.ic_logo_app)
             .into(itemprofileImage)
-
     }
 
     override fun onClick(p0: View?) {
         this.myRecyclerViewInterface?.onItemClicked(adapterPosition)
     }
-
-
 }

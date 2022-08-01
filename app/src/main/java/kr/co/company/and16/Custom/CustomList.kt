@@ -63,7 +63,6 @@ class CustomList : AppCompatActivity(){
         return super.onOptionsItemSelected(item)
     }
 
-
     // xml 변수 선언
     lateinit var customlist_tab1_Button:Button    // 상단 탭 버튼1: 공개된 커스텀
     lateinit var customlist_tab2_Button: Button   // 상단 탭 버튼2: 나만의 커스텀
@@ -76,13 +75,12 @@ class CustomList : AppCompatActivity(){
     lateinit var divide_line_imageView: ImageView   // 구분선 이미지
 
     //lateinit var customlist_card: CardView                       // 카드뷰: 커스텀 메뉴 리스트
-    lateinit var customlist_item_imageView: ImageView            // 카드뷰 제품 이미지
-    lateinit var customlist_item_name_textView: TextView         // 카드뷰 제품 이름
-    lateinit var customlist_item_brand_textView: TextView        // 카드뷰 제품 브랜드명
-    lateinit var customlist_item_prise_textView: TextView        //카드뷰 제품 가격
-    lateinit var customlist_item_mn_textView: TextView           // 카드뷰 제품 좋아요 숫자
-    lateinit var customlist_item_like_imageButton: ImageButton   // 카드뷰 제품 찜 버튼
-
+    //lateinit var customlist_item_imageView: ImageView            // 카드뷰 제품 이미지
+    //lateinit var customlist_item_name_textView: TextView         // 카드뷰 제품 이름
+    //lateinit var customlist_item_brand_textView: TextView        // 카드뷰 제품 브랜드명
+    //lateinit var customlist_item_prise_textView: TextView        //카드뷰 제품 가격
+    //lateinit var customlist_item_mn_textView: TextView           // 카드뷰 제품 좋아요 숫자
+    //lateinit var customlist_item_like_imageButton: ImageButton   // 카드뷰 제품 찜 버튼
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -124,9 +122,5 @@ class CustomList : AppCompatActivity(){
             val intent = Intent(this, GongchaCustomList::class.java)
             startActivity(intent)
         }
-
-
     }
-
-
 }

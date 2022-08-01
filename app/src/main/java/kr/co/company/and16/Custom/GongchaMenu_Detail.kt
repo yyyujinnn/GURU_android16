@@ -46,7 +46,6 @@ class GongchaMenu_Detail : AppCompatActivity() {
     lateinit var str_ice : String
     lateinit var str_topping : String
 
-
     lateinit var bytesImage : ByteArray
 
     @SuppressLint("Range")
@@ -58,7 +57,6 @@ class GongchaMenu_Detail : AppCompatActivity() {
         actionBar = supportActionBar!!
         actionBar.title ="커스텀메뉴 명칭"
 
-
         custom_name = findViewById(R.id.custom_name)
         custom_basemenu = findViewById(R.id.custom_basemenu)
         custom_prise = findViewById(R.id.custom_prise)
@@ -69,9 +67,7 @@ class GongchaMenu_Detail : AppCompatActivity() {
         custom_ice = findViewById(R.id.custom_ice)
         custom_toppings = findViewById(R.id.custom_toppings)
 
-
         login_button = findViewById(R.id.login_button)
-
 
         // 리스트 목록으로 화면 전환
         login_button.setOnClickListener{
@@ -87,12 +83,9 @@ class GongchaMenu_Detail : AppCompatActivity() {
         dbManager = DBManager(this, "gongchaMenuDB", null, 1)
         sqlitedb = dbManager.readableDatabase
 
-
-
         // 결과 얻기
         var cursor : Cursor
         cursor = sqlitedb.rawQuery("SELECT * FROM gongchaMenuDB WHERE customMenuName = '"+ str_customMenuName +"';", null)
-
 
         if(cursor.moveToNext()) {
 
@@ -105,7 +98,6 @@ class GongchaMenu_Detail : AppCompatActivity() {
             str_sugar = cursor.getString(cursor.getColumnIndex("sugar")).toString()
             str_ice = cursor.getString(cursor.getColumnIndex("ice")).toString()
             str_topping = cursor.getString(cursor.getColumnIndex("topping")).toString()
-
         }
         cursor.close()
         sqlitedb.close()
@@ -124,8 +116,5 @@ class GongchaMenu_Detail : AppCompatActivity() {
         custom_sugar.text = str_sugar
         custom_ice.text = str_ice
         custom_toppings.text = str_topping + "\n" // 줄바꿈
-
-
-
     }
 }

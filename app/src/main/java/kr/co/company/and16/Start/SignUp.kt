@@ -43,13 +43,11 @@ class SignUp : AppCompatActivity() {
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
-
     }
     public override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
-
     }
 
     private fun signUp() {
@@ -60,7 +58,6 @@ class SignUp : AppCompatActivity() {
         val email = emailEditText.text.toString()
         val password = passWordEditText.text.toString()
         val passwordCheck = passWordCheckEditText.text.toString()
-
 
         // 이메일이나 패스워드나 패스워드 확인 입력 안했을 때
         if(email.length > 0 && password.length > 0 && passwordCheck.length > 0) {
@@ -84,8 +81,5 @@ class SignUp : AppCompatActivity() {
         }else {
             Toast.makeText(this, "이메일 또는 비밀번호를 입력해 주세요.", Toast.LENGTH_SHORT).show()
         }
-
-
     }
-
 }

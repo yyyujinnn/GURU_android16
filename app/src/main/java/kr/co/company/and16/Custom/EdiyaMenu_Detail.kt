@@ -39,9 +39,7 @@ class EdiyaMenu_Detail : AppCompatActivity() {
     lateinit var custom_toppingsauces : TextView
     lateinit var custom_toppings : TextView
 
-
     lateinit var login_button : TextView
-
 
     // db에서 조회 정보 받아서 textview에 전달하기 전 중간 역할 변수
     lateinit var str_customMenuName : String
@@ -70,7 +68,6 @@ class EdiyaMenu_Detail : AppCompatActivity() {
         actionBar = supportActionBar!!
         actionBar.title ="커스텀메뉴 명칭"
 
-
         custom_name = findViewById(R.id.custom_name)
         custom_image = findViewById(R.id.custom_image) //이미지
         custom_basemenu = findViewById(R.id.custom_basemenu)
@@ -85,7 +82,6 @@ class EdiyaMenu_Detail : AppCompatActivity() {
         custom_cafesyrupnum = findViewById(R.id.custom_cafesyrupnum)
         custom_toppingsauces = findViewById(R.id.custom_toppingsauces)
         custom_toppings = findViewById(R.id.custom_toppings)
-
 
         login_button = findViewById(R.id.login_button)
 
@@ -107,7 +103,6 @@ class EdiyaMenu_Detail : AppCompatActivity() {
         cursor = sqlitedb.rawQuery("SELECT * FROM ediyaMenuDB WHERE customMenuName = '"+ str_customMenuName +"';", null)
 
 
-
         if(cursor.moveToNext()) {
 
             // 컬럼값으로 인덱스값 알아오기
@@ -124,8 +119,6 @@ class EdiyaMenu_Detail : AppCompatActivity() {
             str_vanillaSyrupNumber = cursor.getString(cursor.getColumnIndex("vanillaSyrupNumber")).toString()
             str_irishSyrupNumber = cursor.getString(cursor.getColumnIndex("irishSyrupNumber")).toString()
             str_cafeSyrupNumber = cursor.getString(cursor.getColumnIndex("cafeSyrupNumber")).toString()
-
-
 
         }
         cursor.close()
@@ -146,10 +139,6 @@ class EdiyaMenu_Detail : AppCompatActivity() {
         custom_cafesyrupnum.text =str_cafeSyrupNumber
         custom_toppingsauces.text = str_toppingSauce
         custom_toppings.text = str_topping + "\n" // 줄바꿈
-
-
-
-
 
         var bitmapImage = BitmapFactory.decodeByteArray(bytesImage, 0, bytesImage.size)
         custom_image.setImageBitmap(bitmapImage)

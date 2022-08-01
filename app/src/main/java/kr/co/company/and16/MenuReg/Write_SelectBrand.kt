@@ -15,7 +15,6 @@ class Write_SelectBrand : AppCompatActivity() {
 
     lateinit var actionBar : ActionBar
 
-
     // xml 변수 선언
     lateinit var explain_textView: TextView           // 설명 텍스트
 
@@ -32,8 +31,6 @@ class Write_SelectBrand : AppCompatActivity() {
         // 액션바 제목 변경
         actionBar = supportActionBar!!
         actionBar.title ="커스텀 메뉴 브랜드 선택"
-
-
 
         explain_textView = findViewById(R.id.explain_textView)
         starbucks_radioButton = findViewById(R.id.starbucks_radioButton)

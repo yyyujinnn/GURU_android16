@@ -31,7 +31,6 @@ class GongchaMenu_write : AppCompatActivity() {
 
     lateinit var actionBar : ActionBar
 
-
     lateinit var dbManager: DBManager
     lateinit var sqlitedb : SQLiteDatabase
 
@@ -53,7 +52,6 @@ class GongchaMenu_write : AppCompatActivity() {
     lateinit var custom_shotnum_sub_button : Button
     lateinit var custom_shotnum_textView : TextView
 
-
     lateinit var custom_suger_seekBar : SeekBar
 
     lateinit var custom_ice_seekBar : SeekBar
@@ -74,8 +72,6 @@ class GongchaMenu_write : AppCompatActivity() {
     private var ImageRegButton: ImageView? = null
     private val REQUEST_READ_EXTERNAL_STORAGE = 1000
 
-
-
     protected override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(requestCode == GET_GALLERY_IMAGE && resultCode == RESULT_OK && data != null && data.getData() != null) {
@@ -85,12 +81,10 @@ class GongchaMenu_write : AppCompatActivity() {
         }
     }
 
-
     // 0으로 시럽 개수 초기화 for 증감버튼
     var espressoShotNumber = 0      // 에스프레소 샷 개수를 위한 변수
 
     var str_topping: String = ""      // 체크박스에서 반환된 값(토핑 )
-
 
     var listener = CompoundButton.OnCheckedChangeListener { compoundButton, isChecked ->
         if(isChecked) {
@@ -114,23 +108,17 @@ class GongchaMenu_write : AppCompatActivity() {
                 R.id.custom_topping6_radioButton -> {
                     str_topping += " 치즈폼 "
                 }
-
-
             }
         }
-
-
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gongcha_menu_write)
 
-
         // 액션바 제목 변경
         actionBar = supportActionBar!!
         actionBar.title ="커스텀 메뉴 등록하기"
-
 
         custom_public_radioButton = findViewById(R.id.custom_public_radioButton)
         custom_private_radioButton = findViewById(R.id.custom_private_radioButton)
@@ -154,7 +142,6 @@ class GongchaMenu_write : AppCompatActivity() {
         ImageRegButton = findViewById(R.id.ImageRegButton)
 
         login_button = findViewById(R.id.login_button)
-
 
         // 이미지 추가 버튼 클릭 이벤트
         ImageRegButton!!.setOnClickListener {
@@ -200,10 +187,7 @@ class GongchaMenu_write : AppCompatActivity() {
             }
         }
 
-
-
         var str_existingMenuName: String = ""   //custom_basemenu_spinner 에서 반환된 값(기존메뉴 이름)
-
 
         // 스피너를 위한 리스트 배열로 만들기
         var gongchaExistingMenu =
@@ -222,7 +206,6 @@ class GongchaMenu_write : AppCompatActivity() {
                 }
 
                 override fun onNothingSelected(p0: AdapterView<*>?) {
-
                 }
             }
 
@@ -244,8 +227,6 @@ class GongchaMenu_write : AppCompatActivity() {
             custom_shotnum_textView.text = espressoShotNumber.toString()
         }
 
-
-
         // 체크박스 클릭
         custom_topping1_radioButton.setOnCheckedChangeListener(listener)
         custom_topping2_radioButton.setOnCheckedChangeListener(listener)
@@ -254,10 +235,8 @@ class GongchaMenu_write : AppCompatActivity() {
         custom_topping5_radioButton.setOnCheckedChangeListener(listener)
         custom_topping6_radioButton.setOnCheckedChangeListener(listener)
 
-
         var str_ice: String = ""   // 시크바 - 얼음
         var str_sugar: String = ""   //시크바 - 농도
-
 
         //seekbar 변화 이벤트 - 농도
         custom_suger_seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
@@ -274,20 +253,14 @@ class GongchaMenu_write : AppCompatActivity() {
                     str_sugar= "70%"
                 else if(progress == 4)
                     str_sugar = "100%"
-
-
                 // 진짜 상태 : "${progress}"
-
             }
 
             override fun onStartTrackingTouch(p0: SeekBar?) {
-
             }
 
             override fun onStopTrackingTouch(p0: SeekBar?) {
-
             }
-
         })
         //seekbar 변화 이벤트 - 얼음
         custom_ice_seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
@@ -302,26 +275,19 @@ class GongchaMenu_write : AppCompatActivity() {
                     str_ice= "보통"
                 else if(progress == 3)
                     str_ice = "많이"
-
             }
 
             override fun onStartTrackingTouch(p0: SeekBar?) {
-
             }
 
             override fun onStopTrackingTouch(p0: SeekBar?) {
-
             }
 
-
         })
-
-
         dbManager = DBManager(this, "gongchaMenuDB", null, 1)
 
         // 커스텀메뉴 작성 완료 버튼 클릭
         login_button.setOnClickListener {
-
 
             var str_size: String = ""             // sizeRadioGroup(라디오)에서 반환된 값(사이즈 : 라지 or 점보)
             var str_espressoShotNumber: String = ""
@@ -340,8 +306,6 @@ class GongchaMenu_write : AppCompatActivity() {
             var byteArrayOutputStream = ByteArrayOutputStream()
             bitmap.compress(Bitmap.CompressFormat.PNG, 0, byteArrayOutputStream)
             var bytesImage = byteArrayOutputStream.toByteArray()
-
-
 
             var contentValues = ContentValues()
             // put(항목, 값)
@@ -364,10 +328,6 @@ class GongchaMenu_write : AppCompatActivity() {
             val intent = Intent(this, GongchaMenu_Detail::class.java)
             intent.putExtra("intent_gongcha_name", custom_name_EditText.text.toString())
             startActivity(intent)
-
-
         }
-
     }
-
 }

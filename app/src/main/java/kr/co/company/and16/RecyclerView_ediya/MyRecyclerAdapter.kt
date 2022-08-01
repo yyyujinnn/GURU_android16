@@ -33,6 +33,4 @@ class MyRecyclerAdapter(myRecyclerViewInterface: MyRecyclerViewInterface): Recyc
     fun submitLiist(modelList: ArrayList<MyModel>){
         this.modelList = modelList
     }
-
-
 }

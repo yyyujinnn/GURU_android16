@@ -111,9 +111,7 @@ class StarbucksCustomList : AppCompatActivity(), MyRecyclerViewInterface {
                 layoutManager = LinearLayoutManager(this@StarbucksCustomList, LinearLayoutManager.VERTICAL, false)
                 adapter = myRecyclerAdapter
             }
-
         }
-
         cursor.close()
         sqlitedb.close()
         dbManager.close()
@@ -131,7 +129,6 @@ class StarbucksCustomList : AppCompatActivity(), MyRecyclerViewInterface {
             val intent = Intent(this, GongchaCustomList::class.java)
             startActivity(intent)
         }
-
     }
 
     override fun onItemClicked(position: Int) {
@@ -166,7 +163,6 @@ class StarbucksCustomList : AppCompatActivity(), MyRecyclerViewInterface {
         val mWhipping: String = this.modelList[position].mwhipping ?: ""
         val mDrizzle: String = this.modelList[position].mdrizzle ?: ""
         val mRoast: String = this.modelList[position].mroast ?: ""
-
 
         AlertDialog.Builder(this)
             .setTitle(title)

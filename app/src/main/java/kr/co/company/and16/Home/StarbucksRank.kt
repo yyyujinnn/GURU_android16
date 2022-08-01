@@ -17,7 +17,6 @@ class StarbucksRank : AppCompatActivity() {
         actionBar = supportActionBar!!
         actionBar.title ="스타벅스 커스텀메뉴 랭킹"
 
-
         // xml 변수 선언
         lateinit var all_tab_imageButton: ImageButton         // 전체 탭 버튼
         lateinit var starbucks_tab_imageButton: ImageButton   // 스타벅스 탭 버튼

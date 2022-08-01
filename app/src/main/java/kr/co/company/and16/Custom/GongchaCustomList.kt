@@ -36,7 +36,6 @@ class GongchaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
     lateinit var ediya_tab_imageButton: ImageButton       // 이디야 탭 버튼
     lateinit var gongcha_tab_imageButton: ImageButton     // 공차 탭 버튼
 
-
     @SuppressLint("Range")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,10 +50,8 @@ class GongchaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
         ediya_tab_imageButton = findViewById(R.id.ediya_tab_imageButton)
         gongcha_tab_imageButton = findViewById(R.id.gongcha_tab_imageButton)
 
-
         dbManager = DBManager(this, "gongchaMenuDB", null, 1)
         sqlitedb = dbManager.readableDatabase
-
 
         var cursor : Cursor
         cursor = sqlitedb.rawQuery("SELECT * FROM gongchaMenuDB", null) // gongchaMenuDB 모든 데이터
@@ -72,10 +69,7 @@ class GongchaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
             var str_ice = cursor.getString(cursor.getColumnIndex("ice")).toString()
             var str_topping = cursor.getString(cursor.getColumnIndex("topping")).toString()
 
-
             var bytesImage = cursor.getBlob(cursor.getColumnIndex("customImage"))
-
-
 
             // 리사이클러뷰 관련 내용
             var myModel = MyModel(name = str_customMenuName, price = str_price, existmenu = str_existingMenuName, profileImage = bytesImage,msize = str_size, mtopping = str_topping,
@@ -87,9 +81,6 @@ class GongchaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
                 layoutManager = LinearLayoutManager(this@GongchaCustomList, LinearLayoutManager.VERTICAL, false)
                 adapter = myRecyclerAdapter
             }
-
-
-
         }
 
         cursor.close()
@@ -109,8 +100,6 @@ class GongchaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
             val intent = Intent(this, GongchaCustomList::class.java)
             startActivity(intent)
         }
-
-
     }
 
     override fun onItemClicked(position: Int) {
@@ -132,8 +121,6 @@ class GongchaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
         val mSugar: String = this.modelList[position].msugar ?: ""
         val mIce: String = this.modelList[position].mice ?: ""
 
-
-
         AlertDialog.Builder(this)
             .setTitle(title)
             .setMessage("가격 : $mprice 원\n" +
@@ -148,5 +135,4 @@ class GongchaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
             }
             .show()
     }
-
 }

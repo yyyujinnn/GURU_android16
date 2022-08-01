@@ -28,16 +28,12 @@ class EdiyaMenu_write : AppCompatActivity() {
 
     lateinit var actionBar : ActionBar
 
-
-
     lateinit var dbManager: DBManager
     lateinit var sqlitedb : SQLiteDatabase
-
 
     lateinit var custom_name_EditText : EditText
 
     lateinit var custom_prise_EditText : EditText
-
 
     lateinit var sizeRadioGroup : RadioGroup
     lateinit var custom_size1_radioButton : RadioButton
@@ -45,7 +41,6 @@ class EdiyaMenu_write : AppCompatActivity() {
 
     // 애뮬레이터에서 선택된 이미지 uri를 담을 변수
     lateinit var selectedImageUri: Uri
-
 
     // 증감버튼 동작을 위한 선언
     // 에스프레소 샷
@@ -73,8 +68,6 @@ class EdiyaMenu_write : AppCompatActivity() {
     lateinit var custom_cafesyrupnum_textView : TextView // 개수
     lateinit var custom_cafesyrupnum_plus_button : Button //증가 버튼
 
-
-
     lateinit var custom_pearl1_checkBox : CheckBox
 
     lateinit var custom_toppingsauce1_checkBox : CheckBox
@@ -100,8 +93,6 @@ class EdiyaMenu_write : AppCompatActivity() {
 
     var str_toppingSauce: String = ""        // 체크박스에서 반환된 값을 담을 변수(토핑 소스 : 초콜릿, 카라멜)
     var str_topping: String = ""      // 체크박스에서 반환된 값을 담을 변수(토핑 : 초코쿠키 크림, 초콜릿칩, 휘핑크림)
-
-
 
     // 사진 작업을 위한 값
     private val GET_GALLERY_IMAGE = 200
@@ -135,7 +126,6 @@ class EdiyaMenu_write : AppCompatActivity() {
                     str_toppingSauce += "        카라멜        "
                 }
 
-
                 // 토핑(3) -
                 //  초코쿠키 크림 체크
                 R.id.custom_topping1_checkBox -> {
@@ -152,20 +142,15 @@ class EdiyaMenu_write : AppCompatActivity() {
                 }
             }
         }
-
-
     }
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ediya_menu_write)
 
-
         // 액션바 제목 변경
         actionBar = supportActionBar!!
         actionBar.title ="커스텀 메뉴 등록하기"
-
 
         ImageRegButton = findViewById(R.id.ImageRegButton)
         custom_name_EditText = findViewById(R.id.custom_name_EditText)
@@ -213,7 +198,6 @@ class EdiyaMenu_write : AppCompatActivity() {
         custom_cafesyrupnum_plus_button = findViewById(R.id.custom_cafesyrupnum_plus_button) //증가 버튼
         custom_cafesyrupnum_textView = findViewById(R.id.custom_cafesyrupnum_textView)    // 개수
 
-
         custom_pearl1_checkBox = findViewById(R.id.custom_pearl1_checkBox)
 
         custom_toppingsauce1_checkBox = findViewById(R.id.custom_toppingsauce1_checkBox)
@@ -225,8 +209,6 @@ class EdiyaMenu_write : AppCompatActivity() {
 
         login_button = findViewById(R.id.login_button)
         custom_basemenu_spinner = findViewById(R.id.custom_basemenu_spinner)
-
-
 
         // 이미지 추가 버튼 클릭 이벤트
         ImageRegButton!!.setOnClickListener{
@@ -257,9 +239,6 @@ class EdiyaMenu_write : AppCompatActivity() {
             }
         }
 
-
-
-
         var str_existingMenuName: String = ""   //custom_basemenu_spinner 에서 반환된 값 담을 변수(기존메뉴 이름)
 
         // 스피너를 위한 리스트 배열로 만들기
@@ -277,12 +256,9 @@ class EdiyaMenu_write : AppCompatActivity() {
                     // 선택된 메뉴 저장하기
                     str_existingMenuName = custom_basemenu_spinner.selectedItem.toString()
                 }
-
                 override fun onNothingSelected(p0: AdapterView<*>?) {
-
                 }
             }
-
 
         // 감소(-) 버튼 클릭
         // 에스프레소 샷 갯수 감소 버튼
@@ -390,17 +366,12 @@ class EdiyaMenu_write : AppCompatActivity() {
         custom_topping2_checkBox.setOnCheckedChangeListener(listener)//토핑 - 초콜릿칩
         custom_topping3_checkBox.setOnCheckedChangeListener(listener)//토핑 - 휘핑크림
 
-
-
         dbManager = DBManager(this, "ediyaMenuDB", null, 1)
         // 커스텀메뉴 작성 완료 버튼 클릭
         login_button.setOnClickListener {
 
-
             var str_size: String = ""             // sizeRadioGroup(라디오)에서 반환된 값 담을 변수 (사이즈 : 라지 or 점보)
-
             var str_espressoShotNumber: String = ""
-
             var str_hazelnutsSyrupNumber: String = ""
             var str_caramelSyrupNumber: String = ""
             var str_vanillaSyrupNumber: String = ""
@@ -422,7 +393,6 @@ class EdiyaMenu_write : AppCompatActivity() {
             if (sizeRadioGroup.checkedRadioButtonId == R.id.custom_size2_radioButton)
                 str_size = custom_size2_radioButton.text.toString() // 엑스트라 사이즈
 
-
             // 사용자로부터 받은 사진 uri를 db의 blob 로 변환
             // uri를 bitmap으로
             var stream = contentResolver.openInputStream(selectedImageUri)
@@ -431,8 +401,6 @@ class EdiyaMenu_write : AppCompatActivity() {
             var byteArrayOutputStream = ByteArrayOutputStream()
             bitmap.compress(Bitmap.CompressFormat.PNG, 0, byteArrayOutputStream)
             var bytesImage = byteArrayOutputStream.toByteArray()
-
-
 
             // db 필드에 입력받은 값 넣기
             var contentValues = ContentValues()
@@ -462,11 +430,6 @@ class EdiyaMenu_write : AppCompatActivity() {
             val intent = Intent(this, EdiyaMenu_Detail::class.java)
             intent.putExtra("intent_ediya_name", custom_name_EditText.text.toString())
             startActivity(intent)
-
-
-
-
         }
     }
 }
-

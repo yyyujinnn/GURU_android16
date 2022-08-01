@@ -46,5 +46,4 @@ class EdiyaRank : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
 }

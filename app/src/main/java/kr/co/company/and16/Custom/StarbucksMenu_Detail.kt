@@ -151,7 +151,6 @@ class StarbucksMenu_Detail : AppCompatActivity() {
         custom_drizzle.text = str_drizzle
         custom_roastnum.text = str_roastNumber + "\n" // 줄바꿈
 
-
         var bitmapImage = BitmapFactory.decodeByteArray(bytesImage, 0, bytesImage.size)
         custom_image.setImageBitmap(bitmapImage)
     }

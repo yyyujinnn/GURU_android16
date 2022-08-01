@@ -40,10 +40,8 @@ class Login : AppCompatActivity() {
     lateinit var LoginButton: Button //로그인 버튼
     lateinit var SignupButton: Button //회원가입 버튼
 
-
     var googleSignInClient : GoogleSignInClient? = null
     var GOOGLE_LOGIN_CODE = 9001
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,10 +56,6 @@ class Login : AppCompatActivity() {
         LoginButton = findViewById(R.id.LoginButton)
         LoginButton.setOnClickListener{
             signUp()
-
-            // 로그인버튼 클릭 시 main 화면으로 이동
-            //val intent = Intent(this, MainActivity::class.java)
-            //startActivity(intent)
         }
 
         // 구글 로그인
@@ -76,14 +70,11 @@ class Login : AppCompatActivity() {
             .build()
         googleSignInClient = GoogleSignIn.getClient(this,gso)
 
-
-
         //회원가입 버튼 클릭 시 회원가입 화면으로 이동
         SignupButton.setOnClickListener {
             val intent = Intent(this, SignUp::class.java)
             startActivity(intent)
         }
-
     }
 
     fun googleLogin() {
@@ -133,14 +124,12 @@ class Login : AppCompatActivity() {
         val currentUser = auth.currentUser
     }
 
-
     private fun signUp() {
         ID_editText = findViewById(R.id.ID_editText)
         password_editText = findViewById(R.id.password_editText)
 
         val email = ID_editText.text.toString()
         val password = password_editText.text.toString()
-
 
         // 이메일이나 패스워드나 패스워드 확인 입력 안했을 때
         if(email.length > 0 && password.length > 0 ) {
@@ -159,12 +148,8 @@ class Login : AppCompatActivity() {
                         }
                     }
                 }
-
         }else {
             Toast.makeText(this, "이메일 또는 비밀번호를 입력해 주세요.", Toast.LENGTH_SHORT).show()
         }
-
     }
-
-
 }
