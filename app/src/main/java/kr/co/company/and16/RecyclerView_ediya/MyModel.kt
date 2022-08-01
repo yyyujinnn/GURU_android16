@@ -8,9 +8,8 @@ class MyModel(val name: String? = null, val price: String? = null, val existmenu
               var mcaramelsyrupnumber: String? = null, var mvanillasyrupnumber : String? = null,
               var mirisvhsyrupnumber: String? = null, var mcafesyrunnumber: String? = null,
 
-              var mlattebase: String? = null, var mbase: String? = null, var mbaseSeek: String? = null,
-              var mwhipping: String? = null, var mwhippingSeek: String? = null, var miceSeek: String? = null,
-              var mdrizzle: String? = null, var mdrizzleSeek: String? = null, var mroast: String? = null,
+              var mlattebase: String? = null, var mbase: String? = null, var mwhipping: String? = null,
+              var mdrizzle: String? = null, var mroast: String? = null,
 
               var mice: String? = null, var msugar: String? = null) {
 
