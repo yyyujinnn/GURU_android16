@@ -19,7 +19,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginRight="16dp">
 
-            <!-- 커스텀 메뉴 작성 그룹  -->
+            <!-- 커스텀 메뉴 작성 그룹   -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -252,6 +252,7 @@
 
                 <!-- 사이즈 라디오 버튼1~3 -->
                 <RadioGroup
+                    android:id="@+id/sizeRadioGroup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -707,32 +708,40 @@
                     android:orientation="horizontal"
                     android:gravity="center">
 
-                    <!-- 휘핑 라디오 버튼1 -->
-                    <RadioButton
-                        android:id="@+id/custom_whipping1_radioButton"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:text="휘핑X"
-                        android:textColor="@color/Active_Text" />
 
-                    <!-- 휘핑 라디오 버튼2 -->
-                    <RadioButton
-                        android:id="@+id/custom_whipping2_radioButton"
-                        android:layout_width="100dp"
+                    <!-- 휘핑 라디오 버튼 -->
+                    <RadioGroup
+                        android:id="@+id/custom_whipping_radioGroup"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:text="일반 휘핑"
-                        android:textColor="@color/Active_Text" />
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <!-- 휘핑 라디오 버튼1 -->
+                        <RadioButton
+                            android:id="@+id/custom_whipping1_radioButton"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="휘핑X"
+                            android:textColor="@color/Active_Text" />
 
-                    <!-- 휘핑 라디오 버튼3 -->
-                    <RadioButton
-                        android:id="@+id/custom_whipping3_radioButton"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:text="에스프레소 휘핑"
-                        android:textColor="@color/Active_Text" />
+                        <!-- 휘핑 라디오 버튼2 -->
+                        <RadioButton
+                            android:id="@+id/custom_whipping2_radioButton"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="일반 휘핑"
+                            android:textColor="@color/Active_Text" />
 
+                        <!-- 휘핑 라디오 버튼3 -->
+                        <RadioButton
+                            android:id="@+id/custom_whipping3_radioButton"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="에스프레소 휘핑"
+                            android:textColor="@color/Active_Text" />
+                    </RadioGroup>
                 </LinearLayout>
 
                 <!-- 커스텀 메뉴 휘핑 시크바 -->
@@ -821,33 +830,39 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center">
-
-                    <!-- 드리즐 라디오 버튼1 -->
-                    <RadioButton
-                        android:id="@+id/custom_drizzle1_radioButton"
-                        android:layout_width="100dp"
+                    <!-- 드리즐 라디오 버튼 -->
+                    <RadioGroup
+                        android:id="@+id/custom_drizzle_radioGroup"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="드리즐X"
-                        android:textColor="@color/Active_Text" />
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <!-- 드리즐 라디오 버튼1 -->
+                        <RadioButton
+                            android:id="@+id/custom_drizzle1_radioButton"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="드리즐X"
+                            android:textColor="@color/Active_Text" />
 
-                    <!-- 드리즐 라디오 버튼2 -->
-                    <RadioButton
-                        android:id="@+id/custom_drizzle2_radioButton"
-                        android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:text="카라멜 드리즐"
-                        android:textColor="@color/Active_Text" />
+                        <!-- 드리즐 라디오 버튼2 -->
+                        <RadioButton
+                            android:id="@+id/custom_drizzle2_radioButton"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="카라멜 드리즐"
+                            android:textColor="@color/Active_Text" />
 
-                    <!-- 드리즐 라디오 버튼3 -->
-                    <RadioButton
-                        android:id="@+id/custom_drizzle3_radioButton"
-                        android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:text="초콜릿 드리즐"
-                        android:textColor="@color/Active_Text" />
-
+                        <!-- 드리즐 라디오 버튼3 -->
+                        <RadioButton
+                            android:id="@+id/custom_drizzle3_radioButton"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="초콜릿 드리즐"
+                            android:textColor="@color/Active_Text" />
+                    </RadioGroup>
                 </LinearLayout>
 
                 <!-- 커스텀 메뉴 드리즐 시크바 -->

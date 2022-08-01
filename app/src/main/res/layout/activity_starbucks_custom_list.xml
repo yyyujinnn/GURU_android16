@@ -8,111 +8,111 @@
 
 
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="119dp"
-            tools:layout_editor_absoluteY="-94dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="-94dp">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 상단 탭 버튼  -->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
 
-                <!-- 상단 탭 버튼 -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginRight="16dp"
-                    android:orientation="horizontal">
-
-                    <!-- 상단 탭 버튼1: 공개된 커스텀 -->
-                    <android.widget.Button
-                        android:id="@+id/customlist_tab1_Button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/ic_active_tab_button"
-                        android:text="공개된 커스텀"
-                        android:textColor="@color/White_Text"
-                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
-
-                    <!-- 상단 탭 버튼2: 나 만의 커스텀 -->
-
-                    <android.widget.Button
-                        android:id="@+id/customlist_tab2_Button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="16dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/ic_inactive_tab_button"
-                        android:text="나만의 커스텀"
-                        android:textColor="@color/Inactive_Text"
-                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
-
-                </LinearLayout>
-
-
-                <!-- 상단 브랜드 버튼 -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <ImageButton
-                        android:id="@+id/all_tab_imageButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#00ff0000"
-                        app:srcCompat="@drawable/ic_logo_all_icon_button" />
-
-                    <ImageButton
-                        android:id="@+id/starbucks_tab_imageButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#00ff0000"
-                        app:srcCompat="@drawable/ic_logo_starbucks_icon_button" />
-
-                    <ImageButton
-                        android:id="@+id/ediya_tab_imageButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#00ff0000"
-                        app:srcCompat="@drawable/ic_logo_ediya_icon_button" />
-
-                    <ImageButton
-                        android:id="@+id/gongcha_tab_imageButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#00ff0000"
-                        app:srcCompat="@drawable/ic_logo_gongcha_icon_button" />
-
-                </LinearLayout>
-
-                <!-- 구분선 이미지 -->
-                <ImageView
-                    android:id="@+id/divide_line_imageView"
+                <!-- 상단 탭 버튼1: 공개된 커스텀 -->
+                <android.widget.Button
+                    android:id="@+id/customlist_tab1_Button"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_active_tab_button"
+                    android:text="공개된 커스텀"
+                    android:textColor="@color/White_Text"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                <!-- 상단 탭 버튼2: 나 만의 커스텀 -->
+
+                <android.widget.Button
+                    android:id="@+id/customlist_tab2_Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
                     android:layout_marginLeft="16dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="15dp"
-                    app:srcCompat="@drawable/ic_divide_line" />
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_inactive_tab_button"
+                    android:text="나만의 커스텀"
+                    android:textColor="@color/Inactive_Text"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
             </LinearLayout>
+
+
+            <!-- 상단 브랜드 버튼 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/all_tab_imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00ff0000"
+                    app:srcCompat="@drawable/ic_logo_all_icon_button" />
+
+                <ImageButton
+                    android:id="@+id/starbucks_tab_imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00ff0000"
+                    app:srcCompat="@drawable/ic_logo_starbucks_icon_button" />
+
+                <ImageButton
+                    android:id="@+id/ediya_tab_imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00ff0000"
+                    app:srcCompat="@drawable/ic_logo_ediya_icon_button" />
+
+                <ImageButton
+                    android:id="@+id/gongcha_tab_imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00ff0000"
+                    app:srcCompat="@drawable/ic_logo_gongcha_icon_button" />
+
+            </LinearLayout>
+
+            <!-- 구분선 이미지 -->
+            <ImageView
+                android:id="@+id/divide_line_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/ic_divide_line" />
+
+        </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/my_recycler_view"
@@ -122,6 +122,6 @@
 
         <!-- 스크롤 뷰 -->
 
-        </LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
