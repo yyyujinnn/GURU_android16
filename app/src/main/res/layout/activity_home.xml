@@ -135,7 +135,7 @@
                                     android:id="@+id/first_item_imageView"
                                     android:layout_width="100dp"
                                     android:layout_height="100dp"
-                                    app:srcCompat="@drawable/ic_logo_all_icon_button" />
+                                    app:srcCompat="@drawable/starbuks_review_picture" />
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
@@ -147,7 +147,7 @@
                                         android:id="@+id/first_item_name_textView"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="1위 커스텀메뉴 명칭"
+                                        android:text="돼지바 프라푸치노"
                                         android:textAlignment="viewStart"
                                         android:textColor="@color/Active_Text"
                                         android:textSize="15sp"
@@ -158,7 +158,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="5dp"
-                                        android:text="브랜드명"
+                                        android:text="스타벅스"
                                         android:textColor="@color/Active_Text"
                                         android:textSize="10sp" />
 
@@ -167,7 +167,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="16dp"
-                                        android:text="10000₩"
+                                        android:text="6800₩"
                                         android:textColor="@color/Active_Text"
                                         android:textSize="15sp"
                                         android:textStyle="bold" />
@@ -177,7 +177,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="3dp"
-                                        android:text="nn명 커스텀즈의 찜"
+                                        android:text="16명 커스텀즈의 찜"
                                         android:textColor="@color/Maincolor_Brown2"
                                         android:textSize="15sp" />
 
@@ -238,7 +238,7 @@
                                     android:id="@+id/list_item_imageView"
                                     android:layout_width="80dp"
                                     android:layout_height="80dp"
-                                    app:srcCompat="@drawable/ic_logo_all_icon_button" />
+                                    app:srcCompat="@drawable/ediya_ex" />
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
@@ -250,7 +250,7 @@
                                         android:id="@+id/list_item_name_textView"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="커스텀메뉴 명칭"
+                                        android:text="슈렉 플랫치노"
                                         android:textAlignment="viewStart"
                                         android:textColor="@color/Active_Text"
                                         android:textSize="15sp"
@@ -261,7 +261,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="3dp"
-                                        android:text="브랜드명"
+                                        android:text="이디야"
                                         android:textColor="@color/Active_Text"
                                         android:textSize="10sp" />
 
@@ -270,7 +270,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="10dp"
-                                        android:text="10000₩"
+                                        android:text="5200₩"
                                         android:textColor="@color/Active_Text"
                                         android:textSize="13sp"
                                         android:textStyle="bold" />
