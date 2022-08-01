@@ -18,6 +18,8 @@ class DBManager(
         // 공차테이블 생성
         db!!.execSQL("CREATE TABLE gongchaMenuDB (customMenuName text, customImage blob, existingMenuName text, price text, size text, espressoShotNumber text, sugar text, ice text, topping text)")
 
+        // 스타벅스 테이블 생성
+        db!!.execSQL("CREATE TABLE starbucksMenuDB (customMenuName text, customImage blob, existingMenuName text, price text, size text, espressoShotNumber text, vanillaSyrupNumber text, hazelnutsSyrupNumber text, caramelSyrupNumber text, lattebase text, base text, ice text, whipping text, drizzle text, roastNumber text)")
 
 
     }

@@ -254,19 +254,19 @@ class GongchaMenu_write : AppCompatActivity() {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
 
                 //seekBar 값 변경되면 실행됨
-                if(progress == 0) // 0~24
+                if(progress == 0)
                     str_sugar = "0%"
-                else if(progress == 1)  // 25~46
+                else if(progress == 1)
                     str_sugar = "30%"
-                else if(progress == 2) // 47~66
+                else if(progress == 2)
                     str_sugar = "50%"
-                else if(progress == 3)  // 67~ 96
+                else if(progress == 3)
                     str_sugar= "70%"
-                else if(progress == 4) // 97 ~100
+                else if(progress == 4)
                     str_sugar = "100%"
 
 
-               // 진짜 상태 : "${progress}"
+                // 진짜 상태 : "${progress}"
 
             }
 
@@ -284,13 +284,13 @@ class GongchaMenu_write : AppCompatActivity() {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
 
                 //seekBar 값 변경되면 실행됨
-                if(progress == 0) // 0~34
+                if(progress == 0)
                     str_ice = "없음"
-                else if(progress == 1) // 35~61
+                else if(progress == 1)
                     str_ice = "적게"
-                else if(progress == 2) //62~ 96
+                else if(progress == 2)
                     str_ice= "보통"
-                else if(progress == 3) //97 ~ 101
+                else if(progress == 3)
                     str_ice = "많이"
 
             }
@@ -322,19 +322,7 @@ class GongchaMenu_write : AppCompatActivity() {
                 str_size = custom_size1_radioButton.text.toString() // 하디 사이즈
             if (sizeRadioGroup.checkedRadioButtonId == R.id.custom_size2_radioButton)
                 str_size = custom_size2_radioButton.text.toString() // 점보 사이즈
-//
-//
-//            // 파일경로 생성
-//            var filePath = Environment.getExternalStorageDirectory().path + "/Download/"+ custom_name_EditText.text.toString() + ".jpeg"
-//            var bitmap = BitmapFactory.decodeFile(filePath)
-//            // 비트맵을 바이트로 변환
-//            var byteArrayOutputStream = ByteArrayOutputStream()
-//            bitmap.compress(Bitmap.CompressFormat.PNG, 0, byteArrayOutputStream)
-//            var bytesImage = byteArrayOutputStream.toByteArray()
 
-
-
-//
             // uri를 bitmap으로
             var stream = contentResolver.openInputStream(selectedImageUri)
             var bitmap = BitmapFactory.decodeStream(stream)

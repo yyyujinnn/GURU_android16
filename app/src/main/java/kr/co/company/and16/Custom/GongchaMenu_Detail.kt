@@ -81,6 +81,8 @@ class GongchaMenu_Detail : AppCompatActivity() {
         dbManager = DBManager(this, "gongchaMenuDB", null, 1)
         sqlitedb = dbManager.readableDatabase
 
+
+
         // 결과 얻기
         var cursor : Cursor
         cursor = sqlitedb.rawQuery("SELECT * FROM gongchaMenuDB WHERE customMenuName = '"+ str_customMenuName +"';", null)
@@ -88,7 +90,7 @@ class GongchaMenu_Detail : AppCompatActivity() {
 
         if(cursor.moveToNext()) {
 
-            // 컬럼값으로 인덱스값 알아오기
+            // 컬럼값으로 인덱스값 알아오
             bytesImage = cursor.getBlob(cursor.getColumnIndex("customImage"))
             str_existingMenuName = cursor.getString(cursor.getColumnIndex("existingMenuName")).toString()
             str_price = cursor.getString(cursor.getColumnIndex("price")).toString()

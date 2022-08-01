@@ -39,7 +39,7 @@
 
                     <!-- 커스텀 메뉴 대표 이미지 -->
                     <ImageView
-                        android:id="@+id/first_item_imageView"
+                        android:id="@+id/custom_image"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         app:srcCompat="@drawable/ic_logo_all_icon_button" />
@@ -163,7 +163,7 @@
 
                     <!-- 커스텀 메뉴 기존 메뉴 표시 텍스트 -->
                     <TextView
-                        android:id="@+id/custom_basemenu_textView"
+                        android:id="@+id/custom_basemenu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -231,7 +231,7 @@
 
                         <!-- 커스텀 메뉴 에스프레소 샷 갯수 표시 텍스트 -->
                         <TextView
-                            android:id="@+id/custom_shotnum_textView"
+                            android:id="@+id/custom_shotnum"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="NN"
@@ -288,7 +288,7 @@
 
                             <!-- 커스텀 메뉴 바닐라 시럽 횟수 표시 텍스트 -->
                             <TextView
-                                android:id="@+id/custom_vanillasyrup_shotnum_textView"
+                                android:id="@+id/custom_vanillasyrup_shotnum"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="NN"
@@ -336,7 +336,7 @@
 
                             <!-- 커스텀 메뉴 헤이즐넛 시럽 횟수 표시 텍스트 -->
                             <TextView
-                                android:id="@+id/custom_hazelnutsyrup_shotnum_textView"
+                                android:id="@+id/custom_hazelnutsyrup_shotnum"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="NN"
@@ -384,7 +384,7 @@
 
                             <!-- 커스텀 메뉴 카라멜 시럽 횟수 표시 텍스트 -->
                             <TextView
-                                android:id="@+id/custom_caramelsyrup_shotnum_textView"
+                                android:id="@+id/custom_caramelsyrup_shotnum"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="NN"
@@ -419,7 +419,7 @@
 
                     <!-- 커스텀 메뉴 라떼 베이스 표시 텍스트 -->
                     <TextView
-                        android:id="@+id/custom_lattebase_textView"
+                        android:id="@+id/custom_lattebase"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="라떼 베이스 표시"
@@ -439,7 +439,7 @@
 
                     <!-- 커스텀 메뉴 베이스(물,티) 표시 텍스트 -->
                     <TextView
-                        android:id="@+id/custom_base_textView"
+                        android:id="@+id/custom_base"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -460,7 +460,7 @@
 
                     <!-- 커스텀 메뉴 얼음 표시 텍스트 -->
                     <TextView
-                        android:id="@+id/custom_ice_textView"
+                        android:id="@+id/custom_ice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -481,7 +481,7 @@
 
                     <!-- 커스텀 메뉴 휘핑 표시 텍스트 -->
                     <TextView
-                        android:id="@+id/custom_whipping_textView"
+                        android:id="@+id/custom_whipping"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -502,7 +502,7 @@
 
                     <!-- 커스텀 메뉴 드리즐 표시 텍스트 -->
                     <TextView
-                        android:id="@+id/custom_drizzle_textView"
+                        android:id="@+id/custom_drizzle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -530,7 +530,7 @@
 
                         <!-- 커스텀 메뉴 로스트 갯수 표시 텍스트 -->
                         <TextView
-                            android:id="@+id/custom_roastnum_textView"
+                            android:id="@+id/custom_roastnum"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="NN"
