@@ -279,7 +279,7 @@
                                         android:id="@+id/list_item_mn_textView"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="nn명 커스텀즈의 찜"
+                                        android:text="11명 커스텀즈의 찜"
                                         android:textColor="@color/Maincolor_Brown2"
                                         android:textSize="13sp" />
 
