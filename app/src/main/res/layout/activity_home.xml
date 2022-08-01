@@ -324,6 +324,6 @@
         android:clickable="true"
         android:elevation="6dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/ic_write_button_24" />
+        android:src="@drawable/ic_write_icon_35" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
