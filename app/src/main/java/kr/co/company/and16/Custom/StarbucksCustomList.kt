@@ -107,11 +107,7 @@ class StarbucksCustomList : AppCompatActivity(), MyRecyclerViewInterface {
             myRecyclerAdapter = MyRecyclerAdapter(this)
             myRecyclerAdapter.submitLiist(this.modelList)
             my_recycler_view.apply {
-                layoutManager = LinearLayoutManager(
-                    this@StarbucksCustomList,
-                    LinearLayoutManager.VERTICAL,
-                    false
-                )
+                layoutManager = LinearLayoutManager(this@StarbucksCustomList, LinearLayoutManager.VERTICAL, false)
                 adapter = myRecyclerAdapter
             }
 

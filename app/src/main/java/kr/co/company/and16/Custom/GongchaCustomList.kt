@@ -66,6 +66,12 @@ class GongchaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
 
 
 
+
+//            //textView 가 들어있는 layout
+//            var layout_item: LinearLayout = LinearLayout(this)
+//            layout_item.orientation = LinearLayout.VERTICAL
+//            layout_item.id = num    // 다른 레이아웃과 구분하기 위함(id: 0, 1, 2, ....)
+
             // 리사이클러뷰 관련 내용
             var myModel = MyModel(name = str_customMenuName, price = str_price, existmenu = str_existingMenuName, msize = str_size, mtopping = str_topping,
                 mespressoshotnumber = str_espressoShotNumber, msugar = str_sugar, mice = str_ice)

@@ -11,6 +11,7 @@ import android.widget.ImageButton
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_ediya_custom_list.*
+import kr.co.company.and16.Custom.CustomList
 import kr.co.company.and16.Custom.GongchaCustomList
 import kr.co.company.and16.Custom.StarbucksCustomList
 import kr.co.company.and16.RecyclerView_ediya.MyModel
@@ -93,8 +94,8 @@ class EdiyaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
             val intent = Intent(this, StarbucksCustomList::class.java)
             startActivity(intent)
         }
-        ediya_tab_imageButton.setOnClickListener{
-            val intent = Intent(this, EdiyaCustomList::class.java)
+        all_tab_imageButton.setOnClickListener{
+            val intent = Intent(this, CustomList::class.java)
             startActivity(intent)
         }
         gongcha_tab_imageButton.setOnClickListener{

@@ -8,7 +8,7 @@ import kr.co.company.and16.Custom.StarbucksCustomList
 import kr.co.company.and16.EdiyaCustomList
 import kr.co.company.and16.R
 
-class MyRecyclerAdapter(myRecyclerViewInterface: EdiyaCustomList): RecyclerView.Adapter<MyViewHolder>() {
+class MyRecyclerAdapter(myRecyclerViewInterface: MyRecyclerViewInterface): RecyclerView.Adapter<MyViewHolder>() {
 
     private var modelList = ArrayList<MyModel>()
 

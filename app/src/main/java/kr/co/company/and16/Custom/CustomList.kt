@@ -1,6 +1,8 @@
 package kr.co.company.and16.Custom
 
 import android.content.Intent
+import android.database.Cursor
+import android.database.sqlite.SQLiteDatabase
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -10,6 +12,9 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.activity_ediya_custom_list.*
+import kr.co.company.and16.DBManager
 import kr.co.company.and16.EdiyaCustomList
 import kr.co.company.and16.Home.EdiyaRank
 import kr.co.company.and16.Home.GongchaRank
@@ -17,6 +22,7 @@ import kr.co.company.and16.Home.HomeActivity
 import kr.co.company.and16.Home.StarbucksRank
 import kr.co.company.and16.R
 import kr.co.company.and16.RecyclerView_ediya.MyModel
+import kr.co.company.and16.RecyclerView_ediya.MyRecyclerAdapter
 import kr.co.company.and16.RecyclerView_ediya.MyRecyclerViewInterface
 import kr.co.company.and16.Zzim.MyList
 
@@ -24,6 +30,9 @@ import kr.co.company.and16.Zzim.MyList
 
 class CustomList : AppCompatActivity(){
 
+    val TAG: String = "로그"
+    var modelList = ArrayList<MyModel>()
+    private lateinit var myRecyclerAdapter: MyRecyclerAdapter
 
     //옵션 메뉴
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -83,6 +92,7 @@ class CustomList : AppCompatActivity(){
         customlist_tab1_Button = findViewById(R.id.customlist_tab1_Button)
         customlist_tab2_Button = findViewById(R.id.customlist_tab2_Button)
 
+
         // 공개된 커스텀 / 나만의 커스텀 창 분리
         customlist_tab1_Button.setOnClickListener{
             val intent = Intent(this, CustomList::class.java)
@@ -106,5 +116,9 @@ class CustomList : AppCompatActivity(){
             val intent = Intent(this, GongchaCustomList::class.java)
             startActivity(intent)
         }
+
+
     }
+
+
 }
