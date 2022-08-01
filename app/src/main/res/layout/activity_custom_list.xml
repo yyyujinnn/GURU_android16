@@ -113,10 +113,13 @@
 
         </LinearLayout>
 
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/my_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
+
 
 
         <!-- 스크롤 뷰 -->

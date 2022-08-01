@@ -83,8 +83,7 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <!-- 랭킹 리스트 쌓는 용도의 리니어 레이아웃 -->
             <LinearLayout
@@ -219,8 +218,7 @@
                     <LinearLayout
                         android:id="@+id/customlist_card"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        >
+                        android:layout_height="match_parent">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -307,7 +305,6 @@
                     </LinearLayout>
 
                 </LinearLayout>
-
 
 
             </LinearLayout>

@@ -74,7 +74,7 @@ class EdiyaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
 
 
             // 리사이클러뷰 관련 내용
-            var myModel = MyModel(name = str_customMenuName, price = str_price, existmenu = str_existingMenuName, msize = str_size, mtapiocapearl = str_tapiocaPearl, mtoppingsauce = str_toppingSauce, mtopping = str_topping,
+            var myModel = MyModel(name = str_customMenuName, price = str_price, existmenu = str_existingMenuName, profileImage = bytesImage, msize = str_size, mtapiocapearl = str_tapiocaPearl, mtoppingsauce = str_toppingSauce, mtopping = str_topping,
                 mespressoshotnumber = str_espressoShotNumber, mhazelnutssyrupnumber = str_hazelnutsSyrupNumber, mcaramelsyrupnumber = str_caramelSyrupNumber, mvanillasyrupnumber = str_vanillaSyrupNumber,
                 mirisvhsyrupnumber = str_irishSyrupNumber, mcafesyrunnumber = str_cafeSyrupNumber)
             this.modelList.add(myModel)

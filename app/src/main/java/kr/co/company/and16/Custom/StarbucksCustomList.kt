@@ -73,13 +73,9 @@ class StarbucksCustomList : AppCompatActivity(), MyRecyclerViewInterface {
                 cursor.getString(cursor.getColumnIndex("caramelSyrupNumber")).toString()
             var str_lattebase = cursor.getString(cursor.getColumnIndex("lattebase")).toString()
             var str_base = cursor.getString(cursor.getColumnIndex("base")).toString()
-            var str_baseSeek = cursor.getString(cursor.getColumnIndex("baseSeek")).toString()
             var str_ice = cursor.getString(cursor.getColumnIndex("ice")).toString()
-            var str_iceSeek = cursor.getString(cursor.getColumnIndex("iceSeek")).toString()
             var str_whipping = cursor.getString(cursor.getColumnIndex("whipping")).toString()
-            var str_whippingSeek = cursor.getString(cursor.getColumnIndex("whippingSeek")).toString()
             var str_drizzle = cursor.getString(cursor.getColumnIndex("drizzle")).toString()
-            var str_drizzleSeek = cursor.getString(cursor.getColumnIndex("drizzleSeek")).toString()
             var str_roast = cursor.getString(cursor.getColumnIndex("roastNumber")).toString()
 
             // 리사이클러뷰 관련 내용
@@ -90,17 +86,13 @@ class StarbucksCustomList : AppCompatActivity(), MyRecyclerViewInterface {
                 msize = str_size,
                 mlattebase = str_lattebase,
                 mbase = str_base,
-                mbaseSeek = str_baseSeek,
                 mice = str_ice,
-                miceSeek = str_iceSeek,
                 mwhipping = str_whipping,
-                mwhippingSeek = str_whippingSeek,
                 mespressoshotnumber = str_espressoShotNumber,
                 mhazelnutssyrupnumber = str_hazelnutsSyrupNumber,
                 mcaramelsyrupnumber = str_caramelSyrupNumber,
                 mvanillasyrupnumber = str_vanillaSyrupNumber,
                 mdrizzle = str_drizzle,
-                mdrizzleSeek = str_drizzleSeek,
                 mroast = str_roast
             )
             this.modelList.add(myModel)
@@ -139,17 +131,13 @@ class StarbucksCustomList : AppCompatActivity(), MyRecyclerViewInterface {
         var msize: String? = null
         var mlattebase: String? = null
         var mbase: String? = null
-        var mbaseSeek: String? = null
         var mice: String? = null
-        var miceSeek: String? = null
         var mespressoshotnumber: String? = null
         var mhazelnutssyrupnumber: String? = null
         var mcaramelsyrupnumber: String? = null
         var mvanillasyrupnumber: String? = null
         var mwhipping: String? = null
-        var mwhippingSeek: String? = null
         var mdrizzle: String? = null
-        var mdrizzleSeek: String? = null
         var mroast: String? = null
 
         val title: String = this.modelList[position].name ?: ""
@@ -157,17 +145,13 @@ class StarbucksCustomList : AppCompatActivity(), MyRecyclerViewInterface {
         val mSize: String = this.modelList[position].msize ?: ""
         val mlatteBase: String = this.modelList[position].mlattebase ?: ""
         val mBase: String = this.modelList[position].mbase ?: ""
-        val mBaseSeek: String = this.modelList[position].mbaseSeek ?: ""
         val mIce: String = this.modelList[position].mice ?: ""
-        val mIceSeek: String = this.modelList[position].miceSeek ?: ""
         val mespressoshotNumber: String = this.modelList[position].mespressoshotnumber ?: ""
         val mhazelnutssyrupNumber: String = this.modelList[position].mhazelnutssyrupnumber ?: ""
         val mcaramelsyrupNumber: String = this.modelList[position].mcaramelsyrupnumber ?: ""
         val mvanillasyrupNumber: String = this.modelList[position].mvanillasyrupnumber ?: ""
         val mWhipping: String = this.modelList[position].mwhipping ?: ""
-        val mWhippingSeek: String = this.modelList[position].mwhippingSeek ?: ""
         val mDrizzle: String = this.modelList[position].mdrizzle ?: ""
-        val mDrizzleSeek: String = this.modelList[position].mdrizzleSeek ?: ""
         val mRoast: String = this.modelList[position].mroast ?: ""
 
 
@@ -178,13 +162,9 @@ class StarbucksCustomList : AppCompatActivity(), MyRecyclerViewInterface {
                         "사이즈 : $mSize\n" +
                         "에스프레소 샷 갯수 : $mespressoshotNumber \n" +
                         "라떼 베이스 : $mlatteBase \n" +
-                        "물/티 베이스 : $mBase" + "$mBaseSeek \n" +
                         "헤이즐넛 시럽 : $mhazelnutssyrupNumber \n" +
                         "카라멜 시럽 : $mcaramelsyrupNumber \n" +
                         "바닐라 시럽 : $mvanillasyrupNumber \n" +
-                        "얼음 : $mIce" + "$mIceSeek \n" +
-                        "휘핑크림 : $mWhipping" + "$mWhippingSeek \n" +
-                        "드리즐 : $mDrizzle" + "$mDrizzleSeek \n" +
                         "로스트 프라푸치노 : $mRoast"
             )
             .setPositiveButton("확인") { dialog, id ->
