@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageButton
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_ediya_custom_list.*
@@ -19,6 +20,9 @@ import kr.co.company.and16.RecyclerView_ediya.MyRecyclerAdapter
 import kr.co.company.and16.RecyclerView_ediya.MyRecyclerViewInterface
 
 class GongchaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
+
+    // 액션바
+    lateinit var actionBar : ActionBar
 
     val TAG: String = "로그"
     var modelList = ArrayList<MyModel>()
@@ -37,6 +41,10 @@ class GongchaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gongcha_custom_list)
+
+        // 액션바 제목 변경
+        actionBar = supportActionBar!!
+        actionBar.title ="공차 커스텀메뉴"
 
         all_tab_imageButton = findViewById(R.id.all_tab_imageButton)
         starbucks_tab_imageButton = findViewById(R.id.starbucks_tab_imageButton)
