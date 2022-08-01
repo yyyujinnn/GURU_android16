@@ -566,6 +566,22 @@
 
             </LinearLayout>
 
+            <!-- 목록으로 가기 버튼 -->
+            <android.widget.Button
+                android:id="@+id/goto_list_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/Maincolor_Brown3"
+                android:fontFamily="sans-serif-black"
+                android:text="커스텀메뉴 목록으로 돌아가기 >"
+                android:textColor="@color/White_Text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
             <!-- 카드뷰2: 리뷰 작성 안내 카드 => * 리니어로 수정 -->
             <LinearLayout
                 android:id="@+id/explain_review_card"
