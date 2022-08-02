@@ -53,10 +53,10 @@
             android:name=".Start.Login"
             android:exported="false" />
         <activity
-            android:name=".Start.StartOnboading"
+            android:name=".Home.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".Home.HomeActivity"
+            android:name=".Start.StartOnboading"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
