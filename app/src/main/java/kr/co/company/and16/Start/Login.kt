@@ -28,14 +28,8 @@ class Login : AppCompatActivity() {
     private val TAG = "SignUpActivity"
 
     // xml 변수 선언
-    lateinit var login_bg_imageView: ImageView        // 로그인 배경 물결 이미지
-    lateinit var app_logo_imageView: ImageView        // 로고 이미지
     lateinit var ID_editText: EditText                // 아이디 입력창
-    lateinit var id_icon_imageView: ImageView         // 아이디 아이콘 이미지
     lateinit var password_editText: EditText          // 비밀번호 입력창
-    lateinit var password_icon_imageView: ImageView   // 비밀번호 아이콘 이미지
-    lateinit var forget_password_textView: TextView   // 아이디/비번찾기 텍스트
-    lateinit var signUp_textView: TextView            // 회원가입 설명 텍스트
     lateinit var google_login_button: Button          // 구글 로그인 버튼
     lateinit var LoginButton: Button //로그인 버튼
     lateinit var SignupButton: Button //회원가입 버튼
@@ -120,7 +114,6 @@ class Login : AppCompatActivity() {
 
     public override fun onStart() {
         super.onStart()
-        // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
     }
 

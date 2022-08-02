@@ -19,7 +19,6 @@ class StarbucksRank : AppCompatActivity() {
 
         // xml 변수 선언
         lateinit var all_tab_imageButton: ImageButton         // 전체 탭 버튼
-        lateinit var starbucks_tab_imageButton: ImageButton   // 스타벅스 탭 버튼
         lateinit var ediya_tab_imageButton: ImageButton       // 이디야 탭 버튼
         lateinit var gongcha_tab_imageButton: ImageButton     // 공차 탭 버튼
         super.onCreate(savedInstanceState)
@@ -27,7 +26,6 @@ class StarbucksRank : AppCompatActivity() {
 
         // xml 변수 연결
         all_tab_imageButton = findViewById(R.id.all_tab_imageButton)               // 전체 탭 버튼
-        starbucks_tab_imageButton = findViewById(R.id.starbucks_tab_imageButton)   // 스타벅스 탭 버튼
         ediya_tab_imageButton = findViewById(R.id.ediya_tab_imageButton)           // 이디야 탭 버튼
         gongcha_tab_imageButton = findViewById(R.id.gongcha_tab_imageButton)       // 공차 탭 버튼
 

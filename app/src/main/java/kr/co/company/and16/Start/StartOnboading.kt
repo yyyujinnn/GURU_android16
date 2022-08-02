@@ -11,9 +11,6 @@ import kr.co.company.and16.R
 class StartOnboading : AppCompatActivity() {
 
     // xml 변수 선언
-    lateinit var onboarding_bg_imageView:ImageView   // 온보딩 배경 물결 이미지
-    lateinit var onboarding_logo_imageView: ImageView   // 로고 이미지
-    lateinit var appExplain_textView: TextView   // 어플 설명 텍스트
     lateinit var StartButton: Button //시작버튼
 
     override fun onCreate(savedInstanceState: Bundle?) {
