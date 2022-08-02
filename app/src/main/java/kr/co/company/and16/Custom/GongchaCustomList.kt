@@ -96,8 +96,8 @@ class GongchaCustomList : AppCompatActivity(), MyRecyclerViewInterface {
             val intent = Intent(this, EdiyaCustomList::class.java)
             startActivity(intent)
         }
-        gongcha_tab_imageButton.setOnClickListener{
-            val intent = Intent(this, GongchaCustomList::class.java)
+        all_tab_imageButton.setOnClickListener{
+            val intent = Intent(this, CustomList::class.java)
             startActivity(intent)
         }
     }
