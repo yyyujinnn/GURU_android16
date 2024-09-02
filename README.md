@@ -10,9 +10,9 @@
 
 
 ## 프로젝트 소개
-코로나 19로 인해 프랜차이즈 카페의 비대면 주문 어플의 사용량이 늘어나고,
-비대면 주문 어플의 사용으로 요구 사항이 다양한 레시피도 비교적 편하게 주문이 가능해짐에 따라
-자신의 취향에 맞게 커스텀한 메뉴 레시피를 다양한 사람들에게 공유할 수 있는 앱 서비스
+코로나 19로 인해 프랜차이즈 카페의 비대면 주문 어플의 사용량이 늘어나고, <br/>
+비대면 주문 어플의 사용으로 요구 사항이 다양한 레시피도 비교적 편하게 주문이 가능해짐에 따라 <br/>
+자신의 취향에 맞게 커스텀한 메뉴 레시피를 다양한 사람들에게 공유할 수 있는 앱 서비스 <br/>
 <br/>
 
 ## 프로젝트 개발 기간<br/>
@@ -35,24 +35,11 @@ SQLite를 사용하여 작성한 커스텀 메뉴 레시피 등록 및 데이터
 ## 개발환경
 
 ### Development
-<img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white">  <img src="https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white"> 
- <img src="https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white">
+<img src="https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white"> <img src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white"> <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white">
 
 ### Tools
-<img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white">  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">  <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white">
+<img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white">  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">  <img src="	https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"> <img src="https://img.shields.io/badge/Zoom-2D8CFF?style=for-the-badge&logo=zoom&logoColor=white">
 
-## Convetion
-### Branch
-- github 전략
-- feat/fix/refactor/chore)/#이슈번호-(UI/Func) 
-
-### Commit
-- feat: 새로운 기능 추가
-- fix: 에러 수정
-- style: 코드 스타일 수정
-- docs: 문서 작성 및 편집
-- refactor: 코드 리팩토링
-- chore:  기타 작업
 
 
 
